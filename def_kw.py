@@ -1,4 +1,4 @@
-from re import A
+# from re import A
 import win32con
 import win32gui
 import win32api
@@ -19,14 +19,6 @@ import uiautomation as auto
 from def_ui import *
 from def_loggin import __get_logger, accunt_info
 logger = __get_logger()
-
-
-# 엑티브 하는 명령어 win32gui.SetForegroundWindow(hwnd)
-# FindWindowEx
-# 첫번째 인수는 부모 윈도우의 핸들,
-# 두번째 인수는 자식 윈도우의 핸들,
-# 세번째 인수는 클래스명,
-# 네번째 인수는 윈도우 창 제목입니다.
 
 
 def today_nowDate():
@@ -57,25 +49,6 @@ def get_today_hoilday():
     return XNYS.is_session(todayis)
 
 
-# def kw_window_test(l=0, r=0):
-#     # pag.press("esc", 5)
-#     time.sleep(0.3)
-#     kw_win = gw.getWindowsWithTitle("영웅문Global")[0]
-#     HG_titleName = win32gui.FindWindow(None, "영웅문Global")
-#     # if
-#     logger.debug(kw_win)
-#     # HG_titleName = globalHandleV()
-#     # win32gui.SetForegroundWindow(HG_titleName)
-#     print(kw_win, HG_titleName)
-#     # if kw_win.isActive == False:
-#     #     pywinauto.application.Application().connect(
-#     #         handle=kw_win._hWnd).top_window().set_focus()
-#     kwActivage = kw_win.activate()  # 윈도우 활성화
-#     time.sleep(0.3)
-#     return kwActivage
-#     # pag.click(kw_win.left+l, kw_win.top+r)
-
-
 def kw_window_org(l=0, r=0):
     i = 1
     while i < 10:
@@ -91,9 +64,7 @@ def kw_window_org(l=0, r=0):
                 time.sleep(3)
                 logger.info(f"영웅문Global 확인안됨. {i}회 재 확인")
                 i = i + 1
-                # continue
         except:
-            # print("asdf")
             pass
 
 
@@ -147,15 +118,6 @@ def kw_window_check_kwlogin(l=0, r=0):
 
 
 def kw_window_click(window, l=0, r=0):
-    # kw_window()
-    # time.sleep(0.3)
-    # win = gw.getWindowsWithTitle(window)[0]
-    # win.activate()
-    # # win_left = win.left
-    # # win_top = win.top
-    # # pag.moveRel(win.left+l, win.top+r)
-    # # pag.moveTo(win.left+l, win.top+r)
-    # pag.click(win.left+l, win.top+r)
     i = 0
     while i < 10:
         try:
@@ -603,19 +565,6 @@ def input2102_Stockname(stock):
     # slackSendMsg(f"종목 : {stock} 입력완료.")
     print(f"종목 : {stock} 입력완료.")
     return
-
-# def input2102_Stockname_test(stock):
-#     kw_window()
-#     HG_titleName_1 = win32gui.FindWindow(None, "영웅문Global")
-#     whnd = win32gui.FindWindowEx(
-#         HG_titleName_1, None, "MDIClient", None)
-#     win32gui.EnumChildWindows(whnd, all_ok_MDIClient, None)
-#     # MDIClient_handle(62)
-#     stockName = child_handles_MDIClient_1[62]
-#     mouseClick(stockName)
-#     pag.typewrite(stock)
-#     pag.press('enter')
-#     return print(f"종목 : {stock} 입력완료.")
 
 
 def input2102_Qty(qty):
