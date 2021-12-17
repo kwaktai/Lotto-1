@@ -1,0 +1,126 @@
+ 좌정보(T) - 해외주식 실시간잔고
+4655466 : AfxFrameOrView110 : 
+593270 : AfxWnd110 :
+2296304 : AfxWnd110 : 1
+8915500 : AfxWnd110 : 변경금지
+5308620 : AfxWnd110 : 변경금지
+723962 : AfxWnd110 : 변경금지
+4131044 : AfxWnd110 :
+3605502 : Edit :
+3279196 : AfxWnd110 : 통화코드
+1639784 : AfxWnd110 :
+6490896 : Edit :
+723974 : Button : 일괄매도
+5244526 : Button :
+723972 : Button : 유의사항
+3475750 : Button : 잔고상세내역
+3279318 : AfxWnd110 :
+920350 : AfxWnd110 :
+3016526 : Button : 수수료 보기
+854166 : AfxWnd110 :
+3736204 : Button :
+855256 : AfxWnd110 : 계좌번호
+1902216 : AfxWnd110 :
+3148338 : Button : 원화
+2884252 : Button : 외화
+2885040 : AfxWnd110 : 표시통화
+4654088 : AfxWnd110 :
+2492460 : Edit :
+1574732 : AfxWnd110 : 거래소
+6162750 : Button : 조회
+2098884 : AfxWnd110 : 곽일태
+5638236 : AfxWnd110 :
+2230824 : Edit :
+13305446 : AfxWnd110 :
+3670164 : AfxWnd110 :
+2492034 : SysTabControl32 :
+2099938 : msctls_updown32 :
+2753018 : AfxWnd110 :
+4195294 : Afx:00650000:b:00010003:00000006:09DC0383 : [2102] 
+해외주식 미니주문
+8652780 : AfxFrameOrView110 :
+593206 : AfxWnd110 :
+4589772 : AfxWnd110 :
+722186 : AfxWnd110 :
+1182954 : AfxWnd110 :
+1117392 : AfxWnd110 :
+3736920 : Edit :
+7211648 : AfxWnd110 :
+2885240 : Edit :
+2426718 : AfxWnd110 : 주문번호
+2689028 : AfxWnd110 :
+4851256 : Button : 위험고지
+3803516 : AfxWnd110 :
+4261794 : Edit :
+8717808 : AfxWnd110 :
+2951756 : Edit :
+3411422 : AfxWnd110 :
+7145248 : Button :
+1378410 : Button :
+3934012 : Button : 환전
+3016236 : AfxWnd110 :
+3934748 : AfxWnd110 :
+2361076 : AfxWnd110 : 거래단위:
+4131288 : Button : 유
+2754372 : AfxWnd110 : 가격
+3146482 : AfxWnd110 : 가격
+3738000 : AfxWnd110 :
+5376652 : Button : 5000
+2166218 : Button : 1000
+3476038 : Button : 500
+3606420 : Button : 100
+4327610 : Button : 50
+2819896 : AfxWnd110 :
+2688840 : AfxWnd110 : └─
+2622964 : Button : 자동(현재가)
+1576846 : AfxWnd110 :
+3278772 : AfxWnd110 : %
+2490576 : AfxWnd110 : └─
+8914874 : AfxWnd110 :
+8849318 : Edit :
+8062000 : Button : 자동()
+4197000 : Button : 원화금액유의사항
+3147532 : Button : 미
+2688724 : Button : 취소
+6227388 : Button : 취소
+2492096 : AfxWnd110 : STOP
+3081986 : Button : P
+3672440 : AfxWnd110 :
+9570356 : Edit :
+2884676 : msctls_updown32 :
+3016446 : AfxWnd110 :
+3998972 : Edit :
+3475358 : msctls_updown32 :
+1901432 : AfxWnd110 : (KRW)
+3606272 : Button : P
+2623170 : Button : 미수
+3868496 : AfxWnd110 : (USD)
+2689462 : AfxWnd110 : 수량
+3081642 : AfxWnd110 : 종류
+6228334 : AfxWnd110 : 종목
+5244810 : AfxWnd110 :
+10487308 : AfxWnd110 :
+3868112 : Edit :
+5310722 : AfxWnd110 : MICROSECTORS FANG 3X ETN
+1770342 : Button : ?
+7473158 : AfxWnd110 :
+4129614 : Edit :
+6555786 : Button : 가
+9373128 : Button : 주
+2950756 : Button : 취소(F8)
+3671938 : AfxWnd110 :
+4064300 : Edit :
+3737558 : Button : 정정(F5)
+1770308 : Button : 매도(F12)
+3605990 : AfxWnd110 :
+9636490 : Edit :
+3737808 : Button : 지  움
+2949768 : Button : 매수(F9)
+12256360 : AfxWnd110 :
+4066670 : Edit :
+3409668 : Edit :
+4000112 : msctls_updown32 :
+5048174 : Button : 잔량전부
+920800 : SysTabControl32 :
+658650 : msctls_updown32 :
+2754270 : AfxWnd110 :

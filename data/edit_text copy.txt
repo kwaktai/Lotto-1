@@ -1,0 +1,36 @@
+2689950 : AfxFrameOrView110 :
+525698 : AfxWnd110 :
+1771814 : AfxWnd110 : 1
+2822546 : AfxWnd110 : 변경금지
+856134 : AfxWnd110 : 변경금지
+1708038 : AfxWnd110 : 변경금지
+595768 : AfxWnd110 :
+1640470 : Edit :
+1379064 : AfxWnd110 : 통화코드
+399290 : AfxWnd110 :
+986016 : Edit :
+2102492 : Button : 일괄매도
+595766 : Button :
+399284 : Button : 유의사항
+1642632 : Button : 잔고상세내역
+4065616 : AfxWnd110 :
+399286 : AfxWnd110 :
+1117214 : Button : 수수료 보기
+595784 : AfxWnd110 :
+857988 : Button :
+399270 : AfxWnd110 : 계좌번호
+921992 : AfxWnd110 :
+921724 : Button : 원화
+595788 : Button : 외화
+856228 : AfxWnd110 : 표시통화
+399274 : AfxWnd110 :
+3084298 : Edit :
+596030 : AfxWnd110 : 거래소
+791718 : Button : 조회
+726186 : AfxWnd110 : 곽일태
+399280 : AfxWnd110 :
+1640600 : Edit :
+460170 : AfxWnd110 :
+657124 : AfxWnd110 :
+464258 : SysTabControl32 :
+530524 : AfxWnd110 :

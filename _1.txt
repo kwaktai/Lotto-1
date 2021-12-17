@@ -1,0 +1,317 @@
+
+[2153] 손익/수익률현황(T) - 해외주식 실현손익
+
+all_ok_1 GDI+ Window (AMDRSServ.exe): 131908 : GDI+ Hook Window Class
+all_ok_1 : 65934 : ForegroundStaging
+all_ok_1 : 131204 : ForegroundStaging
+all_ok_1 : 65790 : tooltips_class32
+all_ok_1 : 65786 : tooltips_class32
+all_ok_1 : 65780 : tooltips_class32
+all_ok_1 : 65776 : tooltips_class32
+all_ok_1 : 65770 : tooltips_class32
+all_ok_1 : 65754 : tooltips_class32
+all_ok_1 : 65744 : tooltips_class32
+all_ok_1 : 65740 : tooltips_class32
+all_ok_1 : 65726 : tooltips_class32
+all_ok_1 : 65814 : TaskListThumbnailWnd
+all_ok_1 : 65798 : tooltips_class32
+all_ok_1 : 65794 : tooltips_class32
+all_ok_1 : 65812 : tooltips_class32
+all_ok_1 : 65822 : tooltips_class32
+all_ok_1 : 65714 : Shell_TrayWnd
+all_ok_1 : 65796 : tooltips_class32
+all_ok_1 : 65756 : NotifyIconOverflowWindow
+all_ok_1 배터리 수준: 66060 : SystemTray_Main
+all_ok_1 : 66080 : ATL:00007FF9ECF08280
+all_ok_1 Network Flyout: 66108 : ATL:00007FF9E28DB210
+all_ok_1 : 66106 : PNIHiddenWnd
+all_ok_1 MainWindow: 66798 : Qt5QWindowIcon
+all_ok_1 MainWindow: 66816 : Qt5QWindowIcon
+all_ok_1 Window: 197522 : Windows.UI.Core.CoreWindow
+all_ok_1 510KBOSD: 131680 : LEKBOSD
+all_ok_1 : 65840 : tooltips_class32
+all_ok_1 : 461228 : tooltips_class32
+all_ok_1 : 199346 : #32770
+all_ok_1 Dialog: 854618 : #32770
+all_ok_1 : 199352 : tooltips_class32
+all_ok_1 : 199370 : tooltips_class32
+all_ok_1 : 199412 : tooltips_class32
+all_ok_1 : 199396 : tooltips_class32
+all_ok_1 : 789060 : tooltips_class32
+all_ok_1 : 920164 : tooltips_class32
+all_ok_1 신호관리자: 461266 : #32770
+all_ok_1 : 461300 : tooltips_class32
+all_ok_1 : 264424 : tooltips_class32
+all_ok_1 : 264444 : tooltips_class32
+all_ok_1 : 264438 : tooltips_class32
+all_ok_1 : 264490 : tooltips_class32
+all_ok_1 : 264480 : tooltips_class32
+all_ok_1 : 264466 : tooltips_class32
+all_ok_1 : 330044 : tooltips_class32
+all_ok_1 : 657098 : tooltips_class32
+all_ok_1 : 7276910 : tooltips_class32
+all_ok_1 : 461144 : tooltips_class32
+all_ok_1 : 526486 : tooltips_class32
+all_ok_1 : 264394 : tooltips_class32
+all_ok_1 : 657792 : tooltips_class32
+all_ok_1 : 461364 : tooltips_class32
+all_ok_1 : 395726 : tooltips_class32
+all_ok_1 : 395886 : tooltips_class32
+all_ok_1 : 723522 : tooltips_class32
+all_ok_1 : 264872 : tooltips_class32
+all_ok_1 : 199342 : tooltips_class32
+all_ok_1 : 723590 : tooltips_class32
+all_ok_1 : 264862 : tooltips_class32
+all_ok_1 : 723588 : tooltips_class32
+all_ok_1 : 723528 : tooltips_class32
+all_ok_1 : 199348 : tooltips_class32
+all_ok_1 : 461326 : tooltips_class32
+all_ok_1 : 526724 : tooltips_class32
+all_ok_1 : 461350 : tooltips_class32
+all_ok_1 : 723520 : tooltips_class32
+all_ok_1 : 658066 : tooltips_class32
+all_ok_1 : 199368 : tooltips_class32
+all_ok_1 : 199362 : tooltips_class32
+all_ok_1 : 330450 : tooltips_class32
+all_ok_1 : 526968 : tooltips_class32
+all_ok_1 : 920094 : tooltips_class32
+all_ok_1 : 722928 : tooltips_class32
+all_ok_1 : 330068 : tooltips_class32
+all_ok_1 : 919746 : tooltips_class32
+all_ok_1 : 919724 : tooltips_class32
+all_ok_1 : 1181090 : tooltips_class32
+all_ok_1 : 265422 : tooltips_class32
+all_ok_1 : 1247312 : tooltips_class32
+all_ok_1 : 330744 : tooltips_class32
+all_ok_1 : 265428 : tooltips_class32
+all_ok_1 : 2427048 : tooltips_class32
+all_ok_1 : 461138 : tooltips_class32
+all_ok_1 : 657542 : tooltips_class32
+all_ok_1 : 395662 : tooltips_class32
+all_ok_1 : 789136 : tooltips_class32
+all_ok_1 : 7801380 : tooltips_class32
+all_ok_1 : 330500 : tooltips_class32
+all_ok_1 : 395792 : tooltips_class32
+all_ok_1 : 395742 : tooltips_class32
+all_ok_1 : 395890 : tooltips_class32
+all_ok_1 : 526794 : tooltips_class32
+all_ok_1 : 395752 : tooltips_class32
+all_ok_1 : 395766 : tooltips_class32
+all_ok_1 : 526846 : tooltips_class32
+all_ok_1 : 395780 : tooltips_class32
+all_ok_1 : 395738 : tooltips_class32
+all_ok_1 : 395674 : tooltips_class32
+all_ok_1 : 395706 : tooltips_class32
+all_ok_1 : 395796 : tooltips_class32
+all_ok_1 : 395600 : tooltips_class32
+all_ok_1 : 7014542 : tooltips_class32
+all_ok_1 : 526476 : tooltips_class32
+all_ok_1 : 657136 : tooltips_class32
+all_ok_1 : 657088 : tooltips_class32
+all_ok_1 : 330050 : tooltips_class32
+all_ok_1 : 723548 : tooltips_class32
+all_ok_1 : 395762 : tooltips_class32
+all_ok_1 : 395724 : tooltips_class32
+all_ok_1 : 395718 : #32770
+all_ok_1 : 395820 : tooltips_class32
+all_ok_1 : 264870 : tooltips_class32
+all_ok_1 : 789134 : #32770
+all_ok_1 : 985680 : #32770
+all_ok_1 : 526812 : #32770
+all_ok_1 : 1116760 : #32770
+all_ok_1 : 854590 : #32770
+all_ok_1 : 526820 : #32770
+all_ok_1 : 788750 : tooltips_class32
+all_ok_1 : 7407870 : tooltips_class32
+all_ok_1 : 854650 : tooltips_class32
+all_ok_1 : 396038 : #32770
+all_ok_1 : 329952 : #32770
+all_ok_1 영웅문Global: 461238 : _NFHeroMainClass
+all_ok_1 : 199490 : tooltips_class32
+all_ok_1 : 264958 : tooltips_class32
+all_ok_1 : 461226 : tooltips_class32
+all_ok_1 : 329962 : tooltips_class32
+all_ok_1 : 788086 : tooltips_class32
+all_ok_1 : 395904 : tooltips_class32
+all_ok_1 : 395816 : tooltips_class32
+all_ok_1 : 461100 : tooltips_class32
+all_ok_1 : 2230838 : ComboLBox
+all_ok_1 : 723184 : ComboLBox
+all_ok_1 : 461520 : ComboLBox
+all_ok_1 : 264954 : tooltips_class32
+all_ok_1 GDI+ Window (nfrunlite.exe): 526664 : GDI+ Hook Window Class
+all_ok_1 : 526572 : MyKeyDefense 2.5 Tray Notify Handler Class 80636234
+all_ok_1 : 1509598 : StSdkMainWndCN
+all_ok_1 main.py - Lotto - Visual Studio Code [관리자]: 525414 : Chrome_WidgetWin_1
+all_ok_1 .NET-BroadcastEventWindow.4.0.0.0.3ce0bb8.0: 461182 : .NET-BroadcastEventWindow.4.0.0.0.3ce0bb8.0
+all_ok_1 : 460292 : PseudoConsoleWindow
+all_ok_1 : 394628 : PseudoConsoleWindow
+all_ok_1 : 263622 : Chrome_WidgetWin_0
+all_ok_1 : 65866 : ApplicationManager_DesktopShellWindow
+all_ok_1 : 721988 : Chrome_WidgetWin_0
+all_ok_1 : 394504 : Chrome_WidgetWin_0
+all_ok_1 Code: 591220 : Chrome_WidgetWin_1
+all_ok_1 .NET-BroadcastEventWindow.4.0.0.0.3ce0bb8.0: 590902 : .NET-BroadcastEventWindow.4.0.0.0.3ce0bb8.0
+all_ok_1 .NET-BroadcastEventWindow.4.0.0.0.3ce0bb8.0: 328788 : .NET-BroadcastEventWindow.4.0.0.0.3ce0bb8.0
+all_ok_1 : 327742 : Chrome_SystemMessageWindow
+all_ok_1 : 589912 : Chrome_WidgetWin_0
+all_ok_1 : 263448 : crashpad_SessionEndWatcher
+all_ok_1 : 262212 : Base_PowerMessageWindow
+all_ok_1 Microsoft Text Input Application: 132246 : Windows.UI.Core.CoreWindow    
+all_ok_1 QTrayIconMessageWindow: 66818 : QTrayIconMessageWindowClass
+all_ok_1 : 132166 : com.p5sys.jump.bcastwnd-1920
+all_ok_1 .NET-BroadcastEventWindow.4.0.0.0.3ce0bb8.0: 328646 : .NET-BroadcastEventWindow.4.0.0.0.3ce0bb8.0
+all_ok_1 Microsoft Store: 132142 : Windows.UI.Core.CoreWindow
+all_ok_1 Microsoft Store: 262636 : ApplicationFrameWindow
+all_ok_1 : 131558 : WorkerW
+all_ok_1 : 132076 : WorkerW
+all_ok_1 : 263154 : WorkerW
+all_ok_1 : 132116 : WorkerW
+all_ok_1 Radeon Software: 525164 : Qt5QWindowOwnDCIcon
+all_ok_1 Radeonsoftware: 394178 : Qt5QWindowOwnDCIcon
+all_ok_1 Radeonsoftware: 132100 : Qt5QWindowOwnDCIcon
+all_ok_1 Radeonsoftware: 459180 : Qt5QWindowOwnDCIcon
+all_ok_1 : 197384 : MessageWindowClass+b76884ed-1712-48ee-8e4d-bfc8f06f519c       
+all_ok_1 CloudStation: 721764 : CloudStationWindowClass
+all_ok_1 cloud-drive-ui: 196878 : Qt5QWindowIcon
+all_ok_1 QTrayIconMessageWindow: 590690 : QTrayIconMessageWindowClass
+all_ok_1 AMD:DVR-CapturingWindow: 131918 : DVREventWindowClass
+all_ok_1 AMD:CCC-AEMCapturingWindow: 66352 : CNEventWindowClass
+all_ok_1 : 197418 : WindowsForms10.Window.0.app.0.280fd2b_r7_ad1
+all_ok_1 MediaContextNotificationWindow: 66348 : HwndWrapper[Adguard.exe;;2c6d3fc6-2454-4079-b93d-57311608fa8f]
+all_ok_1 : 66342 : HwndWrapper[Adguard.exe;;2842de5a-67f5-4baf-90ff-19035e5e07de] 
+all_ok_1 SystemResourceNotifyWindow: 66338 : HwndWrapper[Adguard.exe;;8918a9d4-33b6-4a98-8db7-54ebc4fbc926]
+all_ok_1 : 66332 : Chrome_WidgetWin_0
+all_ok_1 : 66330 : Chrome_StatusTrayWindow
+all_ok_1 : 66324 : Chrome_SystemMessageWindow
+all_ok_1 : 66316 : Chrome_WidgetWin_0
+all_ok_1 : 131732 : Base_PowerMessageWindow
+all_ok_1 : 131796 : crashpad_SessionEndWatcher
+all_ok_1 : 66310 : SkyDrive Class Name {026CC316-C268-4EAC-B8FB-AA51BFE323E2}     
+all_ok_1 GDI+ Window (OneDrive.exe): 66306 : GDI+ Hook Window Class
+all_ok_1 DDE Server Window: 66290 : OleDdeWndClass
+all_ok_1 : 66284 : ATL:00007FF9D8B242C0
+all_ok_1 : 66276 : ATL:00007FF9D8B242C0
+all_ok_1 : 66268 : ATL:00007FF9D8B242C0
+all_ok_1 OneDrive: 197288 : SkyDrive Class Name {090B42FF-7B26-4416-99B6-CB17896CF07C}-Personal
+all_ok_1 : 197088 : ATL:00007FF9D8B242C0
+all_ok_1 : 131672 : Protect Browser Tower Class 27671
+all_ok_1 GDI+ Window (KBOSD.exe): 131690 : GDI+ Hook Window Class
+all_ok_1 RealtekAudioBackgroundProcessClass: 131674 : RealtekAudioBackgroundProcessClass
+all_ok_1 : 131656 : ATL:00007FF9D97AB000
+all_ok_1 SecurityHealthSystray: 131478 : SecHealth Window Class
+all_ok_1 : 66212 : NzSessTrayWndCN
+all_ok_1 StSess32: 131744 : NzSess32MainWndCN
+all_ok_1 StSess: 196636 : NzSessMainWndCN
+all_ok_1 : 66178 : WorkerW
+all_ok_1 MS_WebcheckMonitor: 131712 : MS_WebcheckMonitor
+all_ok_1 : 66168 : WorkerW
+all_ok_1 BluetoothNotificationAreaIconWindowClass: 66156 : BluetoothNotificationAreaIconWindowClass
+all_ok_1 : 66116 : WorkerW
+all_ok_1 : 66112 : WorkerW
+all_ok_1 : 66104 : WorkerW
+all_ok_1 : 66092 : WorkerW
+all_ok_1 : 131498 : WorkerW
+all_ok_1 DDE Server Window: 131588 : OleDdeWndClass
+all_ok_1 SKCertService: 65952 : SignKoreaTray
+all_ok_1 : 65922 : TabletModeCoverWindow
+all_ok_1 : 65988 : WorkerW
+all_ok_1 : 65990 : WorkerW
+all_ok_1 : 65924 : DummyDWMListenerWindow
+all_ok_1 : 65914 : EdgeUiInputTopWndClass
+all_ok_1 : 65886 : DummyDWMListenerWindow
+all_ok_1 : 65884 : DummyDWMListenerWindow
+all_ok_1 : 65862 : WorkerW
+all_ok_1 : 65854 : WorkerW
+all_ok_1 : 65852 : WorkerW
+all_ok_1 : 65844 : WorkerW
+all_ok_1 GDI+ Window (Explorer.EXE): 65816 : GDI+ Hook Window Class
+all_ok_1 : 65694 : DDEMLEvent
+all_ok_1 : 65690 : DDEMLMom
+all_ok_1 Windows Push Notifications Platform: 65684 : PushNotificationsPowerManagement
+all_ok_1 Task Host Window: 131096 : COMTASKSWINDOWCLASS
+all_ok_1 AMD EEU Client: 131108 : AMD EEU Client
+all_ok_1 DWM Notification Window: 131130 : Dwm
+all_ok_1 : 65676 : CicLoaderWndClass
+all_ok_1 : 197582 : Base_PowerMessageWindow
+all_ok_1 : 197530 : Chrome_WidgetWin_0
+all_ok_1 : 197514 : Chrome_SystemMessageWindow
+all_ok_1 Radeonsoftware: 197576 : Qt5QWindowOwnDCIcon
+all_ok_1 NFBALANCECOMMWND: 592288 : AfxWnd110
+all_ok_1 NFSignalDataWnd: 395558 : AfxWnd110
+all_ok_1 : 199600 : AfxWnd110
+all_ok_1 : 199482 : AfxWnd110
+all_ok_1 : 199532 : AfxWnd110
+all_ok_1 : 199594 : AfxWnd110
+all_ok_1 : 199478 : AfxWnd110
+all_ok_1 : 199616 : AfxWnd110
+all_ok_1 : 65916 : WorkerW
+all_ok_1 : 131432 : WorkerW
+all_ok_1 Program Manager: 131370 : Progman
+all_ok_1 Default IME: 131916 : IME
+all_ok_1 MSCTFIME UI: 264006 : MSCTFIME UI
+all_ok_1 Default IME: 65936 : IME
+all_ok_1 MSCTFIME UI: 132276 : MSCTFIME UI
+all_ok_1 Default IME: 65864 : IME
+all_ok_1 Default IME: 66082 : IME
+all_ok_1 MSCTFIME UI: 65832 : MSCTFIME UI
+all_ok_1 Default IME: 65716 : IME
+all_ok_1 MSCTFIME UI: 66814 : MSCTFIME UI
+all_ok_1 Default IME: 66800 : IME
+all_ok_1 Default IME: 197506 : IME
+all_ok_1 MSCTFIME UI: 131678 : MSCTFIME UI
+all_ok_1 Default IME: 131662 : IME
+all_ok_1 MSCTFIME UI: 395606 : MSCTFIME UI
+all_ok_1 Default IME: 1313030 : IME
+all_ok_1 Default IME: 396006 : IME
+all_ok_1 Default IME: 657578 : IME
+all_ok_1 MSCTFIME UI: 655444 : MSCTFIME UI
+all_ok_1 Default IME: 196684 : IME
+all_ok_1 Default IME: 460932 : IME
+all_ok_1 Default IME: 589990 : IME
+all_ok_1 Default IME: 1573266 : IME
+all_ok_1 Default IME: 394432 : IME
+all_ok_1 Default IME: 263456 : IME
+all_ok_1 Default IME: 656406 : IME
+all_ok_1 Default IME: 327772 : IME
+all_ok_1 Default IME: 458804 : IME
+all_ok_1 Default IME: 132244 : IME
+all_ok_1 Default IME: 525360 : IME
+all_ok_1 Default IME: 590846 : IME
+all_ok_1 Default IME: 262436 : IME
+all_ok_1 Default IME: 459420 : IME
+all_ok_1 MSCTFIME UI: 262594 : MSCTFIME UI
+all_ok_1 Default IME: 131562 : IME
+all_ok_1 Default IME: 132080 : IME
+all_ok_1 Default IME: 132086 : IME
+all_ok_1 MSCTFIME UI: 197596 : MSCTFIME UI
+all_ok_1 Default IME: 132102 : IME
+all_ok_1 Default IME: 197504 : IME
+all_ok_1 Default IME: 394086 : IME
+all_ok_1 Default IME: 131920 : IME
+all_ok_1 Default IME: 66354 : IME
+all_ok_1 Default IME: 66340 : IME
+all_ok_1 Default IME: 131728 : IME
+all_ok_1 Default IME: 197334 : IME
+all_ok_1 Default IME: 66308 : IME
+all_ok_1 Default IME: 66286 : IME
+all_ok_1 Default IME: 66278 : IME
+all_ok_1 Default IME: 66270 : IME
+all_ok_1 Default IME: 262822 : IME
+all_ok_1 Default IME: 131660 : IME
+all_ok_1 Default IME: 131682 : IME
+all_ok_1 Default IME: 131676 : IME
+all_ok_1 Default IME: 197122 : IME
+all_ok_1 Default IME: 66210 : IME
+all_ok_1 Default IME: 131340 : IME
+all_ok_1 Default IME: 66180 : IME
+all_ok_1 Default IME: 66172 : IME
+all_ok_1 Default IME: 66094 : IME
+all_ok_1 Default IME: 66054 : IME
+all_ok_1 Default IME: 65954 : IME
+all_ok_1 Default IME: 65846 : IME
+all_ok_1 Default IME: 65818 : IME
+all_ok_1 Default IME: 65686 : IME
+all_ok_1 Default IME: 131106 : IME
+all_ok_1 MSCTFIME UI: 65860 : MSCTFIME UI
+all_ok_1 Default IME: 65692 : IME
