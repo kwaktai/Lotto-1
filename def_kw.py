@@ -728,7 +728,7 @@ def input2102_buy_VR(stockname, user="kwak", qty=1, test="test", type="적립식
     # input2102_check_ac
     for i in buy_valueList:
         time.sleep(0.1)
-        input2102_Stockname(stockname)
+        input2102_Stockname(stockname)  # 2102의 시작
         time.sleep(0.1)
         input2102_check_loc()
         time.sleep(0.1)
@@ -869,11 +869,11 @@ def SelectAccount(accNum):
 
 
 if __name__ == '__main__':
-    save_stockQty("kwak", "무매", "45")
+    # save_stockQty("kwak", "무매", "45")
+    saveMyDeposit("kwak", "무매", "45")
     # mouseClick("13438516")
     # print(kw_window())
     # screen_xy_2153('[2153] 손익/수익률현황(T) - 해외주식 실현손익', 4)
-
     # popUp_2150_SelectAccount_오리지널(2)
     # pag.hotkey("shift", "tab")
     # screen_xy_2111('[2111] 계좌정보(T) - 해외주식 예수금')

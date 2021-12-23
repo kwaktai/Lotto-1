@@ -174,4 +174,4 @@
 2021-12-16 16:37:23.045 def_ui.py[200] closeLotto -> Find Control Timeout: {Name: 'iLabAuto', ControlType: WindowControl}
 2021-12-16 16:40:36.370 def_ui.py[200] closeLotto -> Find Control Timeout: {Name: 'iLabAuto', ControlType: PaneControl}
 2021-12-16 16:49:29.131 def_ui.py[201] closeLotto -> Find Control Timeout: {ControlType: EditControl}
-2021-12-17 08:16:04.908 def_ui.py[82] setMainSearch -> 2021-12-17 08:16:25.644 def_ui.py[82] setMainSearch -> 2021-12-17 08:38:09.457 def_ui.py[82] setMainSearch -> 2021-12-17 08:39:34.607 def_ui.py[82] setMainSearch -> 2021-12-17 08:42:32.945 def_ui.py[82] setMainSearch -> 2021-12-17 09:00:36.201 def_ui.py[82] setMainSearch -> 
+2021-12-17 08:16:04.908 def_ui.py[82] setMainSearch -> 2021-12-17 08:16:25.644 def_ui.py[82] setMainSearch -> 2021-12-17 08:38:09.457 def_ui.py[82] setMainSearch -> 2021-12-17 08:39:34.607 def_ui.py[82] setMainSearch -> 2021-12-17 08:42:32.945 def_ui.py[82] setMainSearch -> 2021-12-17 09:00:36.201 def_ui.py[82] setMainSearch -> 2021-12-18 08:09:56.510 def_lotto.py[307] kw_close -> 

@@ -25,7 +25,6 @@ credentials = ServiceAccountCredentials.from_json_keyfile_name(
 gc = gspread.authorize(credentials)
 
 
-
 spreadsheet_url = "https://docs.google.com/spreadsheets/d/1c6qnORby5wLx4EYCzDNIHfDUax90yKIQRwqaiFqy0FI/edit#gid=1309564982"
 # spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1P4vYP_suaKcHG-H2HgqobFEqiiGfUpgep3eAOkVrRZI/edit#gid=1309564982'
 # spreadsheet_url_test = 'https://docs.google.com/spreadsheets/d/1Ihb-0Fg8a9FaHnFADV0YBHBWlXqwpztYiGkSykBiFJE/edit#gid=0'
@@ -159,14 +158,10 @@ def tickerNow_rsi_test():
 def tickerNow_rsi_test2():
     current_shareLists = ['KORU', 'GDXU', 'YINN', 'UTSL', 'DPST', 'TPOR', 'DRN', 'PILL', 'CURE',
                           'FAS', 'MIDU', 'LABU', 'NAIL', 'RETL', 'UDOW', 'WANT', 'HIBL', 'UPRO', 'TECL', 'WEBL', 'TQQQ']
-    # print(current_shareLists)
     targetList = {}
     BasicRsi = {}
     rsiMin_keys = {'KORU': '35', 'GDXU': '35', 'YINN': '35', 'BNKU': '35', 'UTSL': '35', 'DPST': '35', 'TPOR': '40', 'DRN': '40', 'DFEN': '40', 'DUSL': '40', 'PILL': '45', 'CURE': '45', 'FAS': '45', 'MIDU': '45',
                    'LABU': '45', 'NAIL': '50', 'TNA': '50', 'RETL': '50', 'UDOW': '50', 'WANT': '55', 'HIBL': '55', 'UPRO': '55', 'FNGU': '55', 'TECL': '60', 'WEBL': '60', 'TQQQ': '60', 'SOXL': '65', 'BULZ': '65'}
-    # print(rsiMin_keys())
-    # rsi 기준값 가져오기
-    # rsiMin_keys = rsiData.rsiMin()  # rsi 기준값 가져오기
     for i in current_shareLists:
         targetList[i] = rsiMin_keys[i]
         print(i, targetList[i])
@@ -242,12 +237,11 @@ def myDepositValue(user, type, acc):
         r = list(rdr)
         p = r[3][1]
         p = p.replace(",", "")
-        updateLocation = {"kwak": {"무매": ["A20"], "ava1": ["B20"], "ava2": [
-            "C20"], "ava3": ["D20"], "TLP1": ["E20"], "TLP2": ["F20"], "TLP3": ["G20"]}}
+        updateLocation = {"kwak": {"무매": ["A21"], "ava1": ["B21"], "ava2": [
+            "C21"], "ava3": ["D21"], "TLP1": ["E21"], "TLP2": ["F21"], "TLP3": ["G21"]}}
         sh.update_acell(updateLocation[user][type][0], p)
         return p
     except:
-        # sh.update_acell(updateLocation[user][type][0], "0")
         pass
 
 
@@ -262,14 +256,10 @@ def MyRevenueData(user, type_1, acc):
     try:
         _column = [(0, "B"), (1, "C"), (2, "D"), (3, "E"), (4, "F"),
                    (5, "G"), (6, "H"), (7, "I"), (8, "J"), (9, "K"), (10, "L"), (11, "M")]
-        # _column = [(1, "C"), (2, "D"), (3, "E"), (4, "F"), (5, "G"),
-        #            (6, "H"), (7, "I"), (8, "J"), (9, "K"), (10, "L"), (11, "M")]
         next_row = int(next_row) - 1
-        # print(next_row)
         time.sleep(1)
         for _r in range(1, 11):
             time.sleep(1)
-            # sh1.update_acell(f"A{str(next_row + _r)}", todayNow)
             sh1.update_acell(f"A{str(next_row + _r)}", type_1)
             for _c, _l in _column:
                 if _c == 8:
@@ -288,10 +278,10 @@ def MyRevenueData(user, type_1, acc):
 
 
 if __name__ == '__main__':
-    MyRevenueData("kwak", "무매")
+    # MyRevenueData("kwak", "무매")
     # print(todayNow)
     # myDepositValue_test("kwak", "ava")
-    # print(myDepositValue("kwak", "무매"))
+    print(myDepositValue("kwak", "무매", "45"))
     # updateLocation = {"kwak": {"무매": ["B8"], "ava": ["I7"]}}
     # updateLocation = {"kwak": {"무매": ["B8"], "ava": ["I7"]}}
     # sh = findrsishare_total

@@ -302,8 +302,7 @@ def KW_Win(l, r):
 
 def kw_close():
     check_window("영웅문Global")
-    anWindow = auto.WindowControl(
-        searchDepth=2, Name="영웅문Global")
+    anWindow = auto.WindowControl(searchDepth=2, Name="영웅문Global")
     anWindow.SetActive()
     anWindow.GetWindowPattern().Close()
     time.sleep(0.3)

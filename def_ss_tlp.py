@@ -47,42 +47,52 @@ def pig_test():
 
 
 def tryBuy(pig):
-    pigName = dataList(pig)
-    checkWork = list(pigName.values())[0]
-    stockName = list(pigName.values())[1]
+    pigList = dataList(pig)
+    checkWork = list(pigList.values())[0]  # 일하자? 쉬자? 존버
+    stockName = list(pigList.values())[1]  # TQQQ TECL
     if checkWork == "일하자":
+        pigName = list(pigList.keys())[0]
+        print(pigName)
         for buy in range(2, 5):
-            checkValue = list(pigName.values())[buy]
+            checkValue = list(pigList.values())[buy]
             if checkValue == "-":
-                print(f"{buy}매수가 없음.")
+                pass
             else:
-                buyPrice = float(list(pigName.keys())[buy])
+                stockName = list(pigList.values())[1]
+                buyPrice = float(list(pigList.keys())[buy])
                 buyQty = int(checkValue)
-                print(buyPrice)
-                print(buyQty)
-        print("--------------")
-        for sell in range(5, 8):
-            checkValue = list(pigName.values())[sell]
-            if checkValue == "-":
-                print(f"{sell}매도가 없음.")
-            else:
-                sellPrice = float(list(pigName.keys())[sell])
-                sellQty = int(checkValue)
-                print(sellPrice)
-                print(sellQty)
+                # print(buyPrice)
+                # print(buyQty)
+                # print(stockName)
+            for sell in range(5, 8):
+                checkValue = list(pigList.values())[sell]
+                if checkValue == "-":
+                    pass
+                else:
+                    sellPrice = float(list(pigList.keys())[sell])
+                    sellQty = int(checkValue)
+                    # print(sellPrice)
+                    # print(sellQty)
+        return stockName, buyQty, buyPrice, sellQty, sellPrice
+
     elif checkWork == "쉬자":
-        print(f"{list(pigName.keys())[0]} 휴식중.....")
+        # pigName = list(pigList.keys())[0]
+        # print(pigName)
+        # print(f"{pigName}는 휴식중.....")
         pass
     elif checkWork == "존버":
-        print("매도만 하기")
+        # pigName = list(pigList.keys())[0]
+        # print(pigName)
+        # print("매도만 하기")
         print("존버 : 매도만 하기")
         pass
 
 
 if __name__ == '__main__':
     # pigDic = {}
-    for type in ["one", "two", "three"]:
-        tryBuy(type)
+    for pig in ["one", "two", "three"]:
+        a = tryBuy(pig)
+        print(a)
     # tryBuy()
 
     pass
