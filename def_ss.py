@@ -44,6 +44,8 @@ findrsishare_stockList = doc_findrsishare.worksheet('StockList')
 findrsishare_total = doc_findrsishare.worksheet('TOTAL')
 findrsishare_MyRevenue = doc_findrsishare.worksheet('MyRevenue')
 
+# test 20211224-a
+
 
 def column_dataQTY():
     # column_data = []
