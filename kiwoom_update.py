@@ -1,6 +1,6 @@
 from def_lotto import *
 from slack_engin import *
-from def_kw import kw_secrch_Edit, kw_window, sendText, save_stockQty, saveMyDeposit, startGlobal, activeWindow, popUp_2150_SelectAccount, saveMyRevenue
+from def_kw import save_stockQty, saveMyDeposit, startGlobal, activeWindow, popUp_2150_SelectAccount, saveMyRevenue
 import def_ss
 import logging
 import traceback
@@ -23,8 +23,8 @@ def saveStock(user):
     listValue = infoList(user)[1]
     for i in range(len(listKey)):
         print(listKey[i], listValue[i])
-        save_stockQty(user, listKey[i], listValue[i])
         saveMyDeposit(user, listKey[i], listValue[i])
+        save_stockQty(user, listKey[i], listValue[i])
         saveMyRevenue(user, listKey[i], listValue[i])
         slackSendMsg("나의 보유 주식 정보를 업데이트합니다.")
         def_ss.mystockdata(user, listKey[i], listValue[i])
