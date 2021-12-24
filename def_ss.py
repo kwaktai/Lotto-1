@@ -45,6 +45,7 @@ findrsishare_total = doc_findrsishare.worksheet('TOTAL')
 findrsishare_MyRevenue = doc_findrsishare.worksheet('MyRevenue')
 
 # test 20211224-a
+# test 20211224-C
 
 
 def column_dataQTY():
