@@ -2,6 +2,9 @@ import gspread
 from datetime import datetime
 from oauth2client.service_account import ServiceAccountCredentials
 from slack_engin import *
+from def_kw import input2102_buy, kw_secrch_Edit, sendText, kw_window, input2102_sell, input2102_check_check, setAccNum
+import time
+import pyautogui as pag
 from def_loggin import __get_logger
 
 # test 20211224-B
@@ -48,34 +51,59 @@ def pig_test():
     return pigList
 
 
-def tryBuy(pig):
+def open2102():
+    kw_window()
+    pag.press("esc", 5)
+    kw_secrch = kw_secrch_Edit()
+    time.sleep(1)
+    sendText(kw_secrch, "2102")
+    # input2102_check_loc()
+
+
+def tryTLP(pig, test):
     pigList = dataList(pig)
-    checkWork = list(pigList.values())[0]  # 일하자? 쉬자? 존버
+    print(pigList)
+    checkWork = list(pigList.values())[0]  # 일하자? 쉬자? 존버?
+    pigAcc = list(pigList.values())[8]  # 계좌번호
     stockName = list(pigList.values())[1]  # TQQQ TECL
+    setAccNum(pigAcc, "2111")
     if checkWork == "일하자":
         pigName = list(pigList.keys())[0]
-        print(pigName)
+        print(f"{pigName} : {pigAcc}")
+        open2102()
         for buy in range(2, 5):
+            print(buy)
             checkValue = list(pigList.values())[buy]
             if checkValue == "-":
+                print("buy not")
                 pass
             else:
                 stockName = list(pigList.values())[1]
                 buyPrice = float(list(pigList.keys())[buy])
                 buyQty = int(checkValue)
+                input2102_buy(stockName, buyQty, buyPrice, test)  #
                 # print(buyPrice)
                 # print(buyQty)
                 # print(stockName)
-            for sell in range(5, 8):
-                checkValue = list(pigList.values())[sell]
-                if checkValue == "-":
-                    pass
-                else:
-                    sellPrice = float(list(pigList.keys())[sell])
-                    sellQty = int(checkValue)
-                    # print(sellPrice)
-                    # print(sellQty)
-        return stockName, buyQty, buyPrice, sellQty, sellPrice
+        for sell in range(5, 8):
+            checkValueSell = list(pigList.values())[sell]
+            if checkValueSell == "-":
+                print("sell not")
+            else:
+                if sell == 5 or sell == 6:
+                    i = 3
+                    print("LOC")
+                elif sell == 7:
+                    i = 2
+                    print("After")
+                sellPrice = float(list(pigList.keys())[sell])
+                sellQty = int(checkValueSell)
+                input2102_check_check(i)
+                time.sleep(0.2)
+                input2102_sell(stockName, sellQty, sellPrice, test)
+                # print(sellPrice)
+                # print(sellQty)
+                pass
 
     elif checkWork == "쉬자":
         # pigName = list(pigList.keys())[0]
@@ -87,14 +115,30 @@ def tryBuy(pig):
         # print(pigName)
         # print("매도만 하기")
         print("존버 : 매도만 하기")
-        pass
+        for sell in range(5, 8):
+            checkValueSell = list(pigList.values())[sell]
+            if checkValueSell == "-":
+                print("sell not")
+            else:
+                if sell == 5 or sell == 6:
+                    i = 3
+                    print("LOC")
+                elif sell == 7:
+                    i = 2
+                    print("After")
+                sellPrice = float(list(pigList.keys())[sell])
+                sellQty = int(checkValueSell)
+                input2102_check_check(i)
+                time.sleep(0.2)
+                input2102_sell(stockName, sellQty, sellPrice, "test")
+            pass
+
+
+def main(test):
+    for pig in ["one", "two", "three"]:
+        tryTLP(pig, test)
 
 
 if __name__ == '__main__':
-    # pigDic = {}
-    for pig in ["one", "two", "three"]:
-        a = tryBuy(pig)
-        print(a)
-    # tryBuy()
-
+    main("test")
     pass

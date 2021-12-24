@@ -694,7 +694,6 @@ def input2102_check_accuntNumber(acount=0):
 
 
 def input2102_check_loc():
-    # MDIClient_handle(67)  # 15 or 10
     find_handle_3('[2102] 해외주식 미니주문', 67)
     pag.press("up", 8)
     pag.press("down", 3)
@@ -702,10 +701,20 @@ def input2102_check_loc():
 
 
 def input2102_check_after():
-    # MDIClient_handle(67)  # 15 or 10
     find_handle_3('[2102] 해외주식 미니주문', 67)
     pag.press("up", 8)
     pag.press("down", 2)
+    pag.press('enter')
+
+
+def input2102_check_check(loc=3):
+    if loc == 3:
+        i = 3
+    elif loc == 2:
+        i = 2
+    find_handle_3('[2102] 해외주식 미니주문', 67)
+    pag.press("up", 8)
+    pag.press("down", i)
     pag.press('enter')
 
 
@@ -743,7 +752,7 @@ def input2102_buy_VR(stockname, user="kwak", qty=1, test="test", type="적립식
     print("VR 매수 완료.")
 
 
-def input2102_sell(stockname, qty, price, test="test"):
+def input2102_sell(stockname, qty, price, test="test", loc="loc"):
     time.sleep(0.1)
     input2102_Stockname(stockname)
     input2102_Qty(qty)
