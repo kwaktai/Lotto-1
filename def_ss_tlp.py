@@ -4,6 +4,8 @@ from oauth2client.service_account import ServiceAccountCredentials
 from slack_engin import *
 from def_loggin import __get_logger
 
+# test 20211224-B
+
 logger = __get_logger()
 # "client_email": "gstopy@spreadsheettopython-320114.iam.gserviceaccount.com"
 
