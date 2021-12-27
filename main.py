@@ -29,7 +29,7 @@ if __name__ == '__main__':
             #     for key, value in rsiResultList:
             #         slackSendMsg_rsi_check(f"{key}  : {value}%")
             for user in user_name:
-                startGlobal()
+                # startGlobal()
                 if user == "kwak":
                     slackSendMsg(f"{user}의 무한매수를 시작합니다.")
                     kw_Login(user)
