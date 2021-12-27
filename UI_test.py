@@ -92,7 +92,7 @@ def def_accNumEdit_2150():
 def printControlValues():
     winControl = auto.WindowControl(
         searchDepth=1, ClassName='_NFHeroMainClass')
-    for i in range(1, 11):
+    for i in range(0, 11):
         try:
             accNumEdit = winControl.EditControl(foundIndex=i)
             getAccValue = accNumEdit.GetValuePattern().Value
