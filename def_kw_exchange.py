@@ -97,14 +97,18 @@ def getRevenueAmount(i):
     revenues = 0
     try:
         for i in range(1, 20):
-            revenue = float(r[i][9])
-            revenues = revenues + revenue
+            # revenue = float(r[i][9])
+            revenue = str(r[i][9])
+            revenue = revenue.replace(",", "")
+            # print(revenue)
+            revenues = float(revenues) + float(revenue)
     except IndexError:
         revenues = round(revenues, 2)
         if revenues <= 0:
             return 0
         else:
             return revenues
+        # pass
 
 
 def def_accNumEdit_info():
@@ -136,34 +140,36 @@ def def_accNumEdit_info():
 
 
 def main():
-    try:
-        setMainSearch("3135")
-        setAccNum_3135("82", 5)  # 받는계좌 세팅
-        n = ["무매_45", "ava2_23", "ava3_62", "TLP1_04", "TLP2_02", "TLP3_09"]
-        # n = ["무매_45"]
-        for i in n:
+    setMainSearch("3135")
+    setAccNum_3135("82", 5)  # 받는계좌 세팅
+    n = ["무매_45", "ava1_24", "ava2_23", "ava3_62",
+         "TLP1_04", "TLP2_02", "TLP3_09"]
+    # n = ["무매_45"]
+    for i in n:
+        try:
             acc = i[-2:]
             logger.info(acc)
             amounts = getRevenueAmount(i)
             if amounts == 0:
-                logger.info(f"{n}은 수익 없음.")
-                pass
+                logger.info(f"{i}은 수익 없음.")
             else:
                 setAccNum_3135(acc, 7)  # 보내는 계좌 세팅
-                pag.press("tab")
-                pag.typewrite(amounts)
-                # pag.typewrite("1231321")
-                time.sleep(0.3)
-                pag.press("tab")
-                pag.press("enter")
-                def_accNumEdit_info()
-    except LookupError:
-        pass
+                print(amounts)
+                # pag.press("tab")
+                # pag.typewrite(str(amounts))
+                # # pag.typewrite("1231321")
+                # time.sleep(0.3)
+                # pag.press("tab")
+                # pag.press("enter")
+                # # def_accNumEdit_info()
+        except LookupError:
+            pass
 
 
 if __name__ == '__main__':
-    # main()
-    getRevenueAmount("무매_45")
+    main()
+    # a = getRevenueAmount("무매_45")
+    # print(a)
     # setBottom()
     # kw_window()
     # setMainSearch("3135")
