@@ -40,6 +40,7 @@ def dataList(pig):
     pigDic = {}
     for dic in range(len(valueList)):
         pigDic[valueList[dic]] = (qtyList[dic])
+        print(pigDic)
     return pigDic
 
 
@@ -65,6 +66,7 @@ def tryTLP(pig, test):
     print(pigList)
     checkWork = list(pigList.values())[0]  # 일하자? 쉬자? 존버?
     pigAcc = list(pigList.values())[8]  # 계좌번호
+    logger.info(pigAcc)
     stockName = list(pigList.values())[1]  # TQQQ TECL
     setAccNum(pigAcc, "2111")
     if checkWork == "일하자":
@@ -140,5 +142,6 @@ def main(test):
 
 
 if __name__ == '__main__':
-    main("start")
-    pass
+    dataList('two')
+    # main("start")
+    # pass

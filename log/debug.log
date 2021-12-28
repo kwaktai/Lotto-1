@@ -15595,3 +15595,38 @@ NameError: name 'logger' is not defined
 2021-12-28 09:58:00,094:[def_loggin]:(INFO):= 04
 2021-12-28 09:58:00,850:[def_loggin]:(INFO):= 09
 2021-12-28 09:58:00,850:[def_loggin]:(INFO):= TLP3_09은 수익 없음.
+2021-12-28 18:01:39,390 Traceback (most recent call last):
+  File "d:/TaiCloud/Documents/Project/Lotto/main.py", line 37, in <module>
+    openLoto(user=user)
+  File "d:\TaiCloud\Documents\Project\Lotto\def_lotto.py", line 173, in openLoto
+    logger.info("start Ŭ��")
+NameError: name 'logger' is not defined
+
+2021-12-28 18:36:29,522:[def_loggin]:(INFO):= 영운문창 활성화
+2021-12-28 18:36:29,522:[def_loggin]:(INFO):= 영운문창 활성화
+2021-12-28 18:36:29,522:[def_loggin]:(INFO):= 영운문창 활성화
+2021-12-28 18:36:29,522 ���â Ȱ��ȭ
+2021-12-28 18:36:36,195:[def_loggin]:(INFO):= VR 매수시작
+2021-12-28 18:36:36,195:[def_loggin]:(INFO):= VR 매수시작
+2021-12-28 18:36:36,195:[def_loggin]:(INFO):= VR 매수시작
+2021-12-28 18:36:36,195 VR �ż�����
+2021-12-28 19:18:45,460:[def_loggin]:(INFO):= 04
+2021-12-28 19:18:45,460:[def_loggin]:(INFO):= 04
+2021-12-28 19:18:45,460:[def_loggin]:(INFO):= 04
+2021-12-28 19:18:45,460:[def_loggin]:(INFO):= 04
+2021-12-28 19:19:10,587:[def_loggin]:(INFO):= 02
+2021-12-28 19:19:10,587:[def_loggin]:(INFO):= 02
+2021-12-28 19:19:10,587:[def_loggin]:(INFO):= 02
+2021-12-28 19:19:10,587:[def_loggin]:(INFO):= 02
+2021-12-29 00:16:38,806:[def_loggin]:(INFO):= 영운문창 활성화
+2021-12-29 00:16:38,806:[def_loggin]:(INFO):= 영운문창 활성화
+2021-12-29 00:16:38,806:[def_loggin]:(INFO):= 영운문창 활성화
+2021-12-29 00:16:45,500:[def_loggin]:(INFO):= VR 매수시작
+2021-12-29 00:16:45,500:[def_loggin]:(INFO):= VR 매수시작
+2021-12-29 00:16:45,500:[def_loggin]:(INFO):= VR 매수시작
+2021-12-29 00:18:57,734:[def_loggin]:(INFO):= 영운문창 활성화
+2021-12-29 00:18:57,734:[def_loggin]:(INFO):= 영운문창 활성화
+2021-12-29 00:18:57,734:[def_loggin]:(INFO):= 영운문창 활성화
+2021-12-29 00:19:04,430:[def_loggin]:(INFO):= VR 매수시작
+2021-12-29 00:19:04,430:[def_loggin]:(INFO):= VR 매수시작
+2021-12-29 00:19:04,430:[def_loggin]:(INFO):= VR 매수시작

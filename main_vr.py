@@ -47,6 +47,7 @@ def vr_main(stock="TQQQ", user="kwak", type="적립식", start="start"):
 if __name__ == '__main__':
     # vr_main(type="적립식",start="test")
     # pag.press("esc", 5)
-    vr_main(user="kwak", type="적립식", start="start")
+    # vr_main(user="kwak", type="적립식", start="start")
+    vr_main(user="kwak", type="거치식", start="start")
     # input2102_check_accuntNumber(1)
     # test_acc()
