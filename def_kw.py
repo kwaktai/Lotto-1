@@ -646,7 +646,6 @@ def check_message():
         win32gui.SetForegroundWindow(check_message_title)
         txt = win32gui.GetWindowText(mag)
         mouseClick(button)
-
         # print(f"check_message_title: {check_message_title}")
         # print(f"mag: {mag}")
         # print(f"button: {button}")
