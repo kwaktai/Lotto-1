@@ -215,3 +215,5 @@
 2021-12-28 09:46:42.124 def_kw_exchange.py[120] def_accNumEdit_info -> Find Control Timeout: {ControlType: TextControl}
 2021-12-28 09:49:00.800 def_kw_exchange.py[120] def_accNumEdit_info -> Find Control Timeout: {ControlType: TextControl}
 2021-12-28 09:49:12.355 def_kw_exchange.py[120] def_accNumEdit_info -> Find Control Timeout: {ControlType: TextControl}
+2021-12-29 08:21:19.356 def_ui.py[82] setMainSearch -> Find Control Timeout: {Name: '영웅문Global', ControlType: WindowControl}
+2021-12-29 08:23:26.667 def_ui.py[82] setMainSearch -> 

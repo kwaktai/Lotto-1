@@ -15630,3 +15630,144 @@ NameError: name 'logger' is not defined
 2021-12-29 00:19:04,430:[def_loggin]:(INFO):= VR 매수시작
 2021-12-29 00:19:04,430:[def_loggin]:(INFO):= VR 매수시작
 2021-12-29 00:19:04,430:[def_loggin]:(INFO):= VR 매수시작
+2021-12-29 08:01:18,758:[def_loggin]:(INFO):= 5114476
+2021-12-29 08:01:18,758:[def_loggin]:(INFO):= 5114476
+2021-12-29 08:01:18,758:[def_loggin]:(INFO):= 5114476
+2021-12-29 08:01:18,758:[def_loggin]:(INFO):= 5114476
+2021-12-29 08:02:27,184:[def_loggin]:(INFO):= None
+2021-12-29 08:02:27,184:[def_loggin]:(INFO):= None
+2021-12-29 08:02:27,184:[def_loggin]:(INFO):= None
+2021-12-29 08:02:27,184:[def_loggin]:(INFO):= None
+2021-12-29 08:03:01,556:[def_loggin]:(INFO):= None
+2021-12-29 08:03:01,556:[def_loggin]:(INFO):= None
+2021-12-29 08:03:01,556:[def_loggin]:(INFO):= None
+2021-12-29 08:03:01,556:[def_loggin]:(INFO):= None
+2021-12-29 08:03:17,515:[def_loggin]:(INFO):= 14421152
+2021-12-29 08:03:17,515:[def_loggin]:(INFO):= 14421152
+2021-12-29 08:03:17,515:[def_loggin]:(INFO):= 14421152
+2021-12-29 08:03:17,515:[def_loggin]:(INFO):= 14421152
+2021-12-29 08:04:01,095:[def_loggin]:(INFO):= None
+2021-12-29 08:04:01,095:[def_loggin]:(INFO):= None
+2021-12-29 08:04:01,095:[def_loggin]:(INFO):= None
+2021-12-29 08:04:01,095:[def_loggin]:(INFO):= None
+2021-12-29 08:04:20,503:[def_loggin]:(INFO):= None
+2021-12-29 08:04:20,503:[def_loggin]:(INFO):= None
+2021-12-29 08:04:20,503:[def_loggin]:(INFO):= None
+2021-12-29 08:04:20,503:[def_loggin]:(INFO):= None
+2021-12-29 08:04:33,834:[def_loggin]:(INFO):= 11340686
+2021-12-29 08:04:33,834:[def_loggin]:(INFO):= 11340686
+2021-12-29 08:04:33,834:[def_loggin]:(INFO):= 11340686
+2021-12-29 08:04:33,834:[def_loggin]:(INFO):= 11340686
+2021-12-29 08:05:17,273:[def_loggin]:(INFO):= None
+2021-12-29 08:05:17,273:[def_loggin]:(INFO):= None
+2021-12-29 08:05:17,273:[def_loggin]:(INFO):= None
+2021-12-29 08:05:17,273:[def_loggin]:(INFO):= None
+2021-12-29 08:05:22,295:[def_loggin]:(INFO):= None
+2021-12-29 08:05:22,295:[def_loggin]:(INFO):= None
+2021-12-29 08:05:22,295:[def_loggin]:(INFO):= None
+2021-12-29 08:05:22,295:[def_loggin]:(INFO):= None
+2021-12-29 08:05:35,545:[def_loggin]:(INFO):= 5572948
+2021-12-29 08:05:35,545:[def_loggin]:(INFO):= 5572948
+2021-12-29 08:05:35,545:[def_loggin]:(INFO):= 5572948
+2021-12-29 08:05:35,545:[def_loggin]:(INFO):= 5572948
+2021-12-29 08:06:19,267:[def_loggin]:(INFO):= None
+2021-12-29 08:06:19,267:[def_loggin]:(INFO):= None
+2021-12-29 08:06:19,267:[def_loggin]:(INFO):= None
+2021-12-29 08:06:19,267:[def_loggin]:(INFO):= None
+2021-12-29 08:06:23,905:[def_loggin]:(INFO):= None
+2021-12-29 08:06:23,905:[def_loggin]:(INFO):= None
+2021-12-29 08:06:23,905:[def_loggin]:(INFO):= None
+2021-12-29 08:06:23,905:[def_loggin]:(INFO):= None
+2021-12-29 08:06:39,326:[def_loggin]:(INFO):= 20516064
+2021-12-29 08:06:39,326:[def_loggin]:(INFO):= 20516064
+2021-12-29 08:06:39,326:[def_loggin]:(INFO):= 20516064
+2021-12-29 08:06:39,326:[def_loggin]:(INFO):= 20516064
+2021-12-29 08:07:23,782:[def_loggin]:(INFO):= None
+2021-12-29 08:07:23,782:[def_loggin]:(INFO):= None
+2021-12-29 08:07:23,782:[def_loggin]:(INFO):= None
+2021-12-29 08:07:23,782:[def_loggin]:(INFO):= None
+2021-12-29 08:07:44,001:[def_loggin]:(INFO):= None
+2021-12-29 08:07:44,001:[def_loggin]:(INFO):= None
+2021-12-29 08:07:44,001:[def_loggin]:(INFO):= None
+2021-12-29 08:07:44,001:[def_loggin]:(INFO):= None
+2021-12-29 08:07:57,270:[def_loggin]:(INFO):= 10553740
+2021-12-29 08:07:57,270:[def_loggin]:(INFO):= 10553740
+2021-12-29 08:07:57,270:[def_loggin]:(INFO):= 10553740
+2021-12-29 08:07:57,270:[def_loggin]:(INFO):= 10553740
+2021-12-29 08:08:18,433:[def_loggin]:(INFO):= None
+2021-12-29 08:08:18,433:[def_loggin]:(INFO):= None
+2021-12-29 08:08:18,433:[def_loggin]:(INFO):= None
+2021-12-29 08:08:18,433:[def_loggin]:(INFO):= None
+2021-12-29 08:08:23,399:[def_loggin]:(INFO):= None
+2021-12-29 08:08:23,399:[def_loggin]:(INFO):= None
+2021-12-29 08:08:23,399:[def_loggin]:(INFO):= None
+2021-12-29 08:08:23,399:[def_loggin]:(INFO):= None
+2021-12-29 08:08:36,653:[def_loggin]:(INFO):= 5835260
+2021-12-29 08:08:36,653:[def_loggin]:(INFO):= 5835260
+2021-12-29 08:08:36,653:[def_loggin]:(INFO):= 5835260
+2021-12-29 08:08:36,653:[def_loggin]:(INFO):= 5835260
+2021-12-29 08:08:54,466:[def_loggin]:(INFO):= None
+2021-12-29 08:08:54,466:[def_loggin]:(INFO):= None
+2021-12-29 08:08:54,466:[def_loggin]:(INFO):= None
+2021-12-29 08:08:54,466:[def_loggin]:(INFO):= None
+2021-12-29 08:08:58,945:[def_loggin]:(INFO):= None
+2021-12-29 08:08:58,945:[def_loggin]:(INFO):= None
+2021-12-29 08:08:58,945:[def_loggin]:(INFO):= None
+2021-12-29 08:08:58,945:[def_loggin]:(INFO):= None
+2021-12-29 08:24:26,305:[def_loggin]:(INFO):= 62
+2021-12-29 08:24:27,006:[def_loggin]:(INFO):= 45
+2021-12-29 08:24:27,007:[def_loggin]:(INFO):= 무매_45은 수익 없음.
+2021-12-29 08:24:27,008:[def_loggin]:(INFO):= 24
+2021-12-29 08:24:27,084:[def_loggin]:(INFO):= 62
+2021-12-29 08:24:28,324:[def_loggin]:(INFO):= 443.98
+2021-12-29 08:24:29,061:[def_loggin]:(INFO):= 23
+2021-12-29 08:24:29,062:[def_loggin]:(INFO):= ava2_23은 수익 없음.
+2021-12-29 08:24:29,063:[def_loggin]:(INFO):= 62
+2021-12-29 08:24:29,063:[def_loggin]:(INFO):= ava3_62은 수익 없음.
+2021-12-29 08:24:29,063:[def_loggin]:(INFO):= 04
+2021-12-29 08:24:29,145:[def_loggin]:(INFO):= 24
+2021-12-29 08:24:30,917:[def_loggin]:(INFO):= 793.99
+2021-12-29 08:24:31,655:[def_loggin]:(INFO):= 02
+2021-12-29 08:24:31,656:[def_loggin]:(INFO):= TLP2_02은 수익 없음.
+2021-12-29 08:24:31,657:[def_loggin]:(INFO):= 09
+2021-12-29 08:24:31,657:[def_loggin]:(INFO):= TLP3_09은 수익 없음.
+2021-12-29 17:47:37,729 Traceback (most recent call last):
+  File "d:/TaiCloud/Documents/Project/Lotto/main.py", line 36, in <module>
+    time.sleep(10)
+KeyboardInterrupt
+
+2021-12-29 18:02:07,680 Traceback (most recent call last):
+  File "d:/TaiCloud/Documents/Project/Lotto/main.py", line 37, in <module>
+    openLoto(user=user)
+  File "d:\TaiCloud\Documents\Project\Lotto\def_lotto.py", line 173, in openLoto
+    logger.info("start Ŭ��")
+NameError: name 'logger' is not defined
+
+2021-12-29 18:36:35,287:[def_loggin]:(INFO):= 영운문창 활성화
+2021-12-29 18:36:35,287:[def_loggin]:(INFO):= 영운문창 활성화
+2021-12-29 18:36:35,287:[def_loggin]:(INFO):= 영운문창 활성화
+2021-12-29 18:36:35,287 ���â Ȱ��ȭ
+2021-12-29 18:36:41,989:[def_loggin]:(INFO):= VR 매수시작
+2021-12-29 18:36:41,989:[def_loggin]:(INFO):= VR 매수시작
+2021-12-29 18:36:41,989:[def_loggin]:(INFO):= VR 매수시작
+2021-12-29 18:36:41,989 VR �ż�����
+2021-12-29 21:41:38,771:[def_loggin]:(INFO):= 04
+2021-12-29 21:41:38,771:[def_loggin]:(INFO):= 04
+2021-12-29 21:41:38,771:[def_loggin]:(INFO):= 04
+2021-12-29 21:41:38,771:[def_loggin]:(INFO):= 04
+2021-12-29 21:42:05,841:[def_loggin]:(INFO):= 02
+2021-12-29 21:42:05,841:[def_loggin]:(INFO):= 02
+2021-12-29 21:42:05,841:[def_loggin]:(INFO):= 02
+2021-12-29 21:42:05,841:[def_loggin]:(INFO):= 02
+2021-12-30 00:40:11,098:[def_loggin]:(INFO):= 영운문창 활성화
+2021-12-30 00:40:11,098:[def_loggin]:(INFO):= 영운문창 활성화
+2021-12-30 00:40:11,098:[def_loggin]:(INFO):= 영운문창 활성화
+2021-12-30 00:40:17,794:[def_loggin]:(INFO):= VR 매수시작
+2021-12-30 00:40:17,794:[def_loggin]:(INFO):= VR 매수시작
+2021-12-30 00:40:17,794:[def_loggin]:(INFO):= VR 매수시작
+2021-12-30 00:41:58,499:[def_loggin]:(INFO):= 영운문창 활성화
+2021-12-30 00:41:58,499:[def_loggin]:(INFO):= 영운문창 활성화
+2021-12-30 00:41:58,499:[def_loggin]:(INFO):= 영운문창 활성화
+2021-12-30 00:42:05,190:[def_loggin]:(INFO):= VR 매수시작
+2021-12-30 00:42:05,190:[def_loggin]:(INFO):= VR 매수시작
+2021-12-30 00:42:05,190:[def_loggin]:(INFO):= VR 매수시작

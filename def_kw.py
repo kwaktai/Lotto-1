@@ -11,10 +11,10 @@ from datetime import date
 from def_ss import *
 import exchange_calendars as ecals
 import pyperclip
-import csv
+# import csv
 from slack_engin import *
 from def_xyp import xyp_findxy
-import subprocess
+# import subprocess
 import uiautomation as auto
 from def_ui import *
 from def_loggin import __get_logger, accunt_info
@@ -676,7 +676,7 @@ def check_window(titleName, x=0, y=0):
             exit(0)
         anWindow.SetActive()
     except:
-        print(f"{titleName} : 윈도우 없음")
+        logger.info(f"{titleName} : 윈도우 없음")
         return 0
     else:
         return 1234

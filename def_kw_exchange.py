@@ -1,5 +1,5 @@
 from def_ui import setMainSearch
-# from def_kw import kw_window
+# from def_kw import startGlobal
 import uiautomation as auto
 import pyautogui as pag
 import time
@@ -23,7 +23,7 @@ def getAccNumber_3135(ec):
     accNumEdit_2150 = def_accNumEdit_3135(ec)
     getAccValue = accNumEdit_2150.GetValuePattern().Value
     getAccValue = getAccValue[-2:]
-    logger.info(getAccValue)
+    # logger.info(getAccValue)
     return getAccValue
 
 
@@ -62,14 +62,6 @@ def setAccNum_3135(acc, ec):
 
 def setReceiverAcc():
     setAccNum_3135("82", 4)
-
-
-# def getRevenueAmount(i):
-#     revenueFile = f"D:\TaiCloud\Documents\Project\Lotto\stockFile\kwak_MyRevenue_{i}.tsv"
-#     acc = i[-2:]
-#     # print(revenueFile)
-#     amount = "123422"
-#     return acc, amount
 
 
 def setAmount(amount):
@@ -154,13 +146,14 @@ def main():
                 logger.info(f"{i}은 수익 없음.")
             else:
                 setAccNum_3135(acc, 7)  # 보내는 계좌 세팅
-                logger.info(amounts)
+                logger.info(f"{i}의 일 수익은 : {amounts}")
                 pag.press("tab")
                 pag.typewrite(str(amounts))
                 # pag.typewrite("1231321")
                 time.sleep(0.3)
                 pag.press("tab")
                 pag.press("enter")
+                # check안내 함수를 응용하자.
                 # def_accNumEdit_info()
         except LookupError:
             pass

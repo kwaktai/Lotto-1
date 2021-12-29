@@ -142,6 +142,6 @@ def main(test):
 
 
 if __name__ == '__main__':
-    dataList('two')
-    # main("start")
+    # dataList('two')
+    main("start")
     # pass
