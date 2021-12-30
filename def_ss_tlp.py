@@ -9,6 +9,12 @@ from def_loggin import __get_logger
 
 # test 20211224-B
 
+
+def main(test):
+    for pig in ["one", "two", "three"]:
+        setTLP(pig, test)
+
+
 logger = __get_logger()
 # "client_email": "gstopy@spreadsheettopython-320114.iam.gserviceaccount.com"
 
@@ -61,9 +67,9 @@ def open2102():
     # input2102_check_loc()
 
 
-def tryTLP(pig, test):
+def setTLP(pig, test):
     pigList = dataList(pig)
-    print(pigList)
+    # print(pigList)
     checkWork = list(pigList.values())[0]  # 일하자? 쉬자? 존버?
     pigAcc = list(pigList.values())[8]  # 계좌번호
     logger.info(pigAcc)
@@ -136,12 +142,5 @@ def tryTLP(pig, test):
             pass
 
 
-def main(test):
-    for pig in ["one", "two", "three"]:
-        tryTLP(pig, test)
-
-
 if __name__ == '__main__':
-    # dataList('two')
     main("start")
-    # pass

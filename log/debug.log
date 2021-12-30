@@ -16030,3 +16030,86 @@ NameError: name 'logger' is not defined
 2021-12-30 11:02:34,212:[def_loggin]:(INFO):= TLP2_02은 수익 없음.
 2021-12-30 11:02:34,214:[def_loggin]:(INFO):= 09
 2021-12-30 11:02:34,214:[def_loggin]:(INFO):= TLP3_09은 수익 없음.
+2021-12-30 18:00:53,276 Traceback (most recent call last):
+  File "d:/TaiCloud/Documents/Project/Lotto/main.py", line 37, in <module>
+    openLoto(user=user)
+  File "d:\TaiCloud\Documents\Project\Lotto\def_lotto.py", line 172, in openLoto
+    closeLotto()
+  File "d:\TaiCloud\Documents\Project\Lotto\def_lotto.py", line 254, in closeLotto
+    pag.getWindowsWithTitle("iLabAuto")[0].close()
+IndexError: list index out of range
+
+2021-12-30 18:30:27,697 Traceback (most recent call last):
+  File "d:/TaiCloud/Documents/Project/Lotto/main_lee.py", line 22, in <module>
+    kw_Login(user)
+  File "d:\TaiCloud\Documents\Project\Lotto\def_lotto.py", line 117, in kw_Login
+    exit(0)
+  File "C:\Python38-32\lib\_sitebuiltins.py", line 26, in __call__
+    raise SystemExit(code)
+SystemExit: 0
+
+2021-12-30 18:40:59,596 Traceback (most recent call last):
+  File "d:/TaiCloud/Documents/Project/Lotto/main.py", line 37, in <module>
+    openLoto(user=user)
+  File "d:\TaiCloud\Documents\Project\Lotto\def_lotto.py", line 172, in openLoto
+    closeLotto()
+  File "d:\TaiCloud\Documents\Project\Lotto\def_lotto.py", line 254, in closeLotto
+    pag.getWindowsWithTitle("iLabAuto")[0].close()
+IndexError: list index out of range
+
+2021-12-30 18:42:48,516 Traceback (most recent call last):
+  File "d:/TaiCloud/Documents/Project/Lotto/main.py", line 37, in <module>
+    openLoto(user=user)
+  File "d:\TaiCloud\Documents\Project\Lotto\def_lotto.py", line 172, in openLoto
+    closeLotto()
+  File "d:\TaiCloud\Documents\Project\Lotto\def_lotto.py", line 254, in closeLotto
+    pag.getWindowsWithTitle("iLabAuto")[0].close()
+IndexError: list index out of range
+
+2021-12-30 18:47:02,083 Traceback (most recent call last):
+  File "d:/TaiCloud/Documents/Project/Lotto/main.py", line 37, in <module>
+    openLoto(user=user)
+  File "d:\TaiCloud\Documents\Project\Lotto\def_lotto.py", line 174, in openLoto
+    logger.info("start Ŭ��")
+NameError: name 'logger' is not defined
+
+2021-12-30 18:47:56,547 Traceback (most recent call last):
+  File "d:/TaiCloud/Documents/Project/Lotto/main.py", line 37, in <module>
+    openLoto(user=user)
+  File "d:\TaiCloud\Documents\Project\Lotto\def_lotto.py", line 174, in openLoto
+    logger.info("start Ŭ��")
+NameError: name 'logger' is not defined
+
+2021-12-30 18:50:14,035:[def_loggin]:(INFO):= start 클릭
+2021-12-30 18:50:14,035:[def_loggin]:(INFO):= start 클릭
+2021-12-30 18:50:14,035:[def_loggin]:(INFO):= start 클릭
+2021-12-30 18:50:14,035:[def_loggin]:(INFO):= start 클릭
+2021-12-30 18:50:14,035:[def_loggin]:(INFO):= start 클릭
+2021-12-30 18:50:14,035 start Ŭ��
+2021-12-30 18:54:35,151 Traceback (most recent call last):
+  File "d:/TaiCloud/Documents/Project/Lotto/main.py", line 40, in <module>
+    save_screenshot(user)
+  File "d:\TaiCloud\Documents\Project\Lotto\def_kw.py", line 419, in save_screenshot
+    x, y = xyp_findxy("2152")
+TypeError: cannot unpack non-iterable NoneType object
+
+2021-12-30 19:44:38,919:[def_loggin]:(INFO):= 04
+2021-12-30 19:44:38,919:[def_loggin]:(INFO):= 04
+2021-12-30 19:44:38,919:[def_loggin]:(INFO):= 04
+2021-12-30 19:44:38,919:[def_loggin]:(INFO):= 04
+2021-12-30 19:45:42,979:[def_loggin]:(INFO):= 04
+2021-12-30 19:45:42,979:[def_loggin]:(INFO):= 04
+2021-12-30 19:45:42,979:[def_loggin]:(INFO):= 04
+2021-12-30 19:45:42,979:[def_loggin]:(INFO):= 04
+2021-12-30 19:46:08,133:[def_loggin]:(INFO):= 02
+2021-12-30 19:46:08,133:[def_loggin]:(INFO):= 02
+2021-12-30 19:46:08,133:[def_loggin]:(INFO):= 02
+2021-12-30 19:46:08,133:[def_loggin]:(INFO):= 02
+2021-12-30 19:47:55,527:[def_loggin]:(INFO):= 04
+2021-12-30 19:47:55,527:[def_loggin]:(INFO):= 04
+2021-12-30 19:47:55,527:[def_loggin]:(INFO):= 04
+2021-12-30 19:47:55,527:[def_loggin]:(INFO):= 04
+2021-12-30 19:48:20,929:[def_loggin]:(INFO):= 02
+2021-12-30 19:48:20,929:[def_loggin]:(INFO):= 02
+2021-12-30 19:48:20,929:[def_loggin]:(INFO):= 02
+2021-12-30 19:48:20,929:[def_loggin]:(INFO):= 02
