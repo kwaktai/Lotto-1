@@ -780,7 +780,7 @@ def input2102_sell_VR(stockname, user="kwak", qty=1, test="test", type="적립�
         print("VR 매도완료")
 
 
-def startGlobal():
+def startGlobal_org():
     a = check_window("인증서 선택  (Ver 9.9.8.8)         [AnN2]")
     b = check_window("영웅문Global Login")
     c = check_window("영웅문Global")
@@ -808,6 +808,29 @@ def startGlobal():
         pag.hotkey('enter')
     else:
         pass
+
+
+def closeTitle(title):
+    try:
+        if title == "영웅문Global":
+            a = pag.getWindowsWithTitle(title)[0]
+            if title == a.title:
+                kw_window()
+                pag.hotkey('alt', 'f4')
+                time.sleep(1)
+                pag.hotkey('enter')
+            else:
+                pass
+        else:
+            pag.getWindowsWithTitle(title)[0].close()
+    except:
+        print(f"{title} : 없음")
+
+
+def startGlobal():
+    closeTitle("인증서 선택  (Ver 9.9.8.8)         [AnN2]")
+    closeTitle("영웅문Global Login")
+    closeTitle("영웅문Global")
 
 
 def find_handle_2_test(title):  # 62는 2102의 종목??
@@ -877,8 +900,9 @@ def SelectAccount(accNum):
 
 
 if __name__ == '__main__':
+    startGlobal()
     # save_stockQty("kwak", "무매", "45")
-    saveMyDeposit("kwak", "무매", "45")
+    # saveMyDeposit("kwak", "무매", "45")
     # mouseClick("13438516")
     # print(kw_window())
     # screen_xy_2153('[2153] 손익/수익률현황(T) - 해외주식 실현손익', 4)
@@ -899,4 +923,4 @@ if __name__ == '__main__':
     # save_stockQty("kwak", "무매")
     # a = date.today()
     # screen_xy()
-    pass
+    # pass

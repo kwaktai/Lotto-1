@@ -131,6 +131,13 @@ def def_accNumEdit_info():
     # return accNumEdit
 
 
+def closeTitle(title):
+    try:
+        pag.getWindowsWithTitle(title)[0].close()
+    except IndexError:
+        pass
+
+
 def main():
     setMainSearch("3135")
     setAccNum_3135("82", 5)  # 받는계좌 세팅
@@ -144,6 +151,7 @@ def main():
             amounts = getRevenueAmount(i)
             if amounts == 0:
                 logger.info(f"{i}은 수익 없음.")
+                pag.getWindowsWithTitle("안내")[0].close()
             else:
                 setAccNum_3135(acc, 7)  # 보내는 계좌 세팅
                 logger.info(f"{i}의 일 수익은 : {amounts}")
@@ -153,6 +161,7 @@ def main():
                 time.sleep(0.3)
                 pag.press("tab")
                 pag.press("enter")
+                closeTitle("안내")
                 # check안내 함수를 응용하자.
                 # def_accNumEdit_info()
         except LookupError:
@@ -160,7 +169,8 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    closeTitle("안내")
+    # main()
     # a = getRevenueAmount("무매_45")
     # print(a)
     # setBottom()

@@ -12,6 +12,7 @@ from slack_engin import *
 import def_xyp as dx
 from def_kw import kw_window, check_window
 from passdoc import pw
+# from def_ui import closeLotto
 import subprocess
 # from typing_extensions import Unpack
 import uiautomation as auto
@@ -168,7 +169,7 @@ def openLoto_org(user="kwak", x=1, tradetype="아바타"):
 
 def openLoto(user="kwak", x=1, tradetype="아바타"):
     time.sleep(20)
-    closeLoto()
+    closeLotto()
     if user == "kwak":
         logger.info("start 클릭")
         program_file = r"D:\TaiCloud\Documents\Project\Lotto\Lotto\Run.exe -ib1=1 -close=2"
@@ -247,13 +248,13 @@ def mouseClick(hwnd):
     win32gui.PostMessage(hwnd, win32con.WM_LBUTTONUP, 0, 0)
 
 
-def close_Loto(loto):
-    a = pag.getWindowsWithTitle(loto)[0]
-    a.close()
-    slackSendMsg("Loto 프로그램을 '종료'했습니다.")
-
-
-# close_Loto()
+def closeLotto():
+    i = 1
+    while i < 7:
+        pag.getWindowsWithTitle("iLabAuto")[0].close()
+        print(f"{i}lotto 닫기 성공")
+        time.sleep(2)
+        i = i+1
 
 
 def ilab_window(l=0, r=0):
@@ -272,17 +273,17 @@ def ilab_window(l=0, r=0):
 # "iLabAuto 3rd"
 # "iLabAuto 4th"
 
-def closeLoto():
-    lotoList = ["iLabAuto", "iLabAuto 2nd", "iLabAuto 3rd", "iLabAuto 4th"]
-    for loto in lotoList:
-        if check_window(loto) > 0:
-            try:
-                # check_window(loto) == None
-                close_Loto(loto)
-            except:
-                print("닫혀있다.")
-        else:
-            pass
+# def closeLoto():
+#     lotoList = ["iLabAuto", "iLabAuto 2nd", "iLabAuto 3rd", "iLabAuto 4th"]
+#     for loto in lotoList:
+#         if check_window(loto) > 0:
+#             try:
+#                 # check_window(loto) == None
+#                 close_Loto(loto)
+#             except:
+#                 print("닫혀있다.")
+#         else:
+#             pass
 
 
 def waitApp(title):
@@ -338,10 +339,10 @@ def checkLottoOpen():
         pass
         # break
     else:
-        win32gui.SetForegroundWindow(windowLoto)
-        check_window("iLabAuto", 0, 0)
+        # win32gui.SetForegroundWindow(windowLoto)
+        # check_window("iLabAuto", 0, 0)
         slackSendMsg("실행전 Lotte가 Open되어있어 우선 종료합니다.")
-        close_Loto("iLabAuto")
+        closeLotto("iLabAuto")
         # windowLoto = check_windowLoto()
 
 
@@ -367,12 +368,20 @@ def startAvatar():
         slackSendMsg("Lotto 실행시 문제 발생 다시 실행.(아바타)")
 
 
+def activeLotto():
+    pag.getWindowsWithTitle("iLabAuto")[0].close()
+    time.sleep(0.2)
+
+
 if __name__ == '__main__':
     try:
+        pag.getWindowsWithTitle("안내")[0].close()
         # winActivate('iLabAuto')
         # checkLottoOpen()
+        # activeLotto()
         # openLoto()
-        kw_close()
+        # closeLotto()
+        # kw_close()
         # kw_window()
         # pag.hotkey('alt', 'f4')
         # pag.hotkey('enter')

@@ -196,17 +196,8 @@ def saveStock(user):
 
 
 def closeLotto():
-    # winControl = auto.PaneControl(searchDepth=1, Name='iLabAuto')
-    # winControl.SetActive()
-    # # winControl.MiddleClick()
-    # time.sleep(1)
-    # # pag.hotkey('altleft', 'f4')
     a = pag.getWindowsWithTitle("iLabAuto")[0]
     a.close()
-    # winControl.SendKeys('{art}')
-    # print(winControl)
-    # winControl.SetActive()
-    # edit.GetValuePattern().Value
 
 
 if __name__ == '__main__':
