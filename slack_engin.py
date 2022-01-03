@@ -4,8 +4,8 @@ from slacker import Slacker
 # logger = __get_logger()
 
 
-# slack_stock = "xoxb-1731659647985-1712312144294-6M3k1f68GwxxF9ty7685pd2i"
-slack_stock = "xoxb-1731659647985-1712312144294-zBrPfRhePigo2foPVjLjjgEJ"
+slack_stock = "xoxb-1731659647985-1712312144294-6M3k1f68GwxxF9ty7685pd2i"
+# slack_stock = "xoxb-1731659647985-1712312144294-zBrPfRhePigo2foPVjLjjgEJ"
 channelName = "#unlimited-purchase-vr"
 slackTest = Slacker(slack_stock)
 

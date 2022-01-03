@@ -16525,3 +16525,17 @@ TypeError: cannot unpack non-iterable NoneType object
 2022-01-03 08:44:53,878:[def_loggin]:(INFO):= None
 2022-01-03 08:44:53,878:[def_loggin]:(INFO):= None
 2022-01-03 08:44:53,878:[def_loggin]:(INFO):= None
+2022-01-03 18:35:20,837 Traceback (most recent call last):
+  File "d:/TaiCloud/Documents/Project/Lotto/main_lee.py", line 27, in <module>
+    save_screenshot(user)
+  File "d:\TaiCloud\Documents\Project\Lotto\def_kw.py", line 420, in save_screenshot
+    x, y = xyp_findxy("2152")
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-01-03 18:36:22,240:[def_loggin]:(INFO):= start 클릭
+2022-01-03 18:36:22,240:[def_loggin]:(INFO):= start 클릭
+2022-01-03 18:36:22,240:[def_loggin]:(INFO):= start 클릭
+2022-01-03 18:36:22,240:[def_loggin]:(INFO):= start 클릭
+2022-01-03 18:59:55,758:[def_loggin]:(INFO):= 04
+2022-01-03 18:59:55,758:[def_loggin]:(INFO):= 04
+2022-01-03 18:59:55,758:[def_loggin]:(INFO):= 04
