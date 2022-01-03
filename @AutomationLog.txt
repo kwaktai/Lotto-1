@@ -235,3 +235,7 @@
 2022-01-01 23:25:24.198 UI_test.py[99] printControlValues -> Find Control Timeout: {ControlType: EditControl}
 2022-01-01 23:26:05.077 UI_test.py[99] printControlValues -> Find Control Timeout: {ControlType: EditControl}
 2022-01-01 23:26:16.245 UI_test.py[99] printControlValues -> Find Control Timeout: {ControlType: EditControl}
+2022-01-03 22:15:06.894 def_ui.py[188] selsetTab -> Find Control Timeout: {Name: '매수', ControlType: TabItemControl}
+2022-01-03 22:42:58.560 def_ui.py[200] secletEventOk -> Find Control Timeout: {ControlType: EditControl}
+2022-01-03 23:18:24.545 def_ui.py[176] secletEventEnter -> Find Control Timeout: {ControlType: EditControl}
+2022-01-03 23:18:44.376 def_ui.py[176] secletEventEnter -> Find Control Timeout: {ControlType: EditControl}

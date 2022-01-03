@@ -8,6 +8,9 @@ import pyautogui as pag
 # zoom.SetTopmost(True)  # 화면고정
 # zoom.SetTopmost(False)  # 화면고정
 
+numList = ['45', '49', '53', '04',
+           '02', '09', '24', '23', '62', '82']
+
 
 def printControls(items):
     for i in items:
@@ -93,10 +96,7 @@ def moveAccNumDown(count, num=2):
 
 
 def setAccNum(acc, menuNum, num=2):
-    numList = ['45', '49', '53', '04',
-               '02', '09', '24', '23', '62', '82']
     try:
-        # setMainSearch(menuNum)
         nowAccNum = getAccNumber(menuNum, num)
         while acc == nowAccNum:
             print(f"{acc}는 원하는 계좌번호임.")
@@ -114,35 +114,9 @@ def setAccNum(acc, menuNum, num=2):
         print("2150 창이 없습니다.실행합니다.")
 
 
-# def setAccNum_2153(acc, menuNum):
-#     def getAccNumber_2153(menuNum="2153"):
-#         setMainSearch(menuNum)
-#         accNumEdit_2153 = get_NFHeroMainClass(6)
-#         getAccValue = accNumEdit_2153.GetValuePattern().Value
-#         getAccValue = getAccValue[-2:]
-#         return getAccValue
-#     numList = ['45', '49', '53', '04',
-#                '02', '09', '24', '23', '62', '82']
-#     nowAccNum = getAccNumber_2153(menuNum)
-#     while acc == nowAccNum:
-#         print(f"{acc}는 원하는 계좌번호임.")
-#         break
-#     else:
-#         selectAccNumIndex = numList.index(acc)
-#         nowAccNumIndex = numList.index(nowAccNum)
-#         indexValue = selectAccNumIndex - nowAccNumIndex
-#         if indexValue > 0:
-#             moveAccNumDown(indexValue, 6)
-#         else:
-#             moveAccNumUp(indexValue*-1, 6)
-#             pass
-
-
 def infoList(user):
     userInfo = {"kwak": {"무매": "45",  "ava1": "24",
                          "ava2": "23", "ava3": "62", "TLP1": "04", "TLP2": "02", "TLP3": "09"}}
-    # userInfo = {"kwak": {"무매": "45", "적립식": "49", "거치식": "53", "ava1": "24",
-    #                      "ava2": "23", "ava3": "62", "TLP1": "04", "TLP2": "02", "TLP3": "09"}}
     listKey = list(userInfo['kwak'])
     listValue = list(userInfo['kwak'].values())
     return listKey, listValue
@@ -151,10 +125,7 @@ def infoList(user):
 def saveStock(user):
     listKey = infoList(user)[0]
     listValue = infoList(user)[1]
-    # listKey = listKey.index("무매")
-    # listValue = listValue[listKey]
     print(len(listKey))
-
     for i in range(len(listKey)):
         print(listKey[i])
         print(listValue[i])
@@ -169,8 +140,8 @@ def kw_window(l=0, r=0):
     try:
         anWindow = auto.WindowControl(
             searchDepth=2, Name='영웅문Global')
-        if not anWindow.Exists(10, 1):
-            print('Can not find Notepad window')
+        if not anWindow.Exists(0.3, 1):
+            print('Can not find 영웅문Global')
             # exit(0)
             return 0
         anWindow.SetActive()
@@ -180,67 +151,66 @@ def kw_window(l=0, r=0):
         pass
 
 
-def selsetTab(tabName):
+def secletTab(tabName):
     winControl = auto.WindowControl(
         searchDepth=1, ClassName='_NFHeroMainClass')
     accNumEdit = winControl.TabItemControl(
         foundIndex=1, Name=tabName)
+    if not accNumEdit.Exists(0.2, 1):
+        exit(0)
     accNumEdit.GetSelectionItemPattern().Select()
+    print(f"{tabName}: Tab click")
+
+
+def secletEventEnter():
+    winControl = auto.WindowControl(
+        searchDepth=1, ClassName='_NFHeroMainClass')
+    accNumEdit = winControl.WindowControl(foundIndex=1, Name="확인")
+    if not accNumEdit.Exists(0.2, 1):
+        accNumEdit = winControl.WindowControl(foundIndex=1, Name="안내")
+        if not accNumEdit.Exists(0.2, 1):
+            exit(0)
+        else:
+            print(accNumEdit.TextControl(foundIndex=1).Name)
+            accNumEdit.SendKeys('{enter}')
+    else:
+        print(accNumEdit.TextControl(foundIndex=1).Name)
+        accNumEdit.SendKeys('{enter}')
 
 
 def set2102_Buy(stockname, user, qty, price, test, locType, acc):
-    kw_window()
-    setAccNum(acc, "2102")
-    selsetTab("매수")
+    # kw_window()
+    # setAccNum(acc, "2102")
+    secletTab("매수")
     set_NFHeroMainClass_WriteValues(4, stockname)
     set_NFHeroMainClassSetLOC(5, locType)
     set_NFHeroMainClass_WriteValues(7, qty)
     set_NFHeroMainClass_WriteValues(6, price)
     pag.press("enter")
-    pag.getWindowsWithTitle("확인")[0].close()
-    pag.press("enter")
-    try:
-        pag.getWindowsWithTitle("확인")[0].click()
-    except IndexError:
-        pass
-    pag.press("enter")
-    # # pag.getWindowsWithTitle("안내")[0].close()
-    try:
-        pag.getWindowsWithTitle("안내")[0].click()
-    except IndexError:
-        pass
-    if test == test:
+    secletEventEnter()
+    if test == "test":
         pag.press("esc")
     else:
         pag.press("enter")
-    # 추후에 주문불가한날 안내를 처리 하자.
+    secletEventEnter()
 
 
 def set2102_Sell(stockname, user, qty, price, test, locType, acc):
-    kw_window()
-    setAccNum(acc, "2102")
-    selsetTab("매도")
+    # kw_window()
+    # setAccNum(acc, "2102")
+    secletTab("매도")
     time.sleep(1)
     set_NFHeroMainClassSetLOC(5, locType, trade="매도")
     set_NFHeroMainClass_WriteValues(5, stockname)
     set_NFHeroMainClass_WriteValues(8, qty)
     set_NFHeroMainClass_WriteValues(7, price)
     pag.press("enter")
-    try:
-        pag.getWindowsWithTitle("확인")[0].click()
-    except IndexError:
-        pass
-    pag.press("enter")
-    # # pag.getWindowsWithTitle("안내")[0].close()
-    try:
-        pag.getWindowsWithTitle("안내")[0].click()
-    except IndexError:
-        pass
-    if test == test:
+    secletEventEnter()
+    if test == "test":
         pag.press("esc")
     else:
         pag.press("enter")
-    # pass
+    secletEventEnter()
 
 
 def get_NFHeroMainClass(num):
@@ -258,20 +228,20 @@ def set_NFHeroMainClass_WriteValues(num, value=0):
 
 
 def set_NFHeroMainClassSetLOC(num, LocType="LOC", trade="매수"):
-    selsetTab("매수")
+    secletTab(trade)
     accNumEdit = get_NFHeroMainClass(num)
     editTarget = accNumEdit.GetValuePattern()
     nowLocType = editTarget.Value
     numList = {"LOC": 3, "AFTER지정": 2}
-    try:
-        while LocType == nowLocType:
-            break
-        else:
-            moveAccNumUp(5, 5)
-            moveAccNumDown(numList[LocType], 5)
-            selsetTab(trade)
-    except LookupError:
-        pass
+    # try:
+    while LocType == nowLocType:
+        break
+    else:
+        moveAccNumUp(5, 5)
+        moveAccNumDown(numList[LocType], 5)
+        secletTab(trade)
+    # except LookupError:
+        # pass
 
 
 if __name__ == '__main__':
@@ -283,7 +253,9 @@ if __name__ == '__main__':
     # get_NFHeroMainClass(6)
     # set_NFHeroMainClassSetLOC(6, "LOC")
     # set2102_Sell("TQQQ", "kwak", "34", "150.21", "start", "LOC", "82")
-    set2102_Buy("TQQQ", "kwak", "34", "111.21", "test", "LOC", "82")
+    # secletEventEnter()
+    # selsetTab("실시간잔고")
+    set2102_Buy("TQQQ", "kwak", "34", "160", "start", "LOC", "82")
     # warningMsg()
     # set_NFHeroMainClass_WriteValues(7, "111")
     # set_NFHeroMainClass_WriteValues(5, "시장가")
