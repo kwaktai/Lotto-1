@@ -1,4 +1,5 @@
 # from typing import Type, type_check_only
+from collections import namedtuple
 import gspread
 from datetime import datetime
 from oauth2client.service_account import ServiceAccountCredentials
@@ -222,8 +223,9 @@ def mystockdata(user, type_1, acc):
                                      r[_r][_c])  # A1에 값쓰기
 
     except IndexError:
-        sh1.update_acell(f"A{str(next_row + _r)}", "")
-        sh1.update_acell(f"B{str(next_row + _r)}", "")
+        n = ["A", "B", "C", "D", "E"]
+        for i in n:
+            sh1.update_acell(f"{i}{str(next_row + _r)}", "")
         logger.info(slackSendMsg(f"{user}의 {type_1} 업데이트 완료"))
         pass
 
@@ -238,7 +240,7 @@ def myDepositValue(user, type, acc):
         p = r[3][1]
         p = p.replace(",", "")
         updateLocation = {"kwak": {"무매": ["A21"], "ava1": ["B21"], "ava2": [
-            "C21"], "ava3": ["D21"], "TLP1": ["E21"], "TLP2": ["F21"], "TLP3": ["G21"]}}
+            "C21"], "ava3": ["D21"], "TLP1": ["E21"], "TLP2": ["F21"], "TLP3": ["G21"], "Proceeds": ["H21"]}}
         sh.update_acell(updateLocation[user][type][0], p)
         return p
     except:
@@ -281,7 +283,8 @@ if __name__ == '__main__':
     # MyRevenueData("kwak", "무매")
     # print(todayNow)
     # myDepositValue_test("kwak", "ava")
-    print(myDepositValue("kwak", "무매", "45"))
+    mystockdata("kwak", "TLP2", "02")
+    # print(myDepositValue("kwak", "무매", "45"))
     # updateLocation = {"kwak": {"무매": ["B8"], "ava": ["I7"]}}
     # updateLocation = {"kwak": {"무매": ["B8"], "ava": ["I7"]}}
     # sh = findrsishare_total

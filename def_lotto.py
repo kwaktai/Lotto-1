@@ -185,7 +185,6 @@ def openLoto(user="kwak", x=1, tradetype="아바타"):
         program_file = r"D:\TaiCloud\Documents\Project\Lotto\Lotto\Run.exe -ib4=1 -close=2"
         Application(backend="uia").start(program_file)
         time.sleep(250)
-
     slackSendMsg("Loto 프로그램을 실행했습니다.")
 
 

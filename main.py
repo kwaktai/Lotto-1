@@ -6,12 +6,12 @@ from def_kw import check_window, get_today_hoilday, startGlobal
 # from def_kw import kw_window_check_kwlogin
 from def_kw import save_screenshot
 from def_ss import *
-import logging
+# import logging
 from def_loggin import __get_logger
 logger = __get_logger()
 
-logging.basicConfig(filename='log\debug.log',
-                    level=logging.ERROR, format='%(asctime)s %(message)s')
+# logging.basicConfig(filename='log\debug.log',
+#                     level=logging.ERROR, format='%(asctime)s %(message)s')
 
 
 def user_name():
@@ -68,6 +68,6 @@ if __name__ == '__main__':
         else:
             slackSendMsg("주말 입니다.")
     except:
-        logging.error(traceback.format_exc())
+        # logging.error(traceback.format_exc())
         slackSendMsg(f"kwak: 에러발생 확인바람.")
         startGlobal()

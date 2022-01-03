@@ -8,6 +8,7 @@ import pywinauto
 import time
 # import datetime
 from datetime import date
+# from def_lotto import kw_Login
 from def_ss import *
 import exchange_calendars as ecals
 import pyperclip
@@ -18,7 +19,7 @@ from def_xyp import xyp_findxy
 import uiautomation as auto
 from def_ui import *
 from def_loggin import __get_logger, accunt_info
-logger = __get_logger()
+# logger = __get_logger()
 
 
 def today_nowDate():
@@ -474,7 +475,7 @@ def screen_xy_2111(title, acc):
 
 
 def screen_xy_2153(title, acc):
-    setAccNum_2153(acc, "2153")
+    setAccNum(acc, "2153", 6)
     time.sleep(1)
     hwnd = find_handle_3(title, 24)  # 24 체결기간 시작일
     # mouseClick(hwnd)
@@ -733,7 +734,6 @@ def input2102_buy(stockname, qty, price, test="test"):
 def input2102_buy_VR(stockname, user="kwak", qty=1, test="test", type="적립식"):
     logger.info("VR 매수시작")
     buy_valueList = buy_values(user, type)
-    # input2102_check_ac
     for i in buy_valueList:
         time.sleep(0.1)
         input2102_Stockname(stockname)  # 2102의 시작
@@ -831,6 +831,7 @@ def startGlobal():
     closeTitle("인증서 선택  (Ver 9.9.8.8)         [AnN2]")
     closeTitle("영웅문Global Login")
     closeTitle("영웅문Global")
+    # kw_Login()
 
 
 def find_handle_2_test(title):  # 62는 2102의 종목??

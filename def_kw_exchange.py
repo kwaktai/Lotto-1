@@ -169,8 +169,8 @@ def main():
 
 
 if __name__ == '__main__':
-    closeTitle("안내")
-    # main()
+    # closeTitle("안내")
+    main()
     # a = getRevenueAmount("무매_45")
     # print(a)
     # setBottom()

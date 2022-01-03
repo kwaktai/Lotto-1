@@ -4,6 +4,7 @@ import subprocess
 import uiautomation as auto
 import time
 import pyautogui as pag
+import def_ui
 from passdoc import pw
 pw = pw.passWord()
 
@@ -131,11 +132,12 @@ def kw_Login_2(user="kwak", xy=2):
 
 
 if __name__ == '__main__':
+    # def_ui.setMainSearch("2102")
     # manuList = ["2153", "2150", "2111"]
-    a = kw_Login_2()
-    print(str(a)[:2])
-    # manuList = ["2153"]
-    # for i in manuList:
-    #     setMainSearch(i)
+    # a = kw_Login_2()
+    # print(str(a)[:2])
+    # # manuList = ["2153"]
+    # # for i in manuList:
+    # #     setMainSearch(i)
     printControlValues()
     pass

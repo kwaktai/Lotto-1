@@ -5,12 +5,14 @@ from slack_engin import *
 from def_kw import input2102_buy, kw_secrch_Edit, sendText, kw_window, input2102_sell, input2102_check_check, setAccNum
 import time
 import pyautogui as pag
+import csv
 from def_loggin import __get_logger
 
 # test 20211224-B
 
 
 def main(test):
+    setSheet()
     for pig in ["one", "two", "three"]:
         setTLP(pig, test)
 
@@ -30,6 +32,42 @@ spreadsheet_TLP = "https://docs.google.com/spreadsheets/d/1b6da8QlPW0EWs-__vbd7g
 doc = gc.open_by_url(spreadsheet_TLP)
 worksheet_order = doc.worksheet('자동거래시트')  # 시트선택
 worksheet_order.acell("C2").value
+worksheet_TLP = doc.worksheet('TLP')  # 시트선택
+worksheet_TLP.acell("C2").value
+
+
+def getTLPvalue(acc):
+    try:
+        n = ["TLP1_04", "TLP2_02", "TLP3_09"]
+        # kwak_mystockdata_TLP1_04
+        revenueFile = f"D:\TaiCloud\Documents\Project\Lotto\stockFile\kwak_mystockdata_{acc}.tsv"
+        f = open(revenueFile, 'r', encoding='utf-8')
+        rdr = csv.reader(f, delimiter='\t')
+        r = list(rdr)
+        myValue = r[1][5]
+        myQty = r[1][6]
+        stockName = r[1][1]
+        return stockName, myValue, myQty
+    except:
+        myValue = 0
+        myQty = 0
+        stockName = 0
+        return stockName, myValue, myQty
+
+
+def setTLPvalue(acc):
+    stockName, myValue, myQty = getTLPvalue(acc)
+
+    if acc == "TLP1_04":
+        worksheet_TLP.update_acell('D30', myValue)
+        worksheet_TLP.update_acell('E30', myQty)
+    elif acc == "TLP2_02":
+        worksheet_TLP.update_acell('G30', myValue)
+        worksheet_TLP.update_acell('H30', myQty)
+    elif acc == "TLP3_09":
+        worksheet_TLP.update_acell('J30', myValue)
+        worksheet_TLP.update_acell('K30', myQty)
+    pass
 
 
 def dataList(pig):
@@ -112,7 +150,6 @@ def setTLP(pig, test):
                 # print(sellPrice)
                 # print(sellQty)
                 pass
-
     elif checkWork == "쉬자":
         # pigName = list(pigList.keys())[0]
         # print(pigName)
@@ -142,5 +179,12 @@ def setTLP(pig, test):
             pass
 
 
+def setSheet():
+    n = ["TLP1_04", "TLP2_02", "TLP3_09"]
+    for i in range(0, 2):
+        setTLPvalue(n[i])
+
+    # setTLPvalue("TLP1_04")
 if __name__ == '__main__':
     main("start")
+    # setSheet()
