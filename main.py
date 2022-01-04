@@ -33,12 +33,12 @@ if __name__ == '__main__':
                 if user == "kwak":
                     slackSendMsg(f"{user}의 무한매수를 시작합니다.")
                     kw_Login(user)
-                    time.sleep(10)
-                    openLoto(user=user)
+                    # time.sleep(10)
+                    # openLoto(user=user)
                     # time.sleep(30)
                     # closeLoto()
-                    save_screenshot(user)
-                    time.sleep(10)
+                    # save_screenshot(user)
+                    # time.sleep(10)
                     mess = check_message_lotto()
                     if mess == None:
                         slackSendMsg(f"{user}의 무한매수를 완료하였습니다.")

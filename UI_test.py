@@ -131,6 +131,9 @@ def kw_Login_2(user="kwak", xy=2):
     return anWindow
 
 
+a = "매수82.10"
+print(a[2:])
+
 if __name__ == '__main__':
     # def_ui.setMainSearch("2102")
     # manuList = ["2153", "2150", "2111"]
@@ -139,5 +142,6 @@ if __name__ == '__main__':
     # # manuList = ["2153"]
     # # for i in manuList:
     # #     setMainSearch(i)
-    printControlValues()
+
+    # printControlValues()
     pass

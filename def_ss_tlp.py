@@ -84,7 +84,7 @@ def dataList(pig):
     pigDic = {}
     for dic in range(len(valueList)):
         pigDic[valueList[dic]] = (qtyList[dic])
-        print(pigDic)
+        # print(pigDic)
     return pigDic
 
 
@@ -94,6 +94,12 @@ def pig_test():
     pigList2 = {'둘째': '쉬자', '종목': 'TECL', '평단': '3',
                 '+10%': '-', '큰수': '-', '+0%': '-', '+5%': '-'}
     return pigList
+
+
+# {'첫째': '일하자', '종목': 'TECL', '88.76': '6', '93.19': '5', '101.98': '-',
+#     '+0%': '-', '93.26': '18', '97.69': '54', 'acc': '04'}
+# {'둘째': '쉬자', '종목': 'TECL', '평단': '3', '+5%': '-',
+#     '큰수': '-', '+0%': '-', '+10%(매도)': '-', 'acc': '02'}
 
 
 def open2102():
@@ -107,10 +113,8 @@ def open2102():
 
 def setTLP(pig, test):
     pigList = dataList(pig)
-    # print(pigList)
     checkWork = list(pigList.values())[0]  # 일하자? 쉬자? 존버?
-    pigAcc = list(pigList.values())[8]  # 계좌번호
-    logger.info(pigAcc)
+    pigAcc = pigList['acc']  # 계좌번호
     stockName = list(pigList.values())[1]  # TQQQ TECL
     setAccNum(pigAcc, "2111")
     if checkWork == "일하자":
@@ -121,16 +125,13 @@ def setTLP(pig, test):
             print(buy)
             checkValue = list(pigList.values())[buy]
             if checkValue == "-":
-                print("buy not")
+                print("매수 거래 없음.")
                 pass
             else:
                 stockName = list(pigList.values())[1]
-                buyPrice = float(list(pigList.keys())[buy])
+                buyPrice = float(list(pigList.keys())[buy][2:])
                 buyQty = int(checkValue)
                 input2102_buy(stockName, buyQty, buyPrice, test)  #
-                # print(buyPrice)
-                # print(buyQty)
-                # print(stockName)
         for sell in range(5, 8):
             checkValueSell = list(pigList.values())[sell]
             if checkValueSell == "-":
@@ -142,7 +143,7 @@ def setTLP(pig, test):
                 elif sell == 7:
                     i = 2
                     print("After")
-                sellPrice = float(list(pigList.keys())[sell])
+                sellPrice = float(list(pigList.keys())[sell][2:])
                 sellQty = int(checkValueSell)
                 input2102_check_check(i)
                 time.sleep(0.2)
@@ -151,14 +152,8 @@ def setTLP(pig, test):
                 # print(sellQty)
                 pass
     elif checkWork == "쉬자":
-        # pigName = list(pigList.keys())[0]
-        # print(pigName)
-        # print(f"{pigName}는 휴식중.....")
         pass
     elif checkWork == "존버":
-        # pigName = list(pigList.keys())[0]
-        # print(pigName)
-        # print("매도만 하기")
         print("존버 : 매도만 하기")
         for sell in range(5, 8):
             checkValueSell = list(pigList.values())[sell]
@@ -188,3 +183,4 @@ def setSheet():
 if __name__ == '__main__':
     main("start")
     # setSheet()
+    pass
