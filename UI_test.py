@@ -143,5 +143,5 @@ if __name__ == '__main__':
     # # for i in manuList:
     # #     setMainSearch(i)
 
-    # printControlValues()
+    printControlValues()
     pass

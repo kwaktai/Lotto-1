@@ -159,7 +159,7 @@ def secletTab(tabName):
     if not accNumEdit.Exists(0.2, 1):
         exit(0)
     accNumEdit.GetSelectionItemPattern().Select()
-    print(f"{tabName}: Tab click")
+    # print(f"{tabName}: Tab click")
 
 
 def secletEventEnter():
@@ -169,7 +169,8 @@ def secletEventEnter():
     if not accNumEdit.Exists(0.2, 1):
         accNumEdit = winControl.WindowControl(foundIndex=1, Name="안내")
         if not accNumEdit.Exists(0.2, 1):
-            exit(0)
+            # exit(0)
+            pass
         else:
             print(accNumEdit.TextControl(foundIndex=1).Name)
             accNumEdit.SendKeys('{enter}')
@@ -182,7 +183,7 @@ def set2102_Buy(stockname, user, qty, price, test, locType, acc):
     # kw_window()
     # setAccNum(acc, "2102")
     secletTab("매수")
-    set_NFHeroMainClass_WriteValues(4, stockname)
+    set_NFHeroMainClass_WriteValuesDocumentControl(4, stockname)
     set_NFHeroMainClassSetLOC(5, locType)
     set_NFHeroMainClass_WriteValues(7, qty)
     set_NFHeroMainClass_WriteValues(6, price)
@@ -196,12 +197,14 @@ def set2102_Buy(stockname, user, qty, price, test, locType, acc):
 
 
 def set2102_Sell(stockname, user, qty, price, test, locType, acc):
-    # kw_window()
-    # setAccNum(acc, "2102")
+    kw_window()
+    pag.press("esc", 5)
+    setAccNum(acc, "2102")
     secletTab("매도")
     time.sleep(1)
+    set_NFHeroMainClass_WriteValuesDocumentControl(5, stockname)
     set_NFHeroMainClassSetLOC(5, locType, trade="매도")
-    set_NFHeroMainClass_WriteValues(5, stockname)
+    time.sleep(0.3)
     set_NFHeroMainClass_WriteValues(8, qty)
     set_NFHeroMainClass_WriteValues(7, price)
     pag.press("enter")
@@ -224,12 +227,22 @@ def set_NFHeroMainClass_WriteValues(num, value=0):
     accNumEdit = get_NFHeroMainClass(num)
     editTarget = accNumEdit.GetValuePattern()
     editTarget.SetValue(value)
-    # editTarget.SendKey('{down}')
+    # DocumentControl
+
+
+def set_NFHeroMainClass_WriteValuesDocumentControl(num, value=0):
+    accNumEdit = get_NFHeroMainClass(num)
+    editTarget = accNumEdit.GetValuePattern()
+    editTarget.SetValue(value)
+    accNumEdit.SetFocus()
+    # accNumEdit.SendKeys('{enter}')
+    pag.press('enter')
 
 
 def set_NFHeroMainClassSetLOC(num, LocType="LOC", trade="매수"):
-    secletTab(trade)
+    secletTab("매수")
     accNumEdit = get_NFHeroMainClass(num)
+    accNumEdit.SetFocus()
     editTarget = accNumEdit.GetValuePattern()
     nowLocType = editTarget.Value
     numList = {"LOC": 3, "AFTER지정": 2}
@@ -246,16 +259,17 @@ def set_NFHeroMainClassSetLOC(num, LocType="LOC", trade="매수"):
 
 if __name__ == '__main__':
     # saveStock('kwak')
-    # set_NFHeroMainClass_WriteValuesDocumentControl(5)
+    # set_NFHeroMainClass_WriteValuesDocumentControl(4, "SOXL")
+    # pag.press("enter")
     # moveAccNumDown(2, 5)
     # set_NFHeroMainClassSetLOC(5, "AFTER지정")
     # getAccNumbers()\se
     # get_NFHeroMainClass(6)
     # set_NFHeroMainClassSetLOC(6, "LOC")
-    # set2102_Sell("TQQQ", "kwak", "34", "150.21", "start", "LOC", "82")
+    set2102_Sell("SOXL", "kwak", "34", "150.21", "test", "LOC", "82")
     # secletEventEnter()
     # selsetTab("실시간잔고")
-    set2102_Buy("TQQQ", "kwak", "34", "160", "start", "LOC", "82")
+    # set2102_Buy("TQQQ", "kwak", "34", "160.11", "test", "LOC", "82")
     # warningMsg()
     # set_NFHeroMainClass_WriteValues(7, "111")
     # set_NFHeroMainClass_WriteValues(5, "시장가")
@@ -273,3 +287,4 @@ if __name__ == '__main__':
     # print(a)
     # setMainSearch("2153")
     # setAccNum("62")
+    pass
