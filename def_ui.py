@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 import subprocess
 import uiautomation as auto
-
 import time
 import pyautogui as pag
+from slack_engin import *
 
 # zoom.SetTopmost(True)  # 화면고정
 # zoom.SetTopmost(False)  # 화면고정

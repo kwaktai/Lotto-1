@@ -1,0 +1,320 @@
+2022-01-06 00:09:00,155 - root - INFO - info
+2022-01-06 00:12:51,131 - urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2022-01-06 00:12:51,131 - urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2022-01-06 00:12:51,135 - google.auth.transport.requests - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2022-01-06 00:12:51,135 - google.auth.transport.requests - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2022-01-06 00:12:51,140 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-01-06 00:12:51,140 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-01-06 00:12:51,367 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-01-06 00:12:51,367 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-01-06 00:12:51,370 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sheets.googleapis.com:443
+2022-01-06 00:12:51,370 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sheets.googleapis.com:443
+2022-01-06 00:12:53,727 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1c6qnORby5wLx4EYCzDNIHfDUax90yKIQRwqaiFqy0FI?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:12:53,727 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1c6qnORby5wLx4EYCzDNIHfDUax90yKIQRwqaiFqy0FI?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:12:55,362 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1c6qnORby5wLx4EYCzDNIHfDUax90yKIQRwqaiFqy0FI?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:12:55,362 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1c6qnORby5wLx4EYCzDNIHfDUax90yKIQRwqaiFqy0FI?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:12:56,704 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1ImrZF6aZ57rfsbpVVvY4GJiVLqszqxCSKXBM_qIJOdU?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:12:56,704 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1ImrZF6aZ57rfsbpVVvY4GJiVLqszqxCSKXBM_qIJOdU?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:12:57,304 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:12:57,304 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:12:57,707 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:12:57,707 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:12:58,101 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:12:58,101 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:12:58,500 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:12:58,500 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:12:58,869 - urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2022-01-06 00:12:58,869 - urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2022-01-06 00:12:58,869 - urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2022-01-06 00:12:58,869 - urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2022-01-06 00:12:58,869 - urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2022-01-06 00:12:58,873 - google.auth.transport.requests - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2022-01-06 00:12:58,873 - google.auth.transport.requests - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2022-01-06 00:12:58,873 - google.auth.transport.requests - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2022-01-06 00:12:58,873 - google.auth.transport.requests - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2022-01-06 00:12:58,873 - google.auth.transport.requests - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2022-01-06 00:12:58,876 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-01-06 00:12:58,876 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-01-06 00:12:58,876 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-01-06 00:12:58,876 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-01-06 00:12:58,876 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-01-06 00:12:59,061 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-01-06 00:12:59,061 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-01-06 00:12:59,061 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-01-06 00:12:59,061 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-01-06 00:12:59,061 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-01-06 00:12:59,066 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sheets.googleapis.com:443
+2022-01-06 00:12:59,066 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sheets.googleapis.com:443
+2022-01-06 00:12:59,066 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sheets.googleapis.com:443
+2022-01-06 00:12:59,066 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sheets.googleapis.com:443
+2022-01-06 00:12:59,066 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sheets.googleapis.com:443
+2022-01-06 00:13:00,220 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:13:00,220 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:13:00,220 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:13:00,220 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:13:00,220 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:13:00,716 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-06 00:13:00,716 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-06 00:13:00,716 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-06 00:13:00,716 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-06 00:13:00,716 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-06 00:13:01,363 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:13:01,363 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:13:01,363 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:13:01,363 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:13:01,363 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:13:01,833 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-06 00:13:01,833 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-06 00:13:01,833 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-06 00:13:01,833 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-06 00:13:01,833 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-06 00:13:03,862 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): slack.com:443
+2022-01-06 00:13:03,862 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): slack.com:443
+2022-01-06 00:13:03,862 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): slack.com:443
+2022-01-06 00:13:03,862 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): slack.com:443
+2022-01-06 00:13:03,862 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): slack.com:443
+2022-01-06 00:13:03,862 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): slack.com:443
+2022-01-06 00:13:04,148 - urllib3.connectionpool - DEBUG - https://slack.com:443 "POST /api/chat.postMessage HTTP/1.1" 200 55
+2022-01-06 00:13:04,148 - urllib3.connectionpool - DEBUG - https://slack.com:443 "POST /api/chat.postMessage HTTP/1.1" 200 55
+2022-01-06 00:13:04,148 - urllib3.connectionpool - DEBUG - https://slack.com:443 "POST /api/chat.postMessage HTTP/1.1" 200 55
+2022-01-06 00:13:04,148 - urllib3.connectionpool - DEBUG - https://slack.com:443 "POST /api/chat.postMessage HTTP/1.1" 200 55
+2022-01-06 00:13:04,148 - urllib3.connectionpool - DEBUG - https://slack.com:443 "POST /api/chat.postMessage HTTP/1.1" 200 55
+2022-01-06 00:13:04,148 - urllib3.connectionpool - DEBUG - https://slack.com:443 "POST /api/chat.postMessage HTTP/1.1" 200 55
+2022-01-06 00:13:16,701 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): slack.com:443
+2022-01-06 00:13:16,701 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): slack.com:443
+2022-01-06 00:13:16,701 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): slack.com:443
+2022-01-06 00:13:16,701 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): slack.com:443
+2022-01-06 00:13:16,701 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): slack.com:443
+2022-01-06 00:13:16,701 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): slack.com:443
+2022-01-06 00:13:16,984 - urllib3.connectionpool - DEBUG - https://slack.com:443 "POST /api/chat.postMessage HTTP/1.1" 200 55
+2022-01-06 00:13:16,984 - urllib3.connectionpool - DEBUG - https://slack.com:443 "POST /api/chat.postMessage HTTP/1.1" 200 55
+2022-01-06 00:13:16,984 - urllib3.connectionpool - DEBUG - https://slack.com:443 "POST /api/chat.postMessage HTTP/1.1" 200 55
+2022-01-06 00:13:16,984 - urllib3.connectionpool - DEBUG - https://slack.com:443 "POST /api/chat.postMessage HTTP/1.1" 200 55
+2022-01-06 00:13:16,984 - urllib3.connectionpool - DEBUG - https://slack.com:443 "POST /api/chat.postMessage HTTP/1.1" 200 55
+2022-01-06 00:13:16,984 - urllib3.connectionpool - DEBUG - https://slack.com:443 "POST /api/chat.postMessage HTTP/1.1" 200 55
+2022-01-06 00:13:34,147 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): slack.com:443
+2022-01-06 00:13:34,147 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): slack.com:443
+2022-01-06 00:13:34,147 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): slack.com:443
+2022-01-06 00:13:34,147 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): slack.com:443
+2022-01-06 00:13:34,147 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): slack.com:443
+2022-01-06 00:13:34,147 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): slack.com:443
+2022-01-06 00:17:55,350 - urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2022-01-06 00:17:55,355 - google.auth.transport.requests - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2022-01-06 00:17:55,361 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-01-06 00:17:55,559 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-01-06 00:17:55,563 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sheets.googleapis.com:443
+2022-01-06 00:17:58,023 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1c6qnORby5wLx4EYCzDNIHfDUax90yKIQRwqaiFqy0FI?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:17:59,908 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1c6qnORby5wLx4EYCzDNIHfDUax90yKIQRwqaiFqy0FI?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:18:01,162 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1ImrZF6aZ57rfsbpVVvY4GJiVLqszqxCSKXBM_qIJOdU?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:18:01,726 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:18:02,114 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:18:02,508 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:18:02,914 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:18:03,228 - urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2022-01-06 00:18:03,228 - urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2022-01-06 00:18:03,228 - urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2022-01-06 00:18:03,228 - urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2022-01-06 00:18:03,228 - urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2022-01-06 00:18:03,233 - google.auth.transport.requests - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2022-01-06 00:18:03,233 - google.auth.transport.requests - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2022-01-06 00:18:03,233 - google.auth.transport.requests - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2022-01-06 00:18:03,233 - google.auth.transport.requests - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2022-01-06 00:18:03,233 - google.auth.transport.requests - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2022-01-06 00:18:03,237 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-01-06 00:18:03,237 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-01-06 00:18:03,237 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-01-06 00:18:03,237 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-01-06 00:18:03,237 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-01-06 00:18:03,443 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-01-06 00:18:03,443 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-01-06 00:18:03,443 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-01-06 00:18:03,443 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-01-06 00:18:03,443 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-01-06 00:18:03,447 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sheets.googleapis.com:443
+2022-01-06 00:18:03,447 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sheets.googleapis.com:443
+2022-01-06 00:18:03,447 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sheets.googleapis.com:443
+2022-01-06 00:18:03,447 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sheets.googleapis.com:443
+2022-01-06 00:18:03,447 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sheets.googleapis.com:443
+2022-01-06 00:18:04,484 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:18:04,484 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:18:04,484 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:18:04,484 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:18:04,484 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:18:04,967 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-06 00:18:04,967 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-06 00:18:04,967 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-06 00:18:04,967 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-06 00:18:04,967 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-06 00:18:05,631 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:18:05,631 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:18:05,631 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:18:05,631 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:18:05,631 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:18:06,097 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-06 00:18:06,097 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-06 00:18:06,097 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-06 00:18:06,097 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-06 00:18:06,097 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-06 00:18:06,571 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21D30?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2022-01-06 00:18:06,571 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21D30?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2022-01-06 00:18:06,571 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21D30?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2022-01-06 00:18:06,571 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21D30?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2022-01-06 00:18:06,571 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21D30?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2022-01-06 00:18:06,956 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21E30?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2022-01-06 00:18:06,956 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21E30?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2022-01-06 00:18:06,956 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21E30?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2022-01-06 00:18:06,956 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21E30?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2022-01-06 00:18:06,956 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21E30?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2022-01-06 00:18:07,403 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21G30?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2022-01-06 00:18:07,403 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21G30?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2022-01-06 00:18:07,403 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21G30?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2022-01-06 00:18:07,403 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21G30?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2022-01-06 00:18:07,403 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21G30?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2022-01-06 00:18:08,174 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21H30?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2022-01-06 00:18:08,174 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21H30?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2022-01-06 00:18:08,174 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21H30?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2022-01-06 00:18:08,174 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21H30?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2022-01-06 00:18:08,174 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21H30?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2022-01-06 00:18:08,538 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21C1%3AC?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+2022-01-06 00:18:08,538 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21C1%3AC?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+2022-01-06 00:18:08,538 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21C1%3AC?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+2022-01-06 00:18:08,538 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21C1%3AC?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+2022-01-06 00:18:08,538 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21C1%3AC?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+2022-01-06 00:18:08,913 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21D1%3AD?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+2022-01-06 00:18:08,913 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21D1%3AD?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+2022-01-06 00:18:08,913 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21D1%3AD?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+2022-01-06 00:18:08,913 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21D1%3AD?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+2022-01-06 00:18:08,913 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21D1%3AD?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+2022-01-06 00:18:13,376 - root - INFO - 첫째 : 04
+2022-01-06 00:18:13,376 - root - INFO - 첫째 : 04
+2022-01-06 00:18:13,376 - root - INFO - 첫째 : 04
+2022-01-06 00:18:13,376 - root - INFO - 첫째 : 04
+2022-01-06 00:18:13,376 - root - INFO - 첫째 : 04
+2022-01-06 00:18:13,378 - root - INFO - 2
+2022-01-06 00:18:13,378 - root - INFO - 2
+2022-01-06 00:18:13,378 - root - INFO - 2
+2022-01-06 00:18:13,378 - root - INFO - 2
+2022-01-06 00:18:13,378 - root - INFO - 2
+2022-01-06 00:18:24,216 - root - INFO - 3
+2022-01-06 00:18:24,216 - root - INFO - 3
+2022-01-06 00:18:24,216 - root - INFO - 3
+2022-01-06 00:18:24,216 - root - INFO - 3
+2022-01-06 00:18:24,216 - root - INFO - 3
+2022-01-06 00:18:29,730 - root - INFO - 4
+2022-01-06 00:18:29,730 - root - INFO - 4
+2022-01-06 00:18:29,730 - root - INFO - 4
+2022-01-06 00:18:29,730 - root - INFO - 4
+2022-01-06 00:18:29,730 - root - INFO - 4
+2022-01-06 00:18:29,732 - root - INFO - 매수 거래 없음.
+2022-01-06 00:18:29,732 - root - INFO - 매수 거래 없음.
+2022-01-06 00:18:29,732 - root - INFO - 매수 거래 없음.
+2022-01-06 00:18:29,732 - root - INFO - 매수 거래 없음.
+2022-01-06 00:18:29,732 - root - INFO - 매수 거래 없음.
+2022-01-06 00:18:29,743 - root - INFO - sell not
+2022-01-06 00:18:29,743 - root - INFO - sell not
+2022-01-06 00:18:29,743 - root - INFO - sell not
+2022-01-06 00:18:29,743 - root - INFO - sell not
+2022-01-06 00:18:29,743 - root - INFO - sell not
+2022-01-06 00:19:04,104 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21E1%3AE?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+2022-01-06 00:19:04,104 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21E1%3AE?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+2022-01-06 00:19:04,104 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21E1%3AE?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+2022-01-06 00:19:04,104 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21E1%3AE?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+2022-01-06 00:19:04,104 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21E1%3AE?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+2022-01-06 00:19:04,469 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21F1%3AF?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+2022-01-06 00:19:04,469 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21F1%3AF?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+2022-01-06 00:19:04,469 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21F1%3AF?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+2022-01-06 00:19:04,469 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21F1%3AF?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+2022-01-06 00:19:04,469 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21F1%3AF?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+2022-01-06 00:19:09,760 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21G1%3AG?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+2022-01-06 00:19:09,760 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21G1%3AG?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+2022-01-06 00:19:09,760 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21G1%3AG?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+2022-01-06 00:19:09,760 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21G1%3AG?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+2022-01-06 00:19:09,760 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21G1%3AG?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+2022-01-06 00:19:10,123 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21H1%3AH?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+2022-01-06 00:19:10,123 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21H1%3AH?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+2022-01-06 00:19:10,123 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21H1%3AH?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+2022-01-06 00:19:10,123 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21H1%3AH?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+2022-01-06 00:19:10,123 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21H1%3AH?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+2022-01-06 00:20:30,299 - urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2022-01-06 00:20:30,303 - google.auth.transport.requests - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2022-01-06 00:20:30,306 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-01-06 00:20:30,512 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-01-06 00:20:30,515 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sheets.googleapis.com:443
+2022-01-06 00:20:32,477 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1c6qnORby5wLx4EYCzDNIHfDUax90yKIQRwqaiFqy0FI?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:20:34,462 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1c6qnORby5wLx4EYCzDNIHfDUax90yKIQRwqaiFqy0FI?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:20:35,754 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1ImrZF6aZ57rfsbpVVvY4GJiVLqszqxCSKXBM_qIJOdU?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:20:36,281 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:20:36,729 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:20:37,172 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:20:37,631 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:20:37,958 - urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2022-01-06 00:20:37,958 - urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2022-01-06 00:20:37,958 - urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2022-01-06 00:20:37,958 - urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2022-01-06 00:20:37,958 - urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2022-01-06 00:20:37,962 - google.auth.transport.requests - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2022-01-06 00:20:37,962 - google.auth.transport.requests - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2022-01-06 00:20:37,962 - google.auth.transport.requests - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2022-01-06 00:20:37,962 - google.auth.transport.requests - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2022-01-06 00:20:37,962 - google.auth.transport.requests - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2022-01-06 00:20:37,965 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-01-06 00:20:37,965 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-01-06 00:20:37,965 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-01-06 00:20:37,965 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-01-06 00:20:37,965 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-01-06 00:20:38,158 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-01-06 00:20:38,158 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-01-06 00:20:38,158 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-01-06 00:20:38,158 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-01-06 00:20:38,158 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-01-06 00:20:38,162 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sheets.googleapis.com:443
+2022-01-06 00:20:38,162 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sheets.googleapis.com:443
+2022-01-06 00:20:38,162 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sheets.googleapis.com:443
+2022-01-06 00:20:38,162 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sheets.googleapis.com:443
+2022-01-06 00:20:38,162 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sheets.googleapis.com:443
+2022-01-06 00:20:39,010 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:20:39,010 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:20:39,010 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:20:39,010 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:20:39,010 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:20:39,489 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-06 00:20:39,489 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-06 00:20:39,489 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-06 00:20:39,489 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-06 00:20:39,489 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-06 00:20:40,317 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:20:40,317 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:20:40,317 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:20:40,317 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:20:40,317 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:20:40,782 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-06 00:20:40,782 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-06 00:20:40,782 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-06 00:20:40,782 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-06 00:20:40,782 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-06 00:20:40,783 - root - INFO - infoTest
+2022-01-06 00:20:40,783 - root - INFO - infoTest
+2022-01-06 00:20:40,783 - root - INFO - infoTest
+2022-01-06 00:20:40,783 - root - INFO - infoTest
+2022-01-06 00:20:40,783 - root - INFO - infoTest
+2022-01-06 00:22:19,915 - root - INFO - testInfo
+2022-01-06 00:22:19,916 - comtypes - DEBUG - Calling CoUnititialize()
+2022-01-06 00:22:19,916 - comtypes - DEBUG - CoUnititialize() done.
+2022-01-06 00:24:41,061 - urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2022-01-06 00:24:41,065 - google.auth.transport.requests - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2022-01-06 00:24:41,068 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-01-06 00:24:41,285 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-01-06 00:24:41,288 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sheets.googleapis.com:443
+2022-01-06 00:24:43,141 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1c6qnORby5wLx4EYCzDNIHfDUax90yKIQRwqaiFqy0FI?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:24:44,763 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1c6qnORby5wLx4EYCzDNIHfDUax90yKIQRwqaiFqy0FI?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:24:45,964 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1ImrZF6aZ57rfsbpVVvY4GJiVLqszqxCSKXBM_qIJOdU?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:24:46,519 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:24:46,920 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:24:47,320 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:24:47,714 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 00:24:47,716 - root - INFO - testInfo
+2022-01-06 00:24:47,716 - root - INFO - testInfo
+2022-01-06 00:24:47,717 - comtypes - DEBUG - Calling CoUnititialize()
+2022-01-06 00:24:47,717 - comtypes - DEBUG - Calling CoUnititialize()
+2022-01-06 00:24:47,718 - comtypes - DEBUG - CoUnititialize() done.
+2022-01-06 00:24:47,718 - comtypes - DEBUG - CoUnititialize() done.

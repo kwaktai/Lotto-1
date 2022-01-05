@@ -7,7 +7,6 @@ import def_ui
 import time
 import pyautogui as pag
 import csv
-from def_loggin import __get_logger
 
 # test 20211224-B
 
@@ -18,7 +17,6 @@ def main(test):
         setTLP(pig, test)
 
 
-logger = __get_logger()
 # "client_email": "gstopy@spreadsheettopython-320114.iam.gserviceaccount.com"
 
 todayNow = datetime.today().strftime('%Y-%m-%d')
@@ -121,12 +119,12 @@ def setTLP(pig, test):
     setAccNum(pigAcc, "2102")
     if checkWork == "일하자":
         pigName = list(pigList.keys())[0]
-        print(f"{pigName} : {pigAcc}")
+        logger.info(f"{pigName} : {pigAcc}")
         for buy in range(2, 5):
-            print(buy)
+            logger.info(buy)
             checkValue = list(pigList.values())[buy]
             if checkValue == "-":
-                print("매수 거래 없음.")
+                logger.info("매수 거래 없음.")
                 pass
             else:
                 stockName = list(pigList.values())[1]
@@ -138,7 +136,7 @@ def setTLP(pig, test):
         for sell in range(5, 8):
             checkValueSell = list(pigList.values())[sell]
             if checkValueSell == "-":
-                print("sell not")
+                logger.info("sell not")
             else:
                 if sell == 5 or sell == 6:
                     # i = 3
@@ -161,18 +159,18 @@ def setTLP(pig, test):
     elif checkWork == "쉬자":
         pass
     elif checkWork == "존버":
-        print("존버 : 매도만 하기")
+        logger.info("존버 : 매도만 하기")
         for sell in range(5, 8):
             checkValueSell = list(pigList.values())[sell]
             if checkValueSell == "-":
-                print("sell not")
+                logger.info("sell not")
             else:
                 if sell == 5 or sell == 6:
                     i = 3
-                    print("LOC")
+                    logger.info("LOC")
                 elif sell == 7:
                     i = 2
-                    print("After")
+                    logger.info("After")
                 sellPrice = float(list(pigList.keys())[sell])
                 sellQty = int(checkValueSell)
                 input2102_check_check(i)
@@ -189,6 +187,7 @@ def setSheet():
 
     # setTLPvalue("TLP1_04")
 if __name__ == '__main__':
+    # logger.info("infoTest")
     main("start")
     # setSheet()
     # def_ui.set2102_Buy("TQQQ", "kwak", "34", "160.22", "test", "LOC", "82")

@@ -5,8 +5,10 @@ import uiautomation as auto
 import time
 import pyautogui as pag
 import def_ui
+from def_loggin import __get_logger
 from passdoc import pw
 pw = pw.passWord()
+logger = __get_logger()
 
 
 def test():
@@ -142,6 +144,6 @@ if __name__ == '__main__':
     # # manuList = ["2153"]
     # # for i in manuList:
     # #     setMainSearch(i)
-
-    printControlValues()
+    logger.info("testInfo")
+    # printControlValues()
     pass

@@ -1,8 +1,8 @@
 
 from def_lotto import startAvatar
-from def_loggin import __get_logger, accunt_info
-
-logger = __get_logger()
+from def_loggin import accunt_info
+from slack_engin import *
+# logger = __get_logger()
 
 if __name__ == '__main__':
     try:

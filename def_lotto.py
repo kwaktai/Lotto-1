@@ -16,8 +16,8 @@ from passdoc import pw
 import subprocess
 # from typing_extensions import Unpack
 import uiautomation as auto
-from def_loggin import __get_logger
-logger = __get_logger()
+# from def_loggin import __get_logger
+# logger = __get_logger()
 
 pw = pw.passWord()
 # import sys

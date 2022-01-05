@@ -1,17 +1,16 @@
 # from typing import Type, type_check_only
-from collections import namedtuple
+# from collections import namedtuple
 import gspread
 from datetime import datetime
 from oauth2client.service_account import ServiceAccountCredentials
 from def_rsi import *
-from rsi import rsiData
+# from rsi import rsiData
 from slack_engin import *
 import pyperclip
 import time
 import csv
-from def_loggin import __get_logger, accunt_info
+# from def_loggin import accunt_info
 
-logger = __get_logger()
 # "client_email": "gstopy@spreadsheettopython-320114.iam.gserviceaccount.com"
 
 todayNow = datetime.today().strftime('%Y-%m-%d')

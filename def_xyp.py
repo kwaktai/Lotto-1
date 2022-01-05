@@ -1,8 +1,8 @@
 import pyautogui as pya
 import time
 from slack_engin import *
-from def_loggin import __get_logger
-logger = __get_logger()
+# from def_loggin import __get_logger
+# logger = __get_logger()
 
 
 def find_target(img_file, g="True", c=0.8, timeout=5):
@@ -22,7 +22,7 @@ def xyp_last(img_file, slt="click", g="True", c=0.8, timeout=5):
     target = find_target(img_file, g, c, timeout)
     if target:
         target_canter = pya.center(target)
-        print(target_canter)
+        logger.info(target_canter)
         x_p, y_p = target_canter
         # x, y = x_p/2, y_p/2
         x, y = x_p, y_p
@@ -37,7 +37,7 @@ def xyp_last(img_file, slt="click", g="True", c=0.8, timeout=5):
         else:
             print("??")
     else:
-        print(f'Error : {img_file}')
+        logger.debug(f'Error : {img_file}')
 
 
 def xyp_findxy(img_file, slt="click", g="False", c=0.9, timeout=5):

@@ -4,8 +4,7 @@ import uiautomation as auto
 import pyautogui as pag
 import time
 import csv
-from def_loggin import __get_logger
-logger = __get_logger()
+from slack_engin import *
 
 # 받는 계좌 4
 # 보내는계좌 7

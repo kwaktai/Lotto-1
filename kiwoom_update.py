@@ -7,7 +7,7 @@ import def_ss_tlp
 # import logging
 # import traceback
 # from def_loggin import __get_logger
-# logger = __get_logger()
+# logger.info()
 
 
 def infoList(user):
@@ -22,7 +22,7 @@ def saveStock(user):
     listKey = infoList(user)[0]
     listValue = infoList(user)[1]
     for i in range(len(listKey)):
-        print(listKey[i], listValue[i])
+        logger.info(listKey[i], listValue[i])
         saveMyDeposit(user, listKey[i], listValue[i])
         save_stockQty(user, listKey[i], listValue[i])
         saveMyRevenue(user, listKey[i], listValue[i])

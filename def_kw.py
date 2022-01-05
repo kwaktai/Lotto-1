@@ -18,8 +18,7 @@ from def_xyp import xyp_findxy
 # import subprocess
 import uiautomation as auto
 from def_ui import *
-from def_loggin import __get_logger, accunt_info
-# logger = __get_logger()
+from def_loggin import accunt_info
 
 
 def today_nowDate():
