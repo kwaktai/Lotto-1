@@ -1,4 +1,4 @@
-slack_engin.py
+# slack_engin.py
 stockFile/새 텍스트 문서.txt
 stockFile/kwak_MyDeposit_무매_45.tsv
 stockFile/kwak_MyDeposit_ava1_24.tsv
@@ -11,3 +11,4 @@ stockFile/kwak_mystockdata_ava1_24.tsv
 stockFile/kwak_mystockdata_ava2_23.tsv
 stockFile/kwak_mystockdata_ava3_62.tsv
 stockFile/kwak_mystockdata_TLP1_04.tsv
+passdoc\pw.py
