@@ -318,3 +318,42 @@
 2022-01-06 00:24:47,717 - comtypes - DEBUG - Calling CoUnititialize()
 2022-01-06 00:24:47,718 - comtypes - DEBUG - CoUnititialize() done.
 2022-01-06 00:24:47,718 - comtypes - DEBUG - CoUnititialize() done.
+2022-01-06 22:43:47,688 - urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2022-01-06 22:43:47,693 - google.auth.transport.requests - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2022-01-06 22:43:47,696 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-01-06 22:43:47,911 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-01-06 22:43:47,914 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sheets.googleapis.com:443
+2022-01-06 22:43:49,564 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1c6qnORby5wLx4EYCzDNIHfDUax90yKIQRwqaiFqy0FI?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 22:43:51,133 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1c6qnORby5wLx4EYCzDNIHfDUax90yKIQRwqaiFqy0FI?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 22:43:52,583 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1ImrZF6aZ57rfsbpVVvY4GJiVLqszqxCSKXBM_qIJOdU?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 22:43:53,145 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 22:43:53,523 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 22:43:53,925 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 22:43:54,301 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 22:43:54,636 - urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2022-01-06 22:43:54,641 - google.auth.transport.requests - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2022-01-06 22:43:54,643 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-01-06 22:43:54,847 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-01-06 22:43:54,849 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sheets.googleapis.com:443
+2022-01-06 22:43:55,544 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 22:43:56,017 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-06 22:43:56,507 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-06 22:43:56,879 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-06 22:43:57,247 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21D30?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2022-01-06 22:43:57,574 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21E30?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2022-01-06 22:43:58,032 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21G30?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2022-01-06 22:43:58,683 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21H30?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2022-01-06 22:43:59,010 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21C1%3AC?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+2022-01-06 22:43:59,351 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21D1%3AD?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+2022-01-06 22:44:03,882 - root - INFO - 첫째 : 04
+2022-01-06 22:44:03,882 - root - INFO - 2
+2022-01-06 22:44:15,113 - root - INFO - 3
+2022-01-06 22:44:15,114 - root - INFO - 매수 거래 없음.
+2022-01-06 22:44:15,115 - root - INFO - 4
+2022-01-06 22:44:20,533 - root - INFO - sell not
+2022-01-06 22:44:55,351 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21E1%3AE?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+2022-01-06 22:44:55,685 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21F1%3AF?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+2022-01-06 22:45:00,720 - root - INFO - two: 쉬는 타임.
+2022-01-06 22:45:01,056 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21G1%3AG?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+2022-01-06 22:45:01,337 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21H1%3AH?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+2022-01-06 22:45:06,387 - root - INFO - three: 쉬는 타임.

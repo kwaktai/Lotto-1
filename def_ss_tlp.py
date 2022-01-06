@@ -2,11 +2,11 @@ import gspread
 from datetime import datetime
 from oauth2client.service_account import ServiceAccountCredentials
 from slack_engin import *
-from def_kw import input2102_buy, kw_secrch_Edit, sendText, kw_window, input2102_sell, input2102_check_check, setAccNum
+from def_kw import input2102_sell, input2102_check_check, setAccNum
 import def_ui
 import time
-import pyautogui as pag
 import csv
+# import pyautogui as pag
 
 # test 20211224-B
 
@@ -157,9 +157,10 @@ def setTLP(pig, test):
                 # print(sellQty)
                 pass
     elif checkWork == "쉬자":
+        logger.info(f"{pig}: 쉬는 타임.")
         pass
     elif checkWork == "존버":
-        logger.info("존버 : 매도만 하기")
+        logger.info(f"{pig}는 존버(매도만 하기)")
         for sell in range(5, 8):
             checkValueSell = list(pigList.values())[sell]
             if checkValueSell == "-":

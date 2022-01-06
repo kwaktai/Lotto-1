@@ -18,61 +18,57 @@ def accunt_info(user, type):
     return accNum, vr_qty
 
 
-def __get_logger():
-    __logger = logging.getLogger(__name__)
-    # 로그의 출력 기준 설정
-    __logger.setLevel(logging.INFO)
+# def __get_logger():
+#     __logger = logging.getLogger(__name__)
+#     # 로그의 출력 기준 설정
+#     __logger.setLevel(logging.INFO)
 
-    # log 출력 형식
+#     # log 출력 형식
+#     formatter = logging.Formatter(
+#         '%(asctime)s:[%(name)s]:(%(levelname)s):= %(message)s')
+#     stream_handler = logging.StreamHandler()
+#     stream_handler.setFormatter(formatter)
+#     __logger.addHandler(stream_handler)
+
+#     # log를 파일에 출력
+#     file_handler = logging.FileHandler('log\debug.log', 'a', 'utf-8')
+#     file_handler.setFormatter(formatter)
+#     __logger.addHandler(file_handler)
+#     return __logger
+#     # logging.debug('This is a formatted debug message')
+
+
+def __get_logger(name=None):
+    # 1 logger instance를 만든다.
+    logger = logging.getLogger(name)
+
+    # 2 logger의 level을 가장 낮은 수준인 DEBUG로 설정해둔다.
+    logger.setLevel(logging.DEBUG)
+
+    # 3 formatter 지정
     formatter = logging.Formatter(
-        '%(asctime)s:[%(name)s]:(%(levelname)s):= %(message)s')
-    stream_handler = logging.StreamHandler()
-    stream_handler.setFormatter(formatter)
-    __logger.addHandler(stream_handler)
+        "%(asctime)s - %(name)s - %(levelname)s - %(message)s")
 
-    # log를 파일에 출력
+    # 4 handler instance 생성
+    console = logging.StreamHandler()
+    # file_handler = logging.FileHandler(filename="test.log")
     file_handler = logging.FileHandler('log\debug.log', 'a', 'utf-8')
+
+    # 5 handler 별로 다른 level 설정
+    console.setLevel(logging.INFO)
+    file_handler.setLevel(logging.DEBUG)
+
+    # 6 handler 출력 format 지정
+    console.setFormatter(formatter)
     file_handler.setFormatter(formatter)
-    __logger.addHandler(file_handler)
-    return __logger
-    # logging.debug('This is a formatted debug message')
+
+    # 7 logger에 handler 추가
+    logger.addHandler(console)
+    logger.addHandler(file_handler)
+
+    return logger
 
 
 if __name__ == "__main__":
     logger = __get_logger()
-
-# def __get_logger(name=None):
-#     # 1 logger instance를 만든다.
-#     logger = logging.getLogger(name)
-
-#     # 2 logger의 level을 가장 낮은 수준인 DEBUG로 설정해둔다.
-#     logger.setLevel(logging.DEBUG)
-
-#     # 3 formatter 지정
-#     formatter = logging.Formatter(
-#         "%(asctime)s - %(name)s - %(levelname)s - %(message)s")
-
-#     # 4 handler instance 생성
-#     console = logging.StreamHandler()
-#     file_handler = logging.FileHandler(filename="test.log")
-
-#     # 5 handler 별로 다른 level 설정
-#     console.setLevel(logging.INFO)
-#     file_handler.setLevel(logging.DEBUG)
-
-#     # 6 handler 출력 format 지정
-#     console.setFormatter(formatter)
-#     file_handler.setFormatter(formatter)
-
-#     # 7 logger에 handler 추가
-#     logger.addHandler(console)
-#     logger.addHandler(file_handler)
-
-#     return logger
-
-
-# logger = __get_logger()
-# logger.info("info")
-
-# if __name__ == "__main__":
-#     logger = __get_logger()
+    logger.info("gkgkgk하하하")
