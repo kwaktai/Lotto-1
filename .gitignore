@@ -11,4 +11,6 @@ stockFile/kwak_mystockdata_ava1_24.tsv
 stockFile/kwak_mystockdata_ava2_23.tsv
 stockFile/kwak_mystockdata_ava3_62.tsv
 stockFile/kwak_mystockdata_TLP1_04.tsv
-passdoc\pw.py
+# passdoc\pw.py
+#test
+passdoc/pw.py
