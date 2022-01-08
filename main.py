@@ -5,6 +5,7 @@ from main_vr import vr_main
 from def_kw import check_window, get_today_hoilday, startGlobal
 # from def_kw import kw_window_check_kwlogin
 from def_kw import save_screenshot
+from def_lotto import closeLotto
 from def_ss import *
 # import logging
 from def_loggin import __get_logger
@@ -33,10 +34,10 @@ if __name__ == '__main__':
                 if user == "kwak":
                     slackSendMsg(f"{user}의 무한매수를 시작합니다.")
                     kw_Login(user)
-                    # time.sleep(10)
-                    # openLoto(user=user)
+                    time.sleep(10)
+                    openLoto(user=user)
                     # time.sleep(30)
-                    # closeLoto()
+                    closeLotto()
                     # save_screenshot(user)
                     # time.sleep(10)
                     mess = check_message_lotto()
