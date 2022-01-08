@@ -8,16 +8,6 @@ import datetime
 #     # 다른 모듈에서도 logging을 import한 후 logger 이름을 설정하여 사용합니다.
 #     infer_logger.error("inference good")
 
-def accunt_info(user, type):
-    # {"무메":[계좌순서,매수수량]]}
-    acc_type = {"kwak": {"무매": [0, 0], "적립식": [1, 1], "거치식": [
-        2, 7], "ava": [3, 0], "TLP2": [4, 0]}, "lee": {"무매": [0, 0], "적립식": [0, 1], "거치식": [2, 7]},
-        "han": {"무매": [0, 0], "적립식": [0, 1], "거치식": [2, 7]}}
-    # accuntInfo = accunt_info(user, type)
-    accNum = acc_type[user][type][0]
-    vr_qty = acc_type[user][type][1]
-    return accNum, vr_qty
-
 
 # def __get_logger():
 #     __logger = logging.getLogger(__name__)

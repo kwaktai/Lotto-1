@@ -1,6 +1,6 @@
 
 from def_lotto import startAvatar
-from def_loggin import accunt_info
+# from def_loggin import accunt_info
 from slack_engin import *
 # logger = __get_logger()
 

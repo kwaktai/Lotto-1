@@ -1,7 +1,7 @@
 from def_kw import *
 from def_ss import *
 from slack_engin import *
-import def_ui
+# import def_ui
 # import sys
 # sys.path.append(["D:\TaiCloud\Documents\Project\Lotto"])
 # import def_lotto

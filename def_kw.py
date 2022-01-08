@@ -18,7 +18,18 @@ from def_xyp import xyp_findxy
 # import subprocess
 import uiautomation as auto
 from def_ui import *
-from def_loggin import accunt_info
+# from def_loggin import accunt_info
+
+
+def accunt_info(user, type):
+    # {"무메":[계좌순서,매수수량]]}
+    acc_type = {"kwak": {"무매": [0, 0], "적립식": [1, 1], "거치식": [
+        2, 7], "ava": [3, 0], "TLP2": [4, 0]}, "lee": {"무매": [0, 0], "적립식": [0, 1], "거치식": [2, 7]},
+        "han": {"무매": [0, 0], "적립식": [0, 1], "거치식": [2, 7]}}
+    # accuntInfo = accunt_info(user, type)
+    accNum = acc_type[user][type][0]
+    vr_qty = acc_type[user][type][1]
+    return accNum, vr_qty
 
 
 def today_nowDate():
