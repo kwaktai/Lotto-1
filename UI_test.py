@@ -5,6 +5,7 @@ import uiautomation as auto
 import time
 import pyautogui as pag
 import def_ui
+import pyperclip
 from def_loggin import __get_logger
 from passdoc import pw
 pw = pw.passWord()
@@ -133,10 +134,13 @@ def kw_Login_2(user="kwak", xy=2):
     return anWindow
 
 
-a = "매수82.10"
-print(a[2:])
-
 if __name__ == '__main__':
+    # pyperclip.copy("")
+    anWindow = auto.WindowControl(
+        searchDepth=2, Name="영웅문Global Login")
+    print(anWindow.Name)
+    anWindow.SetActive()
+    anWindow.SendKeys("{alt}{f4}")
     # def_ui.setMainSearch("2102")
     # manuList = ["2153", "2150", "2111"]
     # a = kw_Login_2()
@@ -144,6 +148,6 @@ if __name__ == '__main__':
     # # manuList = ["2153"]
     # # for i in manuList:
     # #     setMainSearch(i)
-    logger.info("testInfo")
+    # logger.info("testInfo")
     # printControlValues()
     pass

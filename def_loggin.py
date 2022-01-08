@@ -1,5 +1,6 @@
 import logging
 import datetime
+# from slack_engin import *
 
 
 # def infer():
@@ -61,6 +62,7 @@ def __get_logger(name=None):
     # 6 handler 출력 format 지정
     console.setFormatter(formatter)
     file_handler.setFormatter(formatter)
+    # slackSendMsg(formatter)
 
     # 7 logger에 handler 추가
     logger.addHandler(console)

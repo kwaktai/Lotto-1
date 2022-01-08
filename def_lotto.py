@@ -136,41 +136,41 @@ def kw_Login(user="kwak", xy=2):
     return slackSendMsg(msg)
 
 
-def openLoto_org(user="kwak", x=1, tradetype="아바타"):
-    time.sleep(20)
-    checkLottoOpen()
-    # while True:
-    try:
-        program_file = r"D:\TaiCloud\Documents\Project\Lotto\Lotto\Run.exe"
-        Application(backend="uia").start(program_file)
-        # win_left, win_top = winActivate("iLabAuto", 30, 675)
-        time.sleep(10)
-        winActivate("iLabAuto", 0, 0)  # 만약 에러가 발생하면, 예외처리로 다시 생각해보자.
-    except:
-        slackSendMsg("Lotto 실행시 문제 발생 다시 실행.")
-    win_left, win_top = pag.position()
-    dx.movingAndClick(win_left+300, win_top+738)  # 동의
-    dx.movingAndClick(win_left+485, win_top+607, 3)  # 동의 accpet
-    time.sleep(1)
-    logger.info("start 클릭")
-    if user == "kwak":
-        pass
-    elif user == "han":
-        dx.movingAndClick(win_left+223, win_top+620)  # select 클릭
-        time.sleep(2)
-        dx.movingAndClick(win_left+245, win_top+390)  # 3번클릭
-        time.sleep(1)
-    dx.movingAndClick(win_left+500, win_top+736)  # start
-    time.sleep(0.5)
-    dx.movingAndClick(win_left+485, win_top+630)  # start accpet
-    # print(pag.position())
-    time.sleep(1)
-    dx.movingAndClick(win_left, win_top)  # 임시
-    slackSendMsg("Loto 프로그램을 실행했습니다.")
+# def openLoto_org(user="kwak", x=1, tradetype="아바타"):
+#     time.sleep(20)
+#     checkLottoOpen()
+#     # while True:
+#     try:
+#         program_file = r"D:\TaiCloud\Documents\Project\Lotto\Lotto\Run.exe"
+#         Application(backend="uia").start(program_file)
+#         # win_left, win_top = winActivate("iLabAuto", 30, 675)
+#         time.sleep(10)
+#         winActivate("iLabAuto", 0, 0)  # 만약 에러가 발생하면, 예외처리로 다시 생각해보자.
+#     except:
+#         slackSendMsg("Lotto 실행시 문제 발생 다시 실행.")
+#     win_left, win_top = pag.position()
+#     dx.movingAndClick(win_left+300, win_top+738)  # 동의
+#     dx.movingAndClick(win_left+485, win_top+607, 3)  # 동의 accpet
+#     time.sleep(1)
+#     logger.info("start 클릭")
+#     if user == "kwak":
+#         pass
+#     elif user == "han":
+#         dx.movingAndClick(win_left+223, win_top+620)  # select 클릭
+#         time.sleep(2)
+#         dx.movingAndClick(win_left+245, win_top+390)  # 3번클릭
+#         time.sleep(1)
+#     dx.movingAndClick(win_left+500, win_top+736)  # start
+#     time.sleep(0.5)
+#     dx.movingAndClick(win_left+485, win_top+630)  # start accpet
+#     # print(pag.position())
+#     time.sleep(1)
+#     dx.movingAndClick(win_left, win_top)  # 임시
+#     slackSendMsg("Loto 프로그램을 실행했습니다.")
 
 
 def openLoto(user="kwak", x=1, tradetype="아바타"):
-    time.sleep(20)
+    # time.sleep(20)
     closeLotto()
     if user == "kwak":
         logger.info("start 클릭")

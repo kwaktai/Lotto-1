@@ -21,11 +21,10 @@ def setEsc():
     winControl = auto.WindowControl(
         searchDepth=1, Name='영웅문Global')
     edit = winControl.EditControl(foundIndex=1)
-    edit.SendKeys('{esc}')
-    edit.SendKeys('{esc}')
-    edit.SendKeys('{esc}')
-    edit.SendKeys('{esc}')
-    edit.SendKeys('{esc}')
+    i = 0
+    for i in range(1, 5):
+        edit.SendKeys('{esc}')
+        i = i + 1
 
 
 # def getAccNumbers():

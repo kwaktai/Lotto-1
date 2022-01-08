@@ -209,17 +209,17 @@ def all_ok_MDIClient(hwnd, param):
 #   File "d:\TaiCloud\Documents\Project\Lotto\def_kw.py", line 213, in kw_secrch_Edit
 #     class_list_1 = AfxControlBar110_classname_MDIClient.index("Edit")
 # ValueError: 'Edit' is not in list
-def kw_secrch_Edit_test():  # 메인 검색창의 Edit 29번
-    # HG_titleName_1 = globalHandleV()
-    HG_titleName_1 = kw_window()
-    # HG_titleName_1 = win32gui.FindWindow(None, "영웅문Global")
-    # child_classname_1.clear
-    whnd = win32gui.FindWindowEx(
-        HG_titleName_1, None, "AfxControlBar110", None)
-    win32gui.EnumChildWindows(whnd, all_ok_AfxControlBar110, None)
-    class_list_1 = AfxControlBar110_classname_MDIClient.index("Edit")
-    logger.debug(AfxControlBar110_classname_MDIClient)
-    return AfxControlBar110_handles_MDIClien[class_list_1]
+# def kw_secrch_Edit_test():  # 메인 검색창의 Edit 29번
+#     # HG_titleName_1 = globalHandleV()
+#     HG_titleName_1 = kw_window()
+#     # HG_titleName_1 = win32gui.FindWindow(None, "영웅문Global")
+#     # child_classname_1.clear
+#     whnd = win32gui.FindWindowEx(
+#         HG_titleName_1, None, "AfxControlBar110", None)
+#     win32gui.EnumChildWindows(whnd, all_ok_AfxControlBar110, None)
+#     class_list_1 = AfxControlBar110_classname_MDIClient.index("Edit")
+#     logger.debug(AfxControlBar110_classname_MDIClient)
+#     return AfxControlBar110_handles_MDIClien[class_list_1]
 
 
 def kw_secrch_Edit():  # 메인 검색창의 Edit 29번
@@ -248,18 +248,18 @@ def kw_secrch_Edit():  # 메인 검색창의 Edit 29번
     return hand[class_list]
 
 
-def find_handle_2(title):  # 62는 2102의 종목??
-    # child_handles_MDIClient_1.clear
-    # child_txt_MDIClient.clear
-    HG_titleName = win32gui.FindWindow(None, "영웅문Global")
-    whnd = win32gui.FindWindowEx(
-        HG_titleName, None, "MDIClient", None)
-    # print(f"find_handle_2 :{whnd}")
-    win32gui.EnumChildWindows(whnd, all_ok_MDIClient, None)
-    # print(f"{child_txt_MDIClient} : {child_classname_MDIClient_1} : {child_handles_MDIClient_1}")
-    child_txt_MDIClient1 = child_txt_MDIClient.index(title)
-    hendle = child_handles_MDIClient_1[child_txt_MDIClient1]
-    return hendle
+# def find_handle_2(title):  # 62는 2102의 종목??
+#     # child_handles_MDIClient_1.clear
+#     # child_txt_MDIClient.clear
+#     HG_titleName = win32gui.FindWindow(None, "영웅문Global")
+#     whnd = win32gui.FindWindowEx(
+#         HG_titleName, None, "MDIClient", None)
+#     # print(f"find_handle_2 :{whnd}")
+#     win32gui.EnumChildWindows(whnd, all_ok_MDIClient, None)
+#     # print(f"{child_txt_MDIClient} : {child_classname_MDIClient_1} : {child_handles_MDIClient_1}")
+#     child_txt_MDIClient1 = child_txt_MDIClient.index(title)
+#     hendle = child_handles_MDIClient_1[child_txt_MDIClient1]
+#     return hendle
 
 
 def find_handle_3(title, childNum):
@@ -315,13 +315,6 @@ def find_titleNum(title):
     return int(titleNum), hand
 
 
-# find_handle_3(16,'[2111] 계좌정보(T) - 해외주식 예수금')
-
-def ver9988():
-    ver9988handle = check_window("인증서 선택  (Ver 9.9.8.8)         [AnN2]")
-    return ver9988handle
-
-
 def handle_32770():
     titleName = win32gui.FindWindow(None, "확인")
     titleName_2 = win32gui.FindWindow(None, "안내")
@@ -366,49 +359,49 @@ def handle_855056():
             return
 
 
-def MDIClient_handle(num):  # 사용안함
-    HG_titleName_1 = win32gui.FindWindow(None, "영웅문Global")
-    whnd = win32gui.FindWindowEx(
-        HG_titleName_1, None, "MDIClient", None)
-    win32gui.EnumChildWindows(whnd, all_ok_MDIClient, None)
-    mouseClick(child_handles_MDIClient_1[num])
-    return child_handles_MDIClient_1[num]
-# print(MDIClient_handle(32))
+# def MDIClient_handle(num):  # 사용안함
+#     HG_titleName_1 = win32gui.FindWindow(None, "영웅문Global")
+#     whnd = win32gui.FindWindowEx(
+#         HG_titleName_1, None, "MDIClient", None)
+#     win32gui.EnumChildWindows(whnd, all_ok_MDIClient, None)
+#     mouseClick(child_handles_MDIClient_1[num])
+#     return child_handles_MDIClient_1[num]
+# # print(MDIClient_handle(32))
 
 
-def MDIClient_handle_test(title, num):  # 사용안함
-    HG_titleName_1 = win32gui.FindWindow(None, "영웅문Global")
-    titleNUM = find_titleNum(title)
-    tergetNum = num + titleNUM
-    mouseClick(child_handles_MDIClient_1[tergetNum])
-    return child_handles_MDIClient_1[tergetNum]
+# def MDIClient_handle_test(title, num):  # 사용안함
+#     HG_titleName_1 = win32gui.FindWindow(None, "영웅문Global")
+#     titleNUM = find_titleNum(title)
+#     tergetNum = num + titleNUM
+#     mouseClick(child_handles_MDIClient_1[tergetNum])
+#     return child_handles_MDIClient_1[tergetNum]
 
 
-def MDIClient_handle_nonclick(num):  # 62는 2102의 종목??
-    HG_titleName_1 = win32gui.FindWindow(None, "영웅문Global")
-    # child_handles_MDIClient_1 =[]
-    whnd = win32gui.FindWindowEx(
-        HG_titleName_1, None, "MDIClient", None)
-    win32gui.EnumChildWindows(whnd, all_ok_MDIClient, None)
-    # mouseClick(child_handles_MDIClient_1[num])
-    return child_handles_MDIClient_1[num]
+# def MDIClient_handle_nonclick(num):  # 62는 2102의 종목??
+#     HG_titleName_1 = win32gui.FindWindow(None, "영웅문Global")
+#     # child_handles_MDIClient_1 =[]
+#     whnd = win32gui.FindWindowEx(
+#         HG_titleName_1, None, "MDIClient", None)
+#     win32gui.EnumChildWindows(whnd, all_ok_MDIClient, None)
+#     # mouseClick(child_handles_MDIClient_1[num])
+#     return child_handles_MDIClient_1[num]
 
 
-def save_screenshot_hwnd(user):
-    kw_window()
-    sendText(kw_secrch_Edit(), "2152")
-    time.sleep(2)
-    # hwnd = MDIClient_handle(21)
-    hwnd = find_handle_3_nonClick("[2152] 계좌정보(T) - 해외주식 실시간미체결", 21)
-    win32gui.SetForegroundWindow(hwnd)
-    x, y, x1, y1 = win32gui.GetClientRect(hwnd)
-    x, y = win32gui.ClientToScreen(hwnd, (x, y))
-    filename = user
-    pag.screenshot(f'img/{filename}.png', region=(x, y, 933, 500))
-    slackSendMsg(f"{user}")
-    slackSendFile(user)
-    # print(x,y)
-    return
+# def save_screenshot_hwnd(user):
+#     kw_window()
+#     sendText(kw_secrch_Edit(), "2152")
+#     time.sleep(2)
+#     # hwnd = MDIClient_handle(21)
+#     hwnd = find_handle_3_nonClick("[2152] 계좌정보(T) - 해외주식 실시간미체결", 21)
+#     win32gui.SetForegroundWindow(hwnd)
+#     x, y, x1, y1 = win32gui.GetClientRect(hwnd)
+#     x, y = win32gui.ClientToScreen(hwnd, (x, y))
+#     filename = user
+#     pag.screenshot(f'img/{filename}.png', region=(x, y, 933, 500))
+#     slackSendMsg(f"{user}")
+#     slackSendFile(user)
+#     # print(x,y)
+#     return
 
 
 def save_screenshot(user, type=0):  # 캡쳐로 테스트
@@ -512,17 +505,17 @@ def csv_save(fileName, user="kwak", type="무매", accNUM=0):
     text = pyperclip.paste()
     with open(f'stockFile\{user}_{fileName}_{type}_{accNUM}.tsv', 'w', encoding='utf8', newline="") as file:
         file.write(text)
-    pass
+    pyperclip.copy("")
 
 
-def save_stockQty_org(user, type, acc):
-    kw_window()
-    sendText(kw_secrch_Edit(), "2150")
-    popUp_2150_SelectAccount(acc)
-    screen_xy()
-    accuntInfo = accunt_info(user, type)
-    accNUM = accuntInfo[0]
-    csv_save("mystockdata", user, type, accNUM)
+# def save_stockQty_org(user, type, acc):
+#     kw_window()
+#     sendText(kw_secrch_Edit(), "2150")
+#     popUp_2150_SelectAccount(acc)
+#     screen_xy()
+#     accuntInfo = accunt_info(user, type)
+#     accNUM = accuntInfo[0]
+#     csv_save("mystockdata", user, type, accNUM)
 
 
 def save_stockQty(user, type, acc):
@@ -706,28 +699,28 @@ def input2102_check_after():
     pag.press('enter')
 
 
-def input2102_check_check(loc=3):
-    if loc == 3:
-        i = 3
-    elif loc == 2:
-        i = 2
-    find_handle_3('[2102] 해외주식 미니주문', 67)
-    pag.press("up", 8)
-    pag.press("down", i)
-    pag.press('enter')
+# def input2102_check_check(loc=3):
+#     if loc == 3:
+#         i = 3
+#     elif loc == 2:
+#         i = 2
+#     find_handle_3('[2102] 해외주식 미니주문', 67)
+#     pag.press("up", 8)
+#     pag.press("down", i)
+#     pag.press('enter')
 
 
-def input2102_buy(stockname, qty, price, test="test"):
-    time.sleep(0.3)
-    input2102_Stockname(stockname)
-    time.sleep(0.3)
-    input2102_check_loc()
-    time.sleep(0.3)
-    input2102_Qty(qty)
-    time.sleep(0.3)
-    input2102_price(price)
-    input2102_finshBuy(test)  # 실제주문시 필요한
-    time.sleep(0.3)
+# def input2102_buy(stockname, qty, price, test="test"):
+#     time.sleep(0.3)
+#     input2102_Stockname(stockname)
+#     time.sleep(0.3)
+#     input2102_check_loc()
+#     time.sleep(0.3)
+#     input2102_Qty(qty)
+#     time.sleep(0.3)
+#     input2102_price(price)
+#     input2102_finshBuy(test)  # 실제주문시 필요한
+#     time.sleep(0.3)
 
 
 def input2102_buy_VR(stockname, user="kwak", qty=1, test="test", type="적립식"):
@@ -737,7 +730,7 @@ def input2102_buy_VR(stockname, user="kwak", qty=1, test="test", type="적립식
         time.sleep(0.1)
         input2102_Stockname(stockname)  # 2102의 시작
         time.sleep(0.1)
-        input2102_check_loc()
+        input2102_check_after()
         time.sleep(0.1)
         input2102_Qty(qty)
         time.sleep(0.1)
@@ -750,12 +743,12 @@ def input2102_buy_VR(stockname, user="kwak", qty=1, test="test", type="적립식
     print("VR 매수 완료.")
 
 
-def input2102_sell(stockname, qty, price, test="test", loc="loc"):
-    time.sleep(0.1)
-    input2102_Stockname(stockname)
-    input2102_Qty(qty)
-    input2102_price(price)
-    input2102_finshsell(test)
+# def input2102_sell(stockname, qty, price, test="test", loc="loc"):
+#     time.sleep(0.1)
+#     input2102_Stockname(stockname)
+#     input2102_Qty(qty)
+#     input2102_price(price)
+#     input2102_finshsell(test)
 
 
 def input2102_sell_VR(stockname, user="kwak", qty=1, test="test", type="적립식"):
@@ -779,41 +772,48 @@ def input2102_sell_VR(stockname, user="kwak", qty=1, test="test", type="적립�
         print("VR 매도완료")
 
 
-def startGlobal_org():
-    a = check_window("인증서 선택  (Ver 9.9.8.8)         [AnN2]")
-    b = check_window("영웅문Global Login")
-    c = check_window("영웅문Global")
-    logger.debug(a, b, c)
-    if a > 0:
-        time.sleep(1)
-        kw_window_click("인증서 선택  (Ver 9.9.8.8)         [AnN2]", 0, 0)
-        pag.press("esc")
-        # kw_window_click("영웅문Global Login",0,0)
-        # pag.press("esc")
-        if b > 0:
-            time.sleep(1)
-            kw_window_click("영웅문Global Login", 0, 0)
-            pag.press("esc")
-        else:
-            pass
-    elif b > 0:
-        time.sleep(1)
-        kw_window_click("영웅문Global Login", 0, 0)
-        pag.press("esc")
-    elif c > 0:
-        time.sleep(1)
-        kw_window()
-        pag.hotkey('alt', 'f4')
-        pag.hotkey('enter')
-    else:
-        pass
+# def startGlobal_org():
+#     a = check_window("인증서 선택  (Ver 9.9.8.8)         [AnN2]")
+#     b = check_window("영웅문Global Login")
+#     c = check_window("영웅문Global")
+#     logger.debug(a, b, c)
+#     if a > 0:
+#         time.sleep(1)
+#         kw_window_click("인증서 선택  (Ver 9.9.8.8)         [AnN2]", 0, 0)
+#         pag.press("esc")
+#         # kw_window_click("영웅문Global Login",0,0)
+#         # pag.press("esc")
+#         if b > 0:
+#             time.sleep(1)
+#             kw_window_click("영웅문Global Login", 0, 0)
+#             pag.press("esc")
+#         else:
+#             pass
+#     elif b > 0:
+#         time.sleep(1)
+#         kw_window_click("영웅문Global Login", 0, 0)
+#         pag.press("esc")
+#     elif c > 0:
+#         time.sleep(1)
+#         kw_window()
+#         pag.hotkey('alt', 'f4')
+#         pag.hotkey('enter')
+#     else:
+#         pass
 
 
 def closeTitle(title):
+    anWindow = auto.WindowControl(
+        searchDepth=2, Name=title)
+    if not anWindow.Exists(0.3, 1):
+        logger.info(f'{title} : 윈도우 없음.')
+        # exit(0)
+        return 0
+    anWindowName = anWindow.Name
     try:
         if title == "영웅문Global":
-            a = pag.getWindowsWithTitle(title)[0]
-            if title == a.title:
+            # a = pag.getWindowsWithTitle(title)[0]
+            if title == anWindowName:
                 kw_window()
                 pag.hotkey('alt', 'f4')
                 time.sleep(1)
@@ -821,39 +821,45 @@ def closeTitle(title):
             else:
                 pass
         else:
-            pag.getWindowsWithTitle(title)[0].close()
+            # title == "인증서 선택  (Ver 9.9.8.8)         [AnN2]":
+            anWindow.SetActive()
+            anWindow.SendKeys("{alt}{f4}")
+        # elif title == "영웅문Global Login":
+        #     anWindow.
+
     except:
-        print(f"{title} : 없음")
+        logger.info(f"{title} : 윈도우 없음.(에러)")
 
 
 def startGlobal():
     closeTitle("인증서 선택  (Ver 9.9.8.8)         [AnN2]")
     closeTitle("영웅문Global Login")
     closeTitle("영웅문Global")
+    closeLotto()
     # kw_Login()
 
 
-def find_handle_2_test(title):  # 62는 2102의 종목??
-    # child_txt_MDIClient = []
-    HG_titleName = win32gui.FindWindow(None, "영웅문Global")
-    whnd = win32gui.FindWindowEx(
-        HG_titleName, None, "MDIClient", None)
-    a = win32gui.GetWindowText(whnd)
-    win32gui.EnumChildWindows(whnd, all_ok_MDIClient, None)
-    print(a)
+# def find_handle_2_test(title):  # 62는 2102의 종목??
+#     # child_txt_MDIClient = []
+#     HG_titleName = win32gui.FindWindow(None, "영웅문Global")
+#     whnd = win32gui.FindWindowEx(
+#         HG_titleName, None, "MDIClient", None)
+#     a = win32gui.GetWindowText(whnd)
+#     win32gui.EnumChildWindows(whnd, all_ok_MDIClient, None)
+#     print(a)
 
 
-def try_while(module):
-    i = 0
-    while i < 10:
-        i = i+1
-        try:
-            result = module
-            return result
-        except Exception as e:
-            logger.debug(str(e))
-            logger.debug(f"에러로 반복하는 횟수 {i}")
-            module
+# def try_while(module):
+#     i = 0
+#     while i < 10:
+#         i = i+1
+#         try:
+#             result = module
+#             return result
+#         except Exception as e:
+#             logger.debug(str(e))
+#             logger.debug(f"에러로 반복하는 횟수 {i}")
+#             module
 
 
 def getText(accHendle):
@@ -864,25 +870,24 @@ def getText(accHendle):
     print(txt)
 
 
-def popUp_2150_SelectAccount_오리지널(accNum):
-    kw_window()
-    # kw_secrch = kw_secrch_Edit()
-    # try_while(sendText(kw_secrch, "2150"))
-    # time.sleep(0.5)
-    accHendle = find_handle_3('[2150] 계좌정보(T) - 해외주식 실시간잔고', 32)  # 계좌클릭
-    getText(accHendle)
-    time.sleep(1)
-    pag.press("up", 10)
-    pag.press("down", accNum)
-    time.sleep(0.5)
-    pag.press('enter')
-    # time.sleep(0.5)
-    # pag.press("esc", 2)
+# def popUp_2150_SelectAccount_오리지널(accNum):
+#     kw_window()
+#     # kw_secrch = kw_secrch_Edit()
+#     # try_while(sendText(kw_secrch, "2150"))
+#     # time.sleep(0.5)
+#     accHendle = find_handle_3('[2150] 계좌정보(T) - 해외주식 실시간잔고', 32)  # 계좌클릭
+#     getText(accHendle)
+#     time.sleep(1)
+#     pag.press("up", 10)
+#     pag.press("down", accNum)
+#     time.sleep(0.5)
+#     pag.press('enter')
+#     # time.sleep(0.5)
+#     # pag.press("esc", 2)
 
 
 def popUp_2150_SelectAccount(accNum):
     kw_window()
-
     pag.press("up", 10)
     pag.press("down", accNum)
     time.sleep(0.5)
@@ -890,13 +895,13 @@ def popUp_2150_SelectAccount(accNum):
     time.sleep(0.5)
 
 
-def SelectAccount(accNum):
-    kw_window()
-    pag.press("up", 10)
-    pag.press("down", accNum)
-    time.sleep(0.5)
-    pag.press('enter')
-    time.sleep(0.5)
+# def SelectAccount(accNum):
+#     kw_window()
+#     pag.press("up", 10)
+#     pag.press("down", accNum)
+#     time.sleep(0.5)
+#     pag.press('enter')
+#     time.sleep(0.5)
 
 
 if __name__ == '__main__':

@@ -25,9 +25,8 @@ credentials = ServiceAccountCredentials.from_json_keyfile_name(
 gc = gspread.authorize(credentials)
 
 
-spreadsheet_url = "https://docs.google.com/spreadsheets/d/1c6qnORby5wLx4EYCzDNIHfDUax90yKIQRwqaiFqy0FI/edit#gid=1309564982"
-# spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1P4vYP_suaKcHG-H2HgqobFEqiiGfUpgep3eAOkVrRZI/edit#gid=1309564982'
-# spreadsheet_url_test = 'https://docs.google.com/spreadsheets/d/1Ihb-0Fg8a9FaHnFADV0YBHBWlXqwpztYiGkSykBiFJE/edit#gid=0'
+spreadsheet_url = "https://docs.google.com/spreadsheets/d/1rUxyxUshULyOTWsJT3YiSgxBhD7cIxgw6jpYBDvjRBA/edit#gid=1309564982"
+# spreadsheet_url = "https://docs.google.com/spreadsheets/d/1c6qnORby5wLx4EYCzDNIHfDUax90yKIQRwqaiFqy0FI/edit#gid=1309564982"
 findrsishare_20210807_url = "https://docs.google.com/spreadsheets/d/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE/edit#gid=0"
 spreadsheet_url_lee = "https://docs.google.com/spreadsheets/d/1ImrZF6aZ57rfsbpVVvY4GJiVLqszqxCSKXBM_qIJOdU/edit#gid=1309564982"
 
@@ -280,9 +279,10 @@ def MyRevenueData(user, type_1, acc):
 
 if __name__ == '__main__':
     # MyRevenueData("kwak", "무매")
-    # print(todayNow)
+    # a = buy_values("kwak", "거치식")
+    # print(a)
     # myDepositValue_test("kwak", "ava")
-    mystockdata("kwak", "TLP2", "02")
+    # mystockdata("kwak", "TLP2", "02")
     # print(myDepositValue("kwak", "무매", "45"))
     # updateLocation = {"kwak": {"무매": ["B8"], "ava": ["I7"]}}
     # updateLocation = {"kwak": {"무매": ["B8"], "ava": ["I7"]}}

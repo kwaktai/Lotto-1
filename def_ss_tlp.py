@@ -2,7 +2,7 @@ import gspread
 from datetime import datetime
 from oauth2client.service_account import ServiceAccountCredentials
 from slack_engin import *
-from def_kw import input2102_sell, input2102_check_check, setAccNum
+# from def_kw import setAccNum
 import def_ui
 import time
 import csv
@@ -95,28 +95,13 @@ def pig_test():
     return pigList
 
 
-# {'첫째': '일하자', '종목': 'TECL', '88.76': '6', '93.19': '5', '101.98': '-',
-#     '+0%': '-', '93.26': '18', '97.69': '54', 'acc': '04'}
-# {'둘째': '쉬자', '종목': 'TECL', '평단': '3', '+5%': '-',
-#     '큰수': '-', '+0%': '-', '+10%(매도)': '-', 'acc': '02'}
-
-
-# def open2102():
-#     kw_window()
-#     pag.press("esc", 5)
-#     kw_secrch = kw_secrch_Edit()
-#     time.sleep(1)
-#     sendText(kw_secrch, "2102")
-#     # input2102_check_loc()
-
-
 def setTLP(pig, test):
     user = "kwak"
     pigList = dataList(pig)
     checkWork = list(pigList.values())[0]  # 일하자? 쉬자? 존버?
     pigAcc = pigList['acc']  # 계좌번호
     stockName = list(pigList.values())[1]  # TQQQ TECL
-    setAccNum(pigAcc, "2102")
+    def_ui.setAccNum(pigAcc, "2102")
     if checkWork == "일하자":
         pigName = list(pigList.keys())[0]
         logger.info(f"{pigName} : {pigAcc}")
@@ -139,22 +124,13 @@ def setTLP(pig, test):
                 logger.info("sell not")
             else:
                 if sell == 5 or sell == 6:
-                    # i = 3
-                    # print("LOC")
                     i = "LOC"
                 elif sell == 7:
-                    # i = 2
-                    # print("After")
                     i = "AFTER지정"
                 sellPrice = str(float(list(pigList.keys())[sell][2:]))
                 sellQty = str(int(checkValueSell))
-                # input2102_check_check(i)
-                # time.sleep(0.2)
                 def_ui.set2102_Sell(stockName, user, sellQty,
                                     sellPrice, test, i, pigAcc)
-                # input2102_sell(stockName, sellQty, sellPrice, test)
-                # print(sellPrice)
-                # print(sellQty)
                 pass
     elif checkWork == "쉬자":
         logger.info(f"{pig}: 쉬는 타임.")
@@ -167,16 +143,15 @@ def setTLP(pig, test):
                 logger.info("sell not")
             else:
                 if sell == 5 or sell == 6:
-                    i = 3
+                    i = "LOC"
                     logger.info("LOC")
                 elif sell == 7:
-                    i = 2
+                    i = "AFTER지정"
                     logger.info("After")
                 sellPrice = float(list(pigList.keys())[sell])
                 sellQty = int(checkValueSell)
-                input2102_check_check(i)
-                time.sleep(0.2)
-                input2102_sell(stockName, sellQty, sellPrice, "test")
+                def_ui.set2102_Sell(stockName, user, sellQty,
+                                    sellPrice, test, i, pigAcc)
             pass
 
 
@@ -186,10 +161,5 @@ def setSheet():
         setTLPvalue(n[i])
 
 
-    # setTLPvalue("TLP1_04")
 if __name__ == '__main__':
-    # logger.info("infoTest")
     main("start")
-    # setSheet()
-    # def_ui.set2102_Buy("TQQQ", "kwak", "34", "160.22", "test", "LOC", "82")
-    pass
