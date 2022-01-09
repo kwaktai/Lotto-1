@@ -8,7 +8,7 @@ import pywinauto
 import time
 # import datetime
 from datetime import date
-# from def_lotto import kw_Login
+# from def_lotto import closeLotto
 from def_ss import *
 import exchange_calendars as ecals
 import pyperclip
@@ -831,6 +831,16 @@ def closeTitle(title):
                 pag.hotkey('enter')
             else:
                 pass
+        # elif title == "iLabAuto":
+        #     # iaList = ["iLabAuto", "iLabAuto 2nd", "iLabAuto 3rd"]
+        #     for i in range(1, 6):
+        #         ia = auto.PaneControl(searchDepth=1, ClassName="SDL_app")
+        #         # anWindow.EditControl(
+        #         #     foundIndex=1)
+        #         ia.SetActive()
+        #         # pag.hotkey("alt", "f4")
+        #         # anWindow.SendKeys("{alt}{f4}")
+        #         # i = i+1
         else:
             # title == "인증서 선택  (Ver 9.9.8.8)         [AnN2]":
             anWindow.SetActive()
@@ -842,11 +852,28 @@ def closeTitle(title):
         logger.info(f"{title} : 윈도우 없음.(에러)")
 
 
+def closeLotto():
+    i = 1
+    try:
+        while i < 7:
+            pag.getWindowsWithTitle("iLabAuto")[0].close()
+            print(f"{i}lotto 닫기 성공")
+            time.sleep(2)
+            i = i+1
+    except:
+        pass
+
+
 def startGlobal():
     closeTitle("인증서 선택  (Ver 9.9.8.8)         [AnN2]")
     closeTitle("영웅문Global Login")
     closeTitle("영웅문Global")
     closeLotto()
+    # closeTitle("iLabAuto")
+    # closeTitle("iLabAuto")
+    # closeTitle("iLabAuto")
+    # closeTitle("iLabAuto")
+    # closeLotto()
     # kw_Login()
 
 

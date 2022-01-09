@@ -40,11 +40,11 @@ if __name__ == '__main__':
                     closeLotto()
                     # save_screenshot(user)
                     # time.sleep(10)
-                    mess = check_message_lotto()
-                    if mess == None:
-                        slackSendMsg(f"{user}의 무한매수를 완료하였습니다.")
-                    else:
-                        slackSendMsg(mess)
+                    # mess = check_message_lotto()
+                    # if mess == None:
+                    #     slackSendMsg(f"{user}의 무한매수를 완료하였습니다.")
+                    # else:
+                    #     slackSendMsg(mess)
                     slackSendMsg(f"{user}의 VR <적립식> 매수/매도가 시작 합니다.")
                     vr_main(type="적립식", user=user)
                     slackSendMsg(f"{user}의 VR <적립식> 매수/매도를 완료 했습니다.")

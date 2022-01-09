@@ -11384,3 +11384,476 @@ TypeError: cannot unpack non-iterable NoneType object
 2022-01-08 23:29:56,460 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
 2022-01-08 23:35:58,336 - root - INFO - gkgkgk하하하
 2022-01-08 23:35:58,336 - root - INFO - gkgkgk하하하
+2022-01-09 22:10:54,670 - urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2022-01-09 22:10:54,675 - google.auth.transport.requests - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2022-01-09 22:10:54,680 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-01-09 22:10:54,922 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-01-09 22:10:54,926 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sheets.googleapis.com:443
+2022-01-09 22:10:57,059 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1rUxyxUshULyOTWsJT3YiSgxBhD7cIxgw6jpYBDvjRBA?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:10:58,256 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1rUxyxUshULyOTWsJT3YiSgxBhD7cIxgw6jpYBDvjRBA?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:11:00,128 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1ImrZF6aZ57rfsbpVVvY4GJiVLqszqxCSKXBM_qIJOdU?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:11:00,759 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:11:01,054 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:11:01,323 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:11:01,582 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:11:03,659 - urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2022-01-09 22:11:03,663 - google.auth.transport.requests - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2022-01-09 22:11:03,666 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-01-09 22:11:03,854 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-01-09 22:11:03,857 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sheets.googleapis.com:443
+2022-01-09 22:11:05,279 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:11:06,438 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-09 22:11:07,171 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:11:07,708 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-09 22:11:08,122 - root - INFO - 인증서 선택  (Ver 9.9.8.8)         [AnN2] : 윈도우 없음.
+2022-01-09 22:11:08,520 - root - INFO - 영웅문Global Login : 윈도우 없음.
+2022-01-09 22:11:08,917 - root - INFO - 영웅문Global : 윈도우 없음.
+2022-01-09 22:12:47,645 - urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2022-01-09 22:12:47,649 - google.auth.transport.requests - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2022-01-09 22:12:47,654 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-01-09 22:12:47,865 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-01-09 22:12:47,868 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sheets.googleapis.com:443
+2022-01-09 22:12:49,239 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1rUxyxUshULyOTWsJT3YiSgxBhD7cIxgw6jpYBDvjRBA?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:12:50,434 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1rUxyxUshULyOTWsJT3YiSgxBhD7cIxgw6jpYBDvjRBA?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:12:52,167 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1ImrZF6aZ57rfsbpVVvY4GJiVLqszqxCSKXBM_qIJOdU?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:12:52,488 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:12:52,767 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:12:53,043 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:12:53,315 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:12:53,599 - urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2022-01-09 22:12:53,603 - google.auth.transport.requests - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2022-01-09 22:12:53,605 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-01-09 22:12:53,880 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-01-09 22:12:53,883 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sheets.googleapis.com:443
+2022-01-09 22:12:54,831 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:12:55,403 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-09 22:12:56,153 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:12:56,705 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-09 22:12:57,102 - root - INFO - 인증서 선택  (Ver 9.9.8.8)         [AnN2] : 윈도우 없음.
+2022-01-09 22:12:57,495 - root - INFO - 영웅문Global Login : 윈도우 없음.
+2022-01-09 22:12:57,893 - root - INFO - 영웅문Global : 윈도우 없음.
+2022-01-09 22:18:50,177 - urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2022-01-09 22:18:50,181 - google.auth.transport.requests - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2022-01-09 22:18:50,185 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-01-09 22:18:50,395 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-01-09 22:18:50,398 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sheets.googleapis.com:443
+2022-01-09 22:18:52,531 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1rUxyxUshULyOTWsJT3YiSgxBhD7cIxgw6jpYBDvjRBA?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:18:53,785 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1rUxyxUshULyOTWsJT3YiSgxBhD7cIxgw6jpYBDvjRBA?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:18:56,206 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1ImrZF6aZ57rfsbpVVvY4GJiVLqszqxCSKXBM_qIJOdU?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:18:57,416 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:18:57,696 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:18:57,963 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:18:58,258 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:18:58,916 - root - INFO - 인증서 선택  (Ver 9.9.8.8)         [AnN2] : 윈도우 없음.
+2022-01-09 22:18:59,310 - root - INFO - 영웅문Global Login : 윈도우 없음.
+2022-01-09 22:18:59,717 - root - INFO - 영웅문Global : 윈도우 없음.
+2022-01-09 22:19:00,111 - root - INFO - iLabAuto : 윈도우 없음.
+2022-01-09 22:19:00,506 - root - INFO - iLabAuto : 윈도우 없음.
+2022-01-09 22:19:00,907 - root - INFO - iLabAuto : 윈도우 없음.
+2022-01-09 22:19:01,294 - root - INFO - iLabAuto : 윈도우 없음.
+2022-01-09 22:19:01,689 - root - INFO - iLabAuto : 윈도우 없음.
+2022-01-09 22:19:59,087 - urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2022-01-09 22:19:59,091 - google.auth.transport.requests - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2022-01-09 22:19:59,095 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-01-09 22:19:59,362 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-01-09 22:19:59,365 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sheets.googleapis.com:443
+2022-01-09 22:20:00,822 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1rUxyxUshULyOTWsJT3YiSgxBhD7cIxgw6jpYBDvjRBA?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:20:02,087 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1rUxyxUshULyOTWsJT3YiSgxBhD7cIxgw6jpYBDvjRBA?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:20:03,755 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1ImrZF6aZ57rfsbpVVvY4GJiVLqszqxCSKXBM_qIJOdU?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:20:04,073 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:20:04,682 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:20:04,943 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:20:05,214 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:20:05,516 - urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2022-01-09 22:20:05,521 - google.auth.transport.requests - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2022-01-09 22:20:05,523 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-01-09 22:20:05,725 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-01-09 22:20:05,728 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sheets.googleapis.com:443
+2022-01-09 22:20:06,988 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:20:07,563 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27%EC%9E%90%EB%8F%99%EA%B1%B0%EB%9E%98%EC%8B%9C%ED%8A%B8%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-09 22:20:08,317 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:20:08,882 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/values/%27TLP%27%21C2?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+2022-01-09 22:20:09,351 - root - INFO - 인증서 선택  (Ver 9.9.8.8)         [AnN2] : 윈도우 없음.
+2022-01-09 22:20:09,769 - root - INFO - 영웅문Global Login : 윈도우 없음.
+2022-01-09 22:20:10,183 - root - INFO - 영웅문Global : 윈도우 없음.
+2022-01-09 22:20:10,608 - root - INFO - iLabAuto : 윈도우 없음.
+2022-01-09 22:20:11,030 - root - INFO - iLabAuto : 윈도우 없음.
+2022-01-09 22:20:11,459 - root - INFO - iLabAuto : 윈도우 없음.
+2022-01-09 22:20:11,875 - root - INFO - iLabAuto : 윈도우 없음.
+2022-01-09 22:20:12,290 - root - INFO - iLabAuto : 윈도우 없음.
+2022-01-09 22:20:24,951 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): slack.com:443
+2022-01-09 22:20:25,296 - urllib3.connectionpool - DEBUG - https://slack.com:443 "POST /api/chat.postMessage HTTP/1.1" 200 356
+2022-01-09 22:25:36,812 - urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2022-01-09 22:25:36,816 - google.auth.transport.requests - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2022-01-09 22:25:36,820 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-01-09 22:25:37,040 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-01-09 22:25:37,043 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sheets.googleapis.com:443
+2022-01-09 22:25:39,290 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1rUxyxUshULyOTWsJT3YiSgxBhD7cIxgw6jpYBDvjRBA?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:25:40,554 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1rUxyxUshULyOTWsJT3YiSgxBhD7cIxgw6jpYBDvjRBA?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:25:42,769 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1ImrZF6aZ57rfsbpVVvY4GJiVLqszqxCSKXBM_qIJOdU?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:25:43,183 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:25:43,520 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:25:43,822 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:25:44,476 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:25:45,161 - root - INFO - 인증서 선택  (Ver 9.9.8.8)         [AnN2] : 윈도우 없음.
+2022-01-09 22:25:45,570 - root - INFO - 영웅문Global Login : 윈도우 없음.
+2022-01-09 22:25:49,505 - root - INFO - iLabAuto : 윈도우 없음.
+2022-01-09 22:29:59,193 - urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2022-01-09 22:29:59,197 - google.auth.transport.requests - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2022-01-09 22:29:59,201 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-01-09 22:29:59,529 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-01-09 22:29:59,532 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sheets.googleapis.com:443
+2022-01-09 22:30:01,168 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1rUxyxUshULyOTWsJT3YiSgxBhD7cIxgw6jpYBDvjRBA?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:30:02,452 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1rUxyxUshULyOTWsJT3YiSgxBhD7cIxgw6jpYBDvjRBA?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:30:04,166 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1ImrZF6aZ57rfsbpVVvY4GJiVLqszqxCSKXBM_qIJOdU?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:30:04,651 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:30:04,953 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:30:05,245 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:30:05,536 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:30:06,224 - root - INFO - 인증서 선택  (Ver 9.9.8.8)         [AnN2] : 윈도우 없음.
+2022-01-09 22:30:06,620 - root - INFO - 영웅문Global Login : 윈도우 없음.
+2022-01-09 22:30:07,006 - root - INFO - 영웅문Global : 윈도우 없음.
+2022-01-09 22:30:07,402 - root - INFO - iLabAuto : 윈도우 없음.
+2022-01-09 22:31:31,903 - urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2022-01-09 22:31:31,907 - google.auth.transport.requests - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2022-01-09 22:31:31,911 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-01-09 22:31:32,124 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-01-09 22:31:32,127 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sheets.googleapis.com:443
+2022-01-09 22:31:33,682 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1rUxyxUshULyOTWsJT3YiSgxBhD7cIxgw6jpYBDvjRBA?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:31:34,889 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1rUxyxUshULyOTWsJT3YiSgxBhD7cIxgw6jpYBDvjRBA?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:31:36,725 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1ImrZF6aZ57rfsbpVVvY4GJiVLqszqxCSKXBM_qIJOdU?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:31:37,142 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:31:37,519 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:31:37,893 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:31:38,257 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:31:39,927 - root - INFO - 인증서 선택  (Ver 9.9.8.8)         [AnN2] : 윈도우 없음.
+2022-01-09 22:31:41,325 - root - INFO - 영웅문Global Login : 윈도우 없음.
+2022-01-09 22:31:42,714 - root - INFO - 영웅문Global : 윈도우 없음.
+2022-01-09 22:31:44,105 - root - INFO - iLabAuto : 윈도우 없음.
+2022-01-09 22:33:18,033 - comtypes.client._generate - DEBUG - GetModule(UIAutomationCore.dll)
+2022-01-09 22:33:18,063 - comtypes - DEBUG - Release <POINTER(ITypeLib) ptr=0x153c7aa8 at 15fc2220>
+2022-01-09 22:33:18,063 - comtypes.client - DEBUG - {ff48dba4-60ef-4201-aa87-54103eef594e} -> {FF48DBA4-60EF-4201-AA87-54103EEF594E}
+2022-01-09 22:33:18,063 - comtypes.client - DEBUG - CoCreateInstance({FF48DBA4-60EF-4201-AA87-54103EEF594E}, clsctx=None, interface=<class 'comtypes.gen._944DE083_8FB8_45CF_BCB7_C477ACB2F897_0_1_0.IUIAutomation'>)
+2022-01-09 22:33:18,090 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549ef30 at 15fc2268>
+2022-01-09 22:33:18,091 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f488 at 16112418>
+2022-01-09 22:33:18,092 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549ef30 at 15fc2268>
+2022-01-09 22:33:18,093 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f7e8 at 16112418>
+2022-01-09 22:33:18,094 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549ecf0 at 15fc2268>
+2022-01-09 22:33:18,095 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f7e8 at 16112418>
+2022-01-09 22:33:18,099 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f908 at 161122f8>
+2022-01-09 22:33:18,100 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f3b0 at 16112418>
+2022-01-09 22:33:18,101 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f368 at 161122f8>
+2022-01-09 22:33:18,102 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f7e8 at 16112418>
+2022-01-09 22:33:18,103 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f830 at 161122f8>
+2022-01-09 22:33:18,104 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f440 at 16112460>
+2022-01-09 22:33:18,108 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f680 at 15fc2268>
+2022-01-09 22:33:18,109 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f4d0 at 161122f8>
+2022-01-09 22:33:18,110 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f3f8 at 15fc2268>
+2022-01-09 22:33:18,111 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f4d0 at 161122f8>
+2022-01-09 22:33:18,112 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f758 at 15fc2268>
+2022-01-09 22:33:18,117 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f7e8 at 16112460>
+2022-01-09 22:33:18,148 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f320 at 15fc2268>
+2022-01-09 22:33:18,149 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f8c0 at 161122f8>
+2022-01-09 22:33:18,151 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f830 at 15fc2268>
+2022-01-09 22:33:18,152 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f5a8 at 161122f8>
+2022-01-09 22:33:18,213 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f638 at 16112460>
+2022-01-09 22:33:18,278 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f4d0 at 15fc2268>
+2022-01-09 22:33:18,326 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f7e8 at 16112460>
+2022-01-09 22:33:18,335 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f4d0 at 15fc2268>
+2022-01-09 22:33:18,336 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f8c0 at 161122f8>
+2022-01-09 22:33:18,470 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f710 at 16112460>
+2022-01-09 22:33:18,471 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549eca8 at 15fc22f8>
+2022-01-09 22:33:18,471 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f8c0 at 15fc2268>
+2022-01-09 22:33:18,584 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f488 at 15fc22f8>
+2022-01-09 22:33:18,585 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f7a0 at 16112460>
+2022-01-09 22:33:18,587 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f440 at 15fc22f8>
+2022-01-09 22:33:18,589 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f368 at 16112460>
+2022-01-09 22:33:18,614 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f440 at 15fc22f8>
+2022-01-09 22:33:18,655 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f488 at 16112460>
+2022-01-09 22:33:18,692 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f7a0 at 15fc22f8>
+2022-01-09 22:33:18,705 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f368 at 16112460>
+2022-01-09 22:33:18,711 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f518 at 15fc22f8>
+2022-01-09 22:33:18,846 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f830 at 15fc2268>
+2022-01-09 22:33:18,846 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f368 at 16112460>
+2022-01-09 22:33:19,361 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f5a8 at 15fc22f8>
+2022-01-09 22:33:19,362 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f368 at 16112460>
+2022-01-09 22:33:19,364 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f680 at 15fc22f8>
+2022-01-09 22:33:19,366 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f368 at 16112460>
+2022-01-09 22:33:19,396 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f7e8 at 15fc22f8>
+2022-01-09 22:33:19,438 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f638 at 16112460>
+2022-01-09 22:33:19,479 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f8c0 at 15fc22f8>
+2022-01-09 22:33:19,492 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f488 at 16112460>
+2022-01-09 22:33:19,498 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f830 at 15fc22f8>
+2022-01-09 22:33:19,632 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f7a0 at 15fc2268>
+2022-01-09 22:33:19,632 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f908 at 16112460>
+2022-01-09 22:33:20,147 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f830 at 15fc22f8>
+2022-01-09 22:33:20,149 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f7e8 at 16112460>
+2022-01-09 22:33:20,151 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f5a8 at 15fc22f8>
+2022-01-09 22:33:20,153 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f320 at 16112460>
+2022-01-09 22:33:20,183 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f440 at 15fc22f8>
+2022-01-09 22:33:20,222 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f830 at 16112460>
+2022-01-09 22:33:20,270 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f878 at 15fc22f8>
+2022-01-09 22:33:20,284 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f5a8 at 16112460>
+2022-01-09 22:33:20,290 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f908 at 15fc22f8>
+2022-01-09 22:33:20,424 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f368 at 15fc2268>
+2022-01-09 22:33:20,425 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f638 at 16112460>
+2022-01-09 22:33:20,936 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f5a8 at 15fc22f8>
+2022-01-09 22:33:20,938 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f6c8 at 16112460>
+2022-01-09 22:33:20,939 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f5f0 at 15fc22f8>
+2022-01-09 22:33:20,941 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f2d8 at 16112460>
+2022-01-09 22:33:20,973 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f8c0 at 15fc22f8>
+2022-01-09 22:33:21,015 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f7e8 at 16112460>
+2022-01-09 22:33:21,056 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f368 at 15fc22f8>
+2022-01-09 22:33:21,071 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f5f0 at 16112460>
+2022-01-09 22:33:21,076 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f4d0 at 15fc22f8>
+2022-01-09 22:33:21,207 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f950 at 15fc2268>
+2022-01-09 22:33:21,207 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f368 at 16112460>
+2022-01-09 22:33:21,711 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f2d8 at 15fc22f8>
+2022-01-09 22:33:21,713 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f5a8 at 16112460>
+2022-01-09 22:33:21,714 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f518 at 15fc22f8>
+2022-01-09 22:33:21,716 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f950 at 16112460>
+2022-01-09 22:33:21,747 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f560 at 15fc22f8>
+2022-01-09 22:33:21,785 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f710 at 16112460>
+2022-01-09 22:33:21,824 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f518 at 15fc22f8>
+2022-01-09 22:33:21,838 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f950 at 16112460>
+2022-01-09 22:33:21,845 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f560 at 15fc22f8>
+2022-01-09 22:33:21,972 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f638 at 15fc2268>
+2022-01-09 22:33:21,972 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f8c0 at 16112460>
+2022-01-09 22:33:22,489 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f8c0 at 15fc22f8>
+2022-01-09 22:33:22,490 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f878 at 16112460>
+2022-01-09 22:33:22,493 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f950 at 15fc22f8>
+2022-01-09 22:33:22,496 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f5f0 at 16112460>
+2022-01-09 22:33:22,526 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f368 at 15fc22f8>
+2022-01-09 22:33:22,564 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f5f0 at 16112460>
+2022-01-09 22:33:22,604 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f6c8 at 15fc22f8>
+2022-01-09 22:33:22,618 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f560 at 16112460>
+2022-01-09 22:33:22,623 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f7e8 at 15fc22f8>
+2022-01-09 22:33:22,750 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f5a8 at 15fc2268>
+2022-01-09 22:33:22,750 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f2d8 at 16112460>
+2022-01-09 22:33:23,261 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f2d8 at 15fc22f8>
+2022-01-09 22:33:23,262 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f950 at 16112460>
+2022-01-09 22:33:23,264 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f3f8 at 15fc22f8>
+2022-01-09 22:33:23,265 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f2d8 at 16112460>
+2022-01-09 22:33:23,293 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f830 at 15fc22f8>
+2022-01-09 22:33:23,335 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f638 at 16112460>
+2022-01-09 22:33:23,376 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f680 at 15fc22f8>
+2022-01-09 22:33:23,391 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f638 at 16112460>
+2022-01-09 22:33:23,397 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f878 at 15fc22f8>
+2022-01-09 22:33:23,531 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f5f0 at 15fc2268>
+2022-01-09 22:33:23,531 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f830 at 16112460>
+2022-01-09 22:33:24,046 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f560 at 15fc22f8>
+2022-01-09 22:33:24,047 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f368 at 16112460>
+2022-01-09 22:33:24,049 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f3f8 at 15fc22f8>
+2022-01-09 22:33:24,051 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f440 at 16112460>
+2022-01-09 22:33:24,081 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f368 at 15fc22f8>
+2022-01-09 22:33:24,118 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f3f8 at 16112460>
+2022-01-09 22:33:24,158 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f680 at 15fc22f8>
+2022-01-09 22:33:24,171 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f638 at 16112460>
+2022-01-09 22:33:24,177 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f710 at 15fc22f8>
+2022-01-09 22:33:24,299 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f320 at 15fc2268>
+2022-01-09 22:33:24,299 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f7e8 at 16112460>
+2022-01-09 22:33:24,815 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f3f8 at 15fc22f8>
+2022-01-09 22:33:24,817 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f7e8 at 16112460>
+2022-01-09 22:33:24,819 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f560 at 15fc22f8>
+2022-01-09 22:33:24,822 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f440 at 16112460>
+2022-01-09 22:33:24,851 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f6c8 at 15fc22f8>
+2022-01-09 22:33:24,894 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f4d0 at 16112460>
+2022-01-09 22:33:24,940 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f950 at 15fc22f8>
+2022-01-09 22:33:24,960 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f3f8 at 16112460>
+2022-01-09 22:33:24,966 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f488 at 15fc22f8>
+2022-01-09 22:33:25,103 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f878 at 15fc2268>
+2022-01-09 22:33:25,103 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f710 at 16112460>
+2022-01-09 22:33:25,611 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f710 at 15fc22f8>
+2022-01-09 22:33:25,612 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f7a0 at 16112460>
+2022-01-09 22:33:25,614 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f908 at 15fc22f8>
+2022-01-09 22:33:25,616 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f488 at 16112460>
+2022-01-09 22:33:25,644 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f5a8 at 15fc22f8>
+2022-01-09 22:33:25,685 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f3f8 at 16112460>
+2022-01-09 22:33:25,727 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f560 at 15fc22f8>
+2022-01-09 22:33:25,740 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f710 at 16112460>
+2022-01-09 22:33:25,746 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f8c0 at 15fc22f8>
+2022-01-09 22:33:25,886 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f440 at 15fc2268>
+2022-01-09 22:33:25,886 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f3f8 at 16112460>
+2022-01-09 22:33:26,393 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f368 at 15fc22f8>
+2022-01-09 22:33:26,394 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f5f0 at 16112460>
+2022-01-09 22:33:26,396 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f680 at 15fc22f8>
+2022-01-09 22:33:26,399 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f560 at 16112460>
+2022-01-09 22:33:26,429 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f7a0 at 15fc22f8>
+2022-01-09 22:33:26,467 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f6c8 at 16112460>
+2022-01-09 22:33:26,507 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f3f8 at 15fc22f8>
+2022-01-09 22:33:26,520 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f560 at 16112460>
+2022-01-09 22:33:26,526 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f368 at 15fc22f8>
+2022-01-09 22:33:26,656 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f638 at 15fc2268>
+2022-01-09 22:33:26,656 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x1549f950 at 16112460>
+2022-01-09 22:33:26,896 - comtypes - DEBUG - Calling CoUnititialize()
+2022-01-09 22:33:26,904 - comtypes - DEBUG - CoUnititialize() done.
+2022-01-09 22:33:36,099 - comtypes.client._generate - DEBUG - GetModule(UIAutomationCore.dll)
+2022-01-09 22:33:36,132 - comtypes - DEBUG - Release <POINTER(ITypeLib) ptr=0x14d58a38 at 15962220>
+2022-01-09 22:33:36,132 - comtypes.client - DEBUG - {ff48dba4-60ef-4201-aa87-54103eef594e} -> {FF48DBA4-60EF-4201-AA87-54103EEF594E}
+2022-01-09 22:33:36,132 - comtypes.client - DEBUG - CoCreateInstance({FF48DBA4-60EF-4201-AA87-54103EEF594E}, clsctx=None, interface=<class 'comtypes.gen._944DE083_8FB8_45CF_BCB7_C477ACB2F897_0_1_0.IUIAutomation'>)
+2022-01-09 22:33:36,162 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x14df0468 at 15962268>
+2022-01-09 22:33:36,164 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x14df1230 at 15ab32f8>
+2022-01-09 22:33:36,166 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x14df05d0 at 15962268>
+2022-01-09 22:33:36,168 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x14df0c48 at 15ab32f8>
+2022-01-09 22:33:36,199 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x14df05d0 at 15962268>
+2022-01-09 22:33:36,240 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x14df0e40 at 15ab32f8>
+2022-01-09 22:33:36,289 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x14df0468 at 15962268>
+2022-01-09 22:33:36,308 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x14df0c90 at 15ab32f8>
+2022-01-09 22:33:36,314 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x14df0468 at 15962268>
+2022-01-09 22:33:36,442 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x14df0a98 at 159622f8>
+2022-01-09 22:33:36,442 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x14df1080 at 15ab32f8>
+2022-01-09 22:33:36,443 - root - INFO - : 윈도우 없음.
+2022-01-09 22:33:36,443 - comtypes - DEBUG - Calling CoUnititialize()
+2022-01-09 22:33:36,447 - comtypes - DEBUG - CoUnititialize() done.
+2022-01-09 22:34:34,216 - comtypes.client._generate - DEBUG - GetModule(UIAutomationCore.dll)
+2022-01-09 22:34:34,248 - comtypes - DEBUG - Release <POINTER(ITypeLib) ptr=0x148e1968 at 154f21d8>
+2022-01-09 22:34:34,248 - comtypes.client - DEBUG - {ff48dba4-60ef-4201-aa87-54103eef594e} -> {FF48DBA4-60EF-4201-AA87-54103EEF594E}
+2022-01-09 22:34:34,248 - comtypes.client - DEBUG - CoCreateInstance({FF48DBA4-60EF-4201-AA87-54103EEF594E}, clsctx=None, interface=<class 'comtypes.gen._944DE083_8FB8_45CF_BCB7_C477ACB2F897_0_1_0.IUIAutomation'>)
+2022-01-09 22:34:34,274 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x149b5c08 at 154f2220>
+2022-01-09 22:34:34,275 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x149b57d0 at 156442b0>
+2022-01-09 22:34:34,277 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x149b5938 at 154f2220>
+2022-01-09 22:34:34,278 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x149b5818 at 156442b0>
+2022-01-09 22:34:34,304 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x149b5938 at 154f2220>
+2022-01-09 22:34:34,346 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x149b5c08 at 156442b0>
+2022-01-09 22:34:34,391 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x149b5aa0 at 154f2220>
+2022-01-09 22:34:34,404 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x149b5b30 at 156442b0>
+2022-01-09 22:34:34,409 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x149b5f68 at 154f2220>
+2022-01-09 22:34:34,552 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x149b5e00 at 154f22b0>
+2022-01-09 22:34:34,553 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x149b5db8 at 156442b0>
+2022-01-09 22:34:34,553 - root - INFO - : 윈도우 없음.
+2022-01-09 22:34:34,554 - comtypes - DEBUG - Calling CoUnititialize()
+2022-01-09 22:34:34,559 - comtypes - DEBUG - CoUnititialize() done.
+2022-01-09 22:34:44,483 - comtypes.client._generate - DEBUG - GetModule(UIAutomationCore.dll)
+2022-01-09 22:34:44,515 - comtypes - DEBUG - Release <POINTER(ITypeLib) ptr=0x155a7230 at 161421d8>
+2022-01-09 22:34:44,516 - comtypes.client - DEBUG - {ff48dba4-60ef-4201-aa87-54103eef594e} -> {FF48DBA4-60EF-4201-AA87-54103EEF594E}
+2022-01-09 22:34:44,516 - comtypes.client - DEBUG - CoCreateInstance({FF48DBA4-60EF-4201-AA87-54103EEF594E}, clsctx=None, interface=<class 'comtypes.gen._944DE083_8FB8_45CF_BCB7_C477ACB2F897_0_1_0.IUIAutomation'>)
+2022-01-09 22:34:44,540 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x155e2ba8 at 16142220>
+2022-01-09 22:34:44,542 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x15631f90 at 162942b0>
+2022-01-09 22:34:44,543 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x15631f48 at 16142220>
+2022-01-09 22:34:44,545 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x15631de0 at 162942b0>
+2022-01-09 22:34:44,573 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x15631eb8 at 16142220>
+2022-01-09 22:34:44,611 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x15632410 at 162942b0>
+2022-01-09 22:34:44,623 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x155e2b18 at 161422b0>
+2022-01-09 22:34:45,139 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x15632338 at 16142220>
+2022-01-09 22:34:45,141 - comtypes - DEBUG - Calling CoUnititialize()
+2022-01-09 22:34:45,145 - comtypes - DEBUG - CoUnititialize() done.
+2022-01-09 22:35:00,347 - comtypes.client._generate - DEBUG - GetModule(UIAutomationCore.dll)
+2022-01-09 22:35:00,380 - comtypes - DEBUG - Release <POINTER(ITypeLib) ptr=0x148545c0 at 15412220>
+2022-01-09 22:35:00,380 - comtypes.client - DEBUG - {ff48dba4-60ef-4201-aa87-54103eef594e} -> {FF48DBA4-60EF-4201-AA87-54103EEF594E}
+2022-01-09 22:35:00,381 - comtypes.client - DEBUG - CoCreateInstance({FF48DBA4-60EF-4201-AA87-54103EEF594E}, clsctx=None, interface=<class 'comtypes.gen._944DE083_8FB8_45CF_BCB7_C477ACB2F897_0_1_0.IUIAutomation'>)
+2022-01-09 22:35:00,408 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x148de680 at 15412268>
+2022-01-09 22:35:00,409 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x148dedd0 at 155632f8>
+2022-01-09 22:35:00,411 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x148de680 at 15412268>
+2022-01-09 22:35:00,414 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x148deb00 at 155632f8>
+2022-01-09 22:35:00,439 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x148de680 at 15412268>
+2022-01-09 22:35:00,451 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x148de320 at 154122f8>
+2022-01-09 22:35:00,973 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x148deea8 at 155632f8>
+2022-01-09 22:35:00,975 - comtypes - DEBUG - Calling CoUnititialize()
+2022-01-09 22:35:00,979 - comtypes - DEBUG - CoUnititialize() done.
+2022-01-09 22:35:31,503 - comtypes.client._generate - DEBUG - GetModule(UIAutomationCore.dll)
+2022-01-09 22:35:31,535 - comtypes - DEBUG - Release <POINTER(ITypeLib) ptr=0x14a6a1d8 at 156621d8>
+2022-01-09 22:35:31,535 - comtypes.client - DEBUG - {ff48dba4-60ef-4201-aa87-54103eef594e} -> {FF48DBA4-60EF-4201-AA87-54103EEF594E}
+2022-01-09 22:35:31,535 - comtypes.client - DEBUG - CoCreateInstance({FF48DBA4-60EF-4201-AA87-54103EEF594E}, clsctx=None, interface=<class 'comtypes.gen._944DE083_8FB8_45CF_BCB7_C477ACB2F897_0_1_0.IUIAutomation'>)
+2022-01-09 22:35:31,562 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x14b33cc8 at 15662220>
+2022-01-09 22:35:31,563 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x14b34220 at 157b42b0>
+2022-01-09 22:35:31,564 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x14b33cc8 at 15662220>
+2022-01-09 22:35:31,566 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x14b34580 at 157b42b0>
+2022-01-09 22:35:31,592 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x14b33cc8 at 15662220>
+2022-01-09 22:35:31,604 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x14b33ba8 at 156622b0>
+2022-01-09 22:35:32,227 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x14b34148 at 157b42b0>
+2022-01-09 22:35:32,233 - comtypes - DEBUG - Calling CoUnititialize()
+2022-01-09 22:35:32,237 - comtypes - DEBUG - CoUnititialize() done.
+2022-01-09 22:36:38,311 - comtypes.client._generate - DEBUG - GetModule(UIAutomationCore.dll)
+2022-01-09 22:36:38,341 - comtypes - DEBUG - Release <POINTER(ITypeLib) ptr=0x14c04d38 at 158021d8>
+2022-01-09 22:36:38,342 - comtypes.client - DEBUG - {ff48dba4-60ef-4201-aa87-54103eef594e} -> {FF48DBA4-60EF-4201-AA87-54103EEF594E}
+2022-01-09 22:36:38,342 - comtypes.client - DEBUG - CoCreateInstance({FF48DBA4-60EF-4201-AA87-54103EEF594E}, clsctx=None, interface=<class 'comtypes.gen._944DE083_8FB8_45CF_BCB7_C477ACB2F897_0_1_0.IUIAutomation'>)
+2022-01-09 22:36:38,370 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x14c9abd8 at 15802220>
+2022-01-09 22:36:38,371 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x14c9ad40 at 159542b0>
+2022-01-09 22:36:38,372 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x14c9add0 at 15802220>
+2022-01-09 22:36:38,374 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x14c9ae18 at 159542b0>
+2022-01-09 22:36:38,405 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x14c9a998 at 15802220>
+2022-01-09 22:36:38,418 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x14c9b208 at 158022b0>
+2022-01-09 22:36:39,043 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x14c9acb0 at 159542b0>
+2022-01-09 22:36:39,047 - comtypes - DEBUG - Calling CoUnititialize()
+2022-01-09 22:36:39,052 - comtypes - DEBUG - CoUnititialize() done.
+2022-01-09 22:36:50,524 - comtypes.client._generate - DEBUG - GetModule(UIAutomationCore.dll)
+2022-01-09 22:36:50,554 - comtypes - DEBUG - Release <POINTER(ITypeLib) ptr=0x14959dc0 at 155021d8>
+2022-01-09 22:36:50,554 - comtypes.client - DEBUG - {ff48dba4-60ef-4201-aa87-54103eef594e} -> {FF48DBA4-60EF-4201-AA87-54103EEF594E}
+2022-01-09 22:36:50,555 - comtypes.client - DEBUG - CoCreateInstance({FF48DBA4-60EF-4201-AA87-54103EEF594E}, clsctx=None, interface=<class 'comtypes.gen._944DE083_8FB8_45CF_BCB7_C477ACB2F897_0_1_0.IUIAutomation'>)
+2022-01-09 22:36:50,579 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x149c4a40 at 15502220>
+2022-01-09 22:36:50,580 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x149c4d58 at 156542b0>
+2022-01-09 22:36:50,582 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x149c4a40 at 15502220>
+2022-01-09 22:36:50,583 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x149c4d10 at 156542b0>
+2022-01-09 22:36:50,611 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x149c47b8 at 15502220>
+2022-01-09 22:36:50,623 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x149c45c0 at 155022b0>
+2022-01-09 22:36:52,250 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x149c4c38 at 156542b0>
+2022-01-09 22:36:52,251 - comtypes - DEBUG - Calling CoUnititialize()
+2022-01-09 22:36:52,255 - comtypes - DEBUG - CoUnititialize() done.
+2022-01-09 22:37:29,751 - comtypes.client._generate - DEBUG - GetModule(UIAutomationCore.dll)
+2022-01-09 22:37:29,781 - comtypes - DEBUG - Release <POINTER(ITypeLib) ptr=0x1504a818 at 15be21d8>
+2022-01-09 22:37:29,781 - comtypes.client - DEBUG - {ff48dba4-60ef-4201-aa87-54103eef594e} -> {FF48DBA4-60EF-4201-AA87-54103EEF594E}
+2022-01-09 22:37:29,781 - comtypes.client - DEBUG - CoCreateInstance({FF48DBA4-60EF-4201-AA87-54103EEF594E}, clsctx=None, interface=<class 'comtypes.gen._944DE083_8FB8_45CF_BCB7_C477ACB2F897_0_1_0.IUIAutomation'>)
+2022-01-09 22:37:29,806 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x150bae70 at 15be2220>
+2022-01-09 22:37:29,808 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x150bb608 at 15d342b0>
+2022-01-09 22:37:29,810 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x150bb800 at 15be2220>
+2022-01-09 22:37:29,811 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x150bbb60 at 15d342b0>
+2022-01-09 22:37:29,840 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x150bb8d8 at 15be2220>
+2022-01-09 22:37:29,880 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x150bb578 at 15d342b0>
+2022-01-09 22:37:29,895 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x150bba88 at 15be2220>
+2022-01-09 22:37:29,900 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x150bb578 at 15d342b0>
+2022-01-09 22:37:29,995 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x150bae28 at 15be22b0>
+2022-01-09 22:37:29,995 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x150bb5c0 at 15be2220>
+2022-01-09 22:37:30,055 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x150bb608 at 15be22b0>
+2022-01-09 22:37:30,056 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x150bb6e0 at 15d342b0>
+2022-01-09 22:37:30,058 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x150bbad0 at 15be22b0>
+2022-01-09 22:37:30,060 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x150bb848 at 15d342b0>
+2022-01-09 22:37:30,087 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x150bb650 at 15be22b0>
+2022-01-09 22:37:30,127 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x150bb9f8 at 15d342b0>
+2022-01-09 22:37:30,139 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x150bbbf0 at 15be22b0>
+2022-01-09 22:37:30,145 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x150bba40 at 15d342b0>
+2022-01-09 22:37:30,246 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x150bb5c0 at 15be2220>
+2022-01-09 22:37:30,246 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x150bbb18 at 15be22b0>
+2022-01-09 22:37:30,246 - root - INFO - : 윈도우 없음.
+2022-01-09 22:37:30,247 - comtypes - DEBUG - Calling CoUnititialize()
+2022-01-09 22:37:30,250 - comtypes - DEBUG - CoUnititialize() done.
+2022-01-09 22:37:55,410 - comtypes.client._generate - DEBUG - GetModule(UIAutomationCore.dll)
+2022-01-09 22:37:55,441 - comtypes - DEBUG - Release <POINTER(ITypeLib) ptr=0x14f37dd0 at 15ae21d8>
+2022-01-09 22:37:55,441 - comtypes.client - DEBUG - {ff48dba4-60ef-4201-aa87-54103eef594e} -> {FF48DBA4-60EF-4201-AA87-54103EEF594E}
+2022-01-09 22:37:55,441 - comtypes.client - DEBUG - CoCreateInstance({FF48DBA4-60EF-4201-AA87-54103EEF594E}, clsctx=None, interface=<class 'comtypes.gen._944DE083_8FB8_45CF_BCB7_C477ACB2F897_0_1_0.IUIAutomation'>)
+2022-01-09 22:37:55,466 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x14fa0510 at 15ae2220>
+2022-01-09 22:37:55,467 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x14fa0c18 at 15c342b0>
+2022-01-09 22:37:55,469 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x14fa0e58 at 15ae2220>
+2022-01-09 22:37:55,472 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x14fa1170 at 15c342b0>
+2022-01-09 22:37:55,502 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x14fa0d38 at 15ae2220>
+2022-01-09 22:37:55,514 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x14fa0b40 at 15ae22b0>
+2022-01-09 22:37:57,155 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x14fa0f78 at 15c342b0>
+2022-01-09 22:37:57,160 - comtypes - DEBUG - Calling CoUnititialize()
+2022-01-09 22:37:57,165 - comtypes - DEBUG - CoUnititialize() done.
+2022-01-09 22:38:23,664 - comtypes.client._generate - DEBUG - GetModule(UIAutomationCore.dll)
+2022-01-09 22:38:23,697 - comtypes - DEBUG - Release <POINTER(ITypeLib) ptr=0x153d8048 at 15fd21d8>
+2022-01-09 22:38:23,697 - comtypes.client - DEBUG - {ff48dba4-60ef-4201-aa87-54103eef594e} -> {FF48DBA4-60EF-4201-AA87-54103EEF594E}
+2022-01-09 22:38:23,697 - comtypes.client - DEBUG - CoCreateInstance({FF48DBA4-60EF-4201-AA87-54103EEF594E}, clsctx=None, interface=<class 'comtypes.gen._944DE083_8FB8_45CF_BCB7_C477ACB2F897_0_1_0.IUIAutomation'>)
+2022-01-09 22:38:23,725 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x15467d60 at 15fd2220>
+2022-01-09 22:38:23,727 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x15468468 at 161242b0>
+2022-01-09 22:38:23,728 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x15467c88 at 15fd2220>
+2022-01-09 22:38:23,730 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x154683d8 at 161242b0>
+2022-01-09 22:38:23,757 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x15468420 at 15fd2220>
+2022-01-09 22:38:23,769 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x15467cd0 at 15fd22b0>
+2022-01-09 22:38:27,398 - comtypes - DEBUG - Release <POINTER(IUIAutomationElement) ptr=0x15467bf8 at 161242b0>
+2022-01-09 22:38:27,400 - comtypes - DEBUG - Calling CoUnititialize()
+2022-01-09 22:38:27,405 - comtypes - DEBUG - CoUnititialize() done.
+2022-01-09 22:44:44,769 - urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2022-01-09 22:44:44,773 - google.auth.transport.requests - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2022-01-09 22:44:44,777 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-01-09 22:44:44,984 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-01-09 22:44:44,987 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sheets.googleapis.com:443
+2022-01-09 22:44:47,196 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1rUxyxUshULyOTWsJT3YiSgxBhD7cIxgw6jpYBDvjRBA?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:44:48,392 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1rUxyxUshULyOTWsJT3YiSgxBhD7cIxgw6jpYBDvjRBA?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:44:50,711 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1ImrZF6aZ57rfsbpVVvY4GJiVLqszqxCSKXBM_qIJOdU?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:44:51,978 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:44:52,383 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:44:52,706 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:44:53,053 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE?includeGridData=false HTTP/1.1" 200 None
+2022-01-09 22:44:53,874 - root - INFO - 인증서 선택  (Ver 9.9.8.8)         [AnN2] : 윈도우 없음.
+2022-01-09 22:44:54,385 - root - INFO - 영웅문Global Login : 윈도우 없음.
+2022-01-09 22:44:54,899 - root - INFO - 영웅문Global : 윈도우 없음.

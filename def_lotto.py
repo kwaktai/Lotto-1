@@ -228,19 +228,19 @@ def select_test():
 #         pass
 
 
-def check_message_lotto():
-    time.sleep(0.5)
-    check_message_title = win32gui.FindWindow(None, "안내")
-    mag = win32gui.FindWindowEx(check_message_title, None, "Static", None)
-    button = win32gui.FindWindowEx(check_message_title, None, "Button", None)
-    kw_window()
-    if check_message_title == 0:
-        return
-    else:
-        time.sleep(0.3)
-        mouseClick(button)
-        txt = win32gui.GetWindowText(mag)
-        return print(txt)
+# def check_message_lotto():
+#     time.sleep(0.5)
+#     check_message_title = win32gui.FindWindow(None, "안내")
+#     mag = win32gui.FindWindowEx(check_message_title, None, "Static", None)
+#     button = win32gui.FindWindowEx(check_message_title, None, "Button", None)
+#     kw_window()
+#     if check_message_title == 0:
+#         return
+#     else:
+#         time.sleep(0.3)
+#         mouseClick(button)
+#         txt = win32gui.GetWindowText(mag)
+#         return print(txt)
 
 
 def mouseClick(hwnd):
@@ -254,7 +254,7 @@ def closeLotto():
     try:
         while i < 7:
             pag.getWindowsWithTitle("iLabAuto")[0].close()
-            print(f"{i}lotto 닫기 성공")
+            logger.info(f"{i}번 lotto 닫기 성공")
             time.sleep(2)
             i = i+1
     except:

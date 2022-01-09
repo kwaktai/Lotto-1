@@ -256,7 +256,20 @@ def set_NFHeroMainClassSetLOC(num, LocType="LOC", trade="매수"):
         # pass
 
 
+def test():
+    ia = auto.PaneControl(searchDepth=1, ClassName="SDL_app")
+    if not ia.Exists(0.3, 1):
+        logger.info(': 윈도우 없음.')
+        # exit(0)
+        return 0
+    for i in range(1, 6):
+        ia.SetActive()
+        time.sleep(3)
+        pag.hotkey("alt", "f4")
+
+
 if __name__ == '__main__':
+    test()
     # saveStock('kwak')
     # set_NFHeroMainClass_WriteValuesDocumentControl(4, "SOXL")
     # pag.press("enter")
@@ -265,7 +278,7 @@ if __name__ == '__main__':
     # getAccNumbers()\se
     # get_NFHeroMainClass(6)
     # set_NFHeroMainClassSetLOC(6, "LOC")
-    set2102_Sell("SOXL", "kwak", "34", "150.21", "test", "LOC", "82")
+    # set2102_Sell("SOXL", "kwak", "34", "150.21", "test", "LOC", "82")
     # secletEventEnter()
     # selsetTab("실시간잔고")
     # set2102_Buy("TQQQ", "kwak", "34", "160.11", "test", "LOC", "82")
