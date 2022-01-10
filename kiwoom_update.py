@@ -72,7 +72,7 @@ def main():
 
 
 if __name__ == "__main__":
-    startGlobal()
+    # startGlobal()
     kw_Login()
     # main()
     # saveStock('kwak')
