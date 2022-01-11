@@ -134,13 +134,40 @@ def kw_Login_2(user="kwak", xy=2):
     return anWindow
 
 
+def secletTab(tabName):
+    winControl = auto.WindowControl(
+        searchDepth=1, ClassName='_NFHeroMainClass')
+    accNumEdit = winControl.TabItemControl(
+        foundIndex=1, Name=tabName)
+    if not accNumEdit.Exists(0.2, 1):
+        exit(0)
+    accNumEdit.GetSelectionItemPattern().Select()
+    # print(f"{tabName}: Tab click")
+
+
+def select2102():
+    # winControl = auto.WindowControl(
+    #     searchDepth=1, Name='영웅문Global')
+    winControl = auto.PaneControl(
+        searchDepth=2, ClassName="MDIClient")
+    accNumEdit = winControl.WindowControl(
+        Name="[2102] 해외주식 미니주문")
+    # accNumEdit = winControl.DocumentControl()
+
+    if not accNumEdit.Exists(0.2, 1):
+        print("없음")
+        # exit(0)
+    return accNumEdit.Name
+
+
 if __name__ == '__main__':
+    # print(kw_Login_2())
     # pyperclip.copy("")
-    anWindow = auto.WindowControl(
-        searchDepth=2, Name="영웅문Global Login")
-    print(anWindow.Name)
-    anWindow.SetActive()
-    anWindow.SendKeys("{alt}{f4}")
+    # anWindow = auto.WindowControl(
+    #     searchDepth=2, Name="영웅문Global Login")
+    # print(anWindow.Name)
+    # anWindow.SetActive()
+    # anWindow.SendKeys("{alt}{f4}")
     # def_ui.setMainSearch("2102")
     # manuList = ["2153", "2150", "2111"]
     # a = kw_Login_2()
@@ -149,5 +176,13 @@ if __name__ == '__main__':
     # # for i in manuList:
     # #     setMainSearch(i)
     # logger.info("testInfo")
+    # print("매수 파트")
+    # printControlValues()
+    # secletTab("매도")
+    # for i in range(0, 10):
+    #     print(select2102(i))
+    print(select2102())
+    # print("매도 파트")
+    # secletTab("매도")
     # printControlValues()
     pass

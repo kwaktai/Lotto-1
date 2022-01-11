@@ -4,6 +4,7 @@ import uiautomation as auto
 import time
 import pyautogui as pag
 from slack_engin import *
+import gc
 
 # zoom.SetTopmost(True)  # 화면고정
 # zoom.SetTopmost(False)  # 화면고정
@@ -124,10 +125,10 @@ def infoList(user):
 def saveStock(user):
     listKey = infoList(user)[0]
     listValue = infoList(user)[1]
-    print(len(listKey))
+    logger.info(len(listKey))
     for i in range(len(listKey)):
-        print(listKey[i])
-        print(listValue[i])
+        logger.info(listKey[i])
+        logger.info(listValue[i])
 
 
 def closeLotto():
@@ -140,7 +141,7 @@ def kw_window(l=0, r=0):
         anWindow = auto.WindowControl(
             searchDepth=2, Name='영웅문Global')
         if not anWindow.Exists(0.3, 1):
-            print('Can not find 영웅문Global')
+            logger.info('Can not find 영웅문Global')
             # exit(0)
             return 0
         anWindow.SetActive()
@@ -176,43 +177,6 @@ def secletEventEnter():
     else:
         print(accNumEdit.TextControl(foundIndex=1).Name)
         accNumEdit.SendKeys('{enter}')
-
-
-def set2102_Buy(stockname, user, qty, price, test, locType, acc):
-    # kw_window()
-    # setAccNum(acc, "2102")
-    secletTab("매수")
-    set_NFHeroMainClass_WriteValuesDocumentControl(4, stockname)
-    set_NFHeroMainClassSetLOC(5, locType)
-    set_NFHeroMainClass_WriteValues(7, qty)
-    set_NFHeroMainClass_WriteValues(6, price)
-    pag.press("enter")
-    secletEventEnter()
-    if test == "test":
-        pag.press("esc")
-    else:
-        pag.press("enter")
-    secletEventEnter()
-
-
-def set2102_Sell(stockname, user, qty, price, test, locType, acc):
-    kw_window()
-    pag.press("esc", 5)
-    setAccNum(acc, "2102")
-    secletTab("매도")
-    time.sleep(1)
-    set_NFHeroMainClass_WriteValuesDocumentControl(5, stockname)
-    set_NFHeroMainClassSetLOC(5, locType, trade="매도")
-    time.sleep(0.3)
-    set_NFHeroMainClass_WriteValues(8, qty)
-    set_NFHeroMainClass_WriteValues(7, price)
-    pag.press("enter")
-    secletEventEnter()
-    if test == "test":
-        pag.press("esc")
-    else:
-        pag.press("enter")
-    secletEventEnter()
 
 
 def get_NFHeroMainClass(num):
@@ -268,8 +232,60 @@ def test():
         pag.hotkey("alt", "f4")
 
 
+def set2102_Buy(stockname, user, qty, price, test, locType, acc):
+    # kw_window()
+    # setAccNum(acc, "2102")
+    secletTab("매수")
+    set_NFHeroMainClass_WriteValuesDocumentControl(4, stockname)
+    set_NFHeroMainClassSetLOC(5, locType)
+    set_NFHeroMainClass_WriteValues(7, qty)
+    set_NFHeroMainClass_WriteValues(6, price)
+    pag.press("enter")
+    secletEventEnter()
+    if test == "test":
+        pag.press("esc")
+    else:
+        pag.press("enter")
+    secletEventEnter()
+    gc.collect()
+
+
+def set2102_Sell(stockname, user, qty, price, test, locType, acc):
+    # kw_window()
+    # pag.press("esc", 5)
+    # setAccNum(acc, "2102")
+    # secletTab("매도")
+    # time.sleep(1)
+    # set_NFHeroMainClass_WriteValuesDocumentControl(5, stockname)
+    set_NFHeroMainClassSetLOC(6, locType, trade="매도")
+    # # time.sleep(0.3)
+    select2102()
+    secletTab("매도")
+    # pag.press("tab")
+    # set_NFHeroMainClassSetLOC(6, locType)
+    set_NFHeroMainClass_WriteValues(8, qty)
+    set_NFHeroMainClass_WriteValues(7, price)
+    pag.press("enter")
+    secletEventEnter()
+    if test == "test":
+        pag.press("esc")
+    else:
+        pag.press("enter")
+    secletEventEnter()
+
+
+def select2102():
+    winControl = auto.PaneControl(
+        searchDepth=2, ClassName="MDIClient")
+    accNumEdit = winControl.WindowControl(
+        Name="[2102] 해외주식 미니주문")
+    if not accNumEdit.Exists(0.2, 1):
+        print("없음")
+    return accNumEdit
+
+
 if __name__ == '__main__':
-    test()
+    # test()
     # saveStock('kwak')
     # set_NFHeroMainClass_WriteValuesDocumentControl(4, "SOXL")
     # pag.press("enter")
@@ -278,10 +294,24 @@ if __name__ == '__main__':
     # getAccNumbers()\se
     # get_NFHeroMainClass(6)
     # set_NFHeroMainClassSetLOC(6, "LOC")
-    # set2102_Sell("SOXL", "kwak", "34", "150.21", "test", "LOC", "82")
     # secletEventEnter()
-    # selsetTab("실시간잔고")
-    # set2102_Buy("TQQQ", "kwak", "34", "160.11", "test", "LOC", "82")
+    kw_window()
+    setAccNum("04", "2102")
+    set2102_Buy("TQQQ", "kwak", "34", "160.11", "test", "LOC", "82")
+    set2102_Buy("TQQQ", "kwak", "22", "130.11", "test", "LOC", "82")
+    set2102_Sell("TQQQ", "kwak", "56", "150.21", "test", "AFTER지정", "82")
+    set2102_Sell("TQQQ", "kwak", "77", "150.21", "test", "LOC", "82")
+    # secletTab("매도")
+    # set_NFHeroMainClassSetLOC(5, "AFTER지정", trade="매도")
+    # set_NFHeroMainClass_WriteValues(8, "33")
+    # set_NFHeroMainClass_WriteValues(7, "101.28")
+    # pag.press("enter")
+    # secletEventEnter()
+    # if test == "test":
+    #     pag.press("esc")
+    # else:
+    #     pag.press("enter")
+    # secletEventEnter()
     # warningMsg()
     # set_NFHeroMainClass_WriteValues(7, "111")
     # set_NFHeroMainClass_WriteValues(5, "시장가")

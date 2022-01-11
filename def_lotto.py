@@ -171,7 +171,7 @@ def kw_Login(user="kwak", xy=2):
 
 def openLoto(user="kwak", x=1, tradetype="아바타"):
     # time.sleep(20)
-    closeLotto()
+    # closeLotto()
     if user == "kwak":
         logger.info("start 클릭")
         program_file = r"D:\TaiCloud\Documents\Project\Lotto\Lotto\Run.exe -ib1=1 -close=2"

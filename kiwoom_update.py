@@ -73,8 +73,8 @@ def main():
 
 if __name__ == "__main__":
     # startGlobal()
-    kw_Login()
-    # main()
+    # kw_Login()
+    main()
     # saveStock('kwak')
     # saveStock("kwak")
     # saveMyRevenue("kwak", "TLP2", 4)

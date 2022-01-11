@@ -242,3 +242,36 @@
 2022-01-05 00:10:53.432 UI_test.py[99] printControlValues -> Find Control Timeout: {ControlType: EditControl}
 2022-01-05 00:11:05.067 UI_test.py[99] printControlValues -> Find Control Timeout: {ControlType: EditControl}
 2022-01-05 08:06:16.066 def_ui.py[75] getAccNumber -> 2022-01-05 08:45:34.880 def_lotto.py[134] kw_Login -> 2022-01-05 08:55:45.766 def_ui.py[57] setMainSearch -> Find Control Timeout: {Name: '영웅문Global', ControlType: WindowControl}
+2022-01-11 11:05:30.193 def_ui.py[74] getAccNumber -> Find Control Timeout: {ControlType: EditControl}
+2022-01-11 11:07:43.613 def_ui.py[74] getAccNumber -> Find Control Timeout: {ControlType: EditControl}
+2022-01-11 11:08:41.544 def_ui.py[74] getAccNumber -> Find Control Timeout: {ControlType: EditControl}
+2022-01-11 11:23:36.890 def_ui.py[74] getAccNumber -> Find Control Timeout: {ControlType: EditControl}
+2022-01-11 11:36:24.821 UI_test.py[102] printControlValues -> Find Control Timeout: {ControlType: EditControl}
+2022-01-11 11:36:36.195 UI_test.py[102] printControlValues -> Find Control Timeout: {ControlType: EditControl}
+2022-01-11 11:37:01.348 UI_test.py[102] printControlValues -> Find Control Timeout: {ControlType: EditControl}
+2022-01-11 11:37:12.767 UI_test.py[102] printControlValues -> Find Control Timeout: {ControlType: EditControl}
+2022-01-11 11:42:34.083 UI_test.py[102] printControlValues -> Find Control Timeout: {ControlType: EditControl}
+2022-01-11 11:42:45.257 UI_test.py[102] printControlValues -> Find Control Timeout: {ControlType: EditControl}
+2022-01-11 11:42:55.602 UI_test.py[102] printControlValues -> Find Control Timeout: {ControlType: EditControl}
+2022-01-11 11:43:06.800 UI_test.py[102] printControlValues -> Find Control Timeout: {ControlType: EditControl}
+2022-01-11 11:43:18.144 UI_test.py[102] printControlValues -> Find Control Timeout: {ControlType: EditControl}
+2022-01-11 11:48:46.352 UI_test.py[102] printControlValues -> Find Control Timeout: {ControlType: EditControl}
+2022-01-11 11:49:02.202 UI_test.py[102] printControlValues -> Find Control Timeout: {ControlType: EditControl}
+2022-01-11 11:49:12.558 UI_test.py[102] printControlValues -> Find Control Timeout: {ControlType: EditControl}
+2022-01-11 11:49:23.582 UI_test.py[102] printControlValues -> Find Control Timeout: {ControlType: EditControl}
+2022-01-11 11:49:34.792 UI_test.py[102] printControlValues -> Find Control Timeout: {ControlType: EditControl}
+2022-01-11 11:49:44.993 UI_test.py[102] printControlValues -> Find Control Timeout: {ControlType: EditControl}
+2022-01-11 11:49:59.972 UI_test.py[102] printControlValues -> Find Control Timeout: {ControlType: EditControl}
+2022-01-11 11:50:11.493 UI_test.py[102] printControlValues -> Find Control Timeout: {ControlType: EditControl}
+2022-01-11 12:01:44.053 UI_test.py[102] printControlValues -> Find Control Timeout: {ControlType: EditControl}
+2022-01-11 12:01:55.766 UI_test.py[102] printControlValues -> Find Control Timeout: {ControlType: EditControl}
+2022-01-11 12:12:44.583 UI_test.py[182] <module> -> Find Control Timeout: {Name: '[2102] 해외주식 미니주문', ControlType: WindowControl}
+2022-01-11 12:14:29.934 UI_test.py[182] <module> -> Find Control Timeout: {Name: '[2102] 해외주식 미니주문', ControlType: WindowControl}
+2022-01-11 12:15:02.961 UI_test.py[182] <module> -> Find Control Timeout: {Name: '[2102] 해외주식 미니주문', ControlType: EditControl}
+2022-01-11 12:17:43.732 UI_test.py[182] <module> -> Find Control Timeout: {Name: '작업 영역', ControlType: PaneControl}
+2022-01-11 12:18:52.087 UI_test.py[182] <module> -> Find Control Timeout: {Name: '작업 영역', ControlType: PaneControl}
+2022-01-11 12:19:18.431 UI_test.py[182] <module> -> Find Control Timeout: {Name: '작업 영역', ControlType: PaneControl}
+2022-01-11 12:20:00.574 UI_test.py[182] <module> -> Find Control Timeout: {Name: '[2102] 해외주식 미니주문', ControlType: WindowControl}
+2022-01-11 12:21:57.942 UI_test.py[183] <module> -> Find Control Timeout: {Name: '[2102] 해외주식 미니주문', ControlType: WindowControl}
+2022-01-11 12:25:38.690 UI_test.py[183] <module> -> Find Control Timeout: {Name: '[2102] 해외주식 미니주문', ControlType: EditControl}
+2022-01-11 12:25:57.069 UI_test.py[183] <module> -> Find Control Timeout: {Name: '[2102] 해외주식 미니주문', ControlType: EditControl}
