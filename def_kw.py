@@ -23,9 +23,9 @@ from def_ui import *
 
 def accunt_info(user, type):
     # {"무메":[계좌순서,매수수량]]}
-    acc_type = {"kwak": {"무매": [0, 0], "적립식": [1, 1], "거치식": [
+    acc_type = {"kwak": {"무매": [0, 0], "적립식": [1, 2], "거치식": [
         2, 7], "ava": [3, 0], "TLP2": [4, 0]}, "lee": {"무매": [0, 0], "적립식": [0, 1], "거치식": [2, 7]},
-        "han": {"무매": [0, 0], "적립식": [0, 1], "거치식": [2, 7]}}
+        "han": {"무매": [0, 0], "적립식": [0, 1], "거치식": [2, 14]}}
     # accuntInfo = accunt_info(user, type)
     accNum = acc_type[user][type][0]
     vr_qty = acc_type[user][type][1]
@@ -415,15 +415,18 @@ def handle_855056():
 #     return
 
 
-def save_screenshot(user, type=0):  # 캡쳐로 테스트
+def save_screenshot(user, type=0):  # 캡쳐로 실행여부 확인
     kw_window()
     pag.press('esc', 5)
     sendText(kw_secrch_Edit(), "2152")
     time.sleep(2)
     x, y = xyp_findxy("2152")
+    logger.info(x, y)
     filename = user
-    pag.screenshot(f'img/{filename}_{type}.png',
+    pag.screenshot(f'img/{filename}.png',
                    region=(x-130, y-20, 933, 500))
+    # pag.screenshot(f'img/{filename}_{type}.png',
+    #                region=(x-130, y-20, 933, 500))
     slackSendMsg(f"{user}: {type}의 스크린샷")
     slackSendFile(user, type)
     return
@@ -734,7 +737,7 @@ def input2102_check_after():
 #     time.sleep(0.3)
 
 
-def input2102_buy_VR(stockname, user="kwak", qty=1, test="test", type="적립식"):
+def input2102_buy_VR(stockname, user="kwak", qty=2, test="test", type="적립식"):
     logger.info("VR 매수시작")
     buy_valueList = buy_values(user, type)
     for i in buy_valueList:
@@ -762,7 +765,7 @@ def input2102_buy_VR(stockname, user="kwak", qty=1, test="test", type="적립식
 #     input2102_finshsell(test)
 
 
-def input2102_sell_VR(stockname, user="kwak", qty=1, test="test", type="적립식"):
+def input2102_sell_VR(stockname, user="kwak", qty=2, test="test", type="적립식"):
     slackSendMsg("VR 매도시작")
     sell_valueList = sell_values(user, type)
     # input2102_check_accuntNumber(1)
@@ -943,7 +946,8 @@ def popUp_2150_SelectAccount(accNum):
 
 
 if __name__ == '__main__':
-    startGlobal()
+    save_screenshot("kwak")
+    # startGlobal()
     # save_stockQty("kwak", "무매", "45")
     # saveMyDeposit("kwak", "무매", "45")
     # mouseClick("13438516")

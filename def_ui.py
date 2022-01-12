@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from logging import log
 import subprocess
 import uiautomation as auto
 import time
@@ -26,29 +27,6 @@ def setEsc():
     for i in range(1, 5):
         edit.SendKeys('{esc}')
         i = i + 1
-
-
-# def getAccNumbers():
-#     accNumEdit = get_NFHeroMainClass(2)
-
-#     def getAccNum():
-#         getAccValue = accNumEdit.GetValuePattern().Value
-#         getAccValue = getAccValue[-2:]
-#         return getAccValue
-
-#     def _setAccNum():
-#         def setNumUp():
-#             for i in list(range(0, 10)):
-#                 accNumEdit.SendKeys('{up}')
-#         setNumUp()
-#         accNumList = []
-#         for i in list(range(0, 10)):
-#             accNumList.append(getAccNum())
-#             accNumEdit.SendKeys('{down}')
-#         print(accNumList)
-#         return accNumList
-#     return _setAccNum()
-#     # print(getAccNum())
 
 
 def setMainSearch(menuNum):
@@ -172,10 +150,12 @@ def secletEventEnter():
             # exit(0)
             pass
         else:
-            print(accNumEdit.TextControl(foundIndex=1).Name)
+            logger.info(accNumEdit.TextControl(foundIndex=1).Name)
+            logger.info("네")
             accNumEdit.SendKeys('{enter}')
     else:
-        print(accNumEdit.TextControl(foundIndex=1).Name)
+        logger.info(accNumEdit.TextControl(foundIndex=1).Name)
+        logger.info("네")
         accNumEdit.SendKeys('{enter}')
 
 

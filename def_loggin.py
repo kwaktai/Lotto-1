@@ -43,8 +43,8 @@ def __get_logger(name=None):
     # 4 handler instance 생성
     console = logging.StreamHandler()
     # file_handler = logging.FileHandler(filename="test.log")
-    file_handler = logging.FileHandler('log\debug.log', 'a', 'utf-8')
-
+    file_handler = logging.FileHandler(
+        'D:\TaiCloud\Documents\Project\Lotto\log\debug.log', 'a', 'utf-8')
     # 5 handler 별로 다른 level 설정
     console.setLevel(logging.INFO)
     file_handler.setLevel(logging.DEBUG)

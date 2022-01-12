@@ -1,6 +1,6 @@
 import pyautogui as pya
 import time
-from slack_engin import *
+# from slack_engin import *
 # from def_loggin import __get_logger
 # logger = __get_logger()
 
@@ -22,7 +22,7 @@ def xyp_last(img_file, slt="click", g="True", c=0.8, timeout=5):
     target = find_target(img_file, g, c, timeout)
     if target:
         target_canter = pya.center(target)
-        logger.info(target_canter)
+        # logger.info(target_canter)
         x_p, y_p = target_canter
         # x, y = x_p/2, y_p/2
         x, y = x_p, y_p
@@ -37,17 +37,18 @@ def xyp_last(img_file, slt="click", g="True", c=0.8, timeout=5):
         else:
             print("??")
     else:
-        logger.debug(f'Error : {img_file}')
+        # logger.debug(f'Error : {img_file}')
+        pass
 
 
 def xyp_findxy(img_file, slt="click", g="False", c=0.9, timeout=5):
     target = find_target(img_file, g, c, timeout)
     if target:
         target_canter = pya.center(target)
-        # target_canter = pya.position(target)
+        # target_canter = pya.p
         # print(target_canter)
         x, y = target_canter
-        logger.debug(x, y)
+        # logger.debug(x, y)
         return x, y
 
 
@@ -62,6 +63,6 @@ if __name__ == "__main__":
     # img = "save_excel"
     # xyp_last(img)
     # pya.rightClick()
-    x, y = xyp_findxy("2152")
-    print(x, y)
+    print(xyp_findxy("2152"))
+    # print(x, y)
     #
