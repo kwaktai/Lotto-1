@@ -25,7 +25,7 @@ credentials = ServiceAccountCredentials.from_json_keyfile_name(
 gc = gspread.authorize(credentials)
 
 
-spreadsheet_url = "https://docs.google.com/spreadsheets/d/1rUxyxUshULyOTWsJT3YiSgxBhD7cIxgw6jpYBDvjRBA/edit#gid=1309564982"
+spreadsheet_url = "https://docs.google.com/spreadsheets/d/1fdgmklJQleUirNKm9vgH032EqIMZjpYs3qMYuKt81G4/edit#gid=1780394304"
 # spreadsheet_url = "https://docs.google.com/spreadsheets/d/1c6qnORby5wLx4EYCzDNIHfDUax90yKIQRwqaiFqy0FI/edit#gid=1309564982"
 findrsishare_20210807_url = "https://docs.google.com/spreadsheets/d/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE/edit#gid=0"
 spreadsheet_url_lee = "https://docs.google.com/spreadsheets/d/1ImrZF6aZ57rfsbpVVvY4GJiVLqszqxCSKXBM_qIJOdU/edit#gid=1309564982"

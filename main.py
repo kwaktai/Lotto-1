@@ -2,14 +2,15 @@ import traceback
 from def_lotto import *
 from slack_engin import *
 from main_vr import vr_main
-from def_kw import check_window, get_today_hoilday, startGlobal
+from def_kw import get_today_hoilday, startGlobal
 # from def_kw import kw_window_check_kwlogin
-from def_kw import save_screenshot
+# from def_kw import save_screenshot
 from def_lotto import closeLotto
-from def_ss import *
+from def_ui import startLotto
+from def_ss_tlp import startTlpMain
 # import logging
-from def_loggin import __get_logger
-logger = __get_logger()
+# from def_loggin import __get_logger
+# logger = __get_logger()
 
 # logging.basicConfig(filename='log\debug.log',
 #                     level=logging.ERROR, format='%(asctime)s %(message)s')
@@ -36,21 +37,19 @@ if __name__ == '__main__':
                     kw_Login(user)
                     time.sleep(10)
                     openLoto(user=user)
-                    # time.sleep(30)
-                    closeLotto()
-                    # save_screenshot(user)
-                    # time.sleep(10)
-                    # mess = check_message_lotto()
-                    # if mess == None:
-                    #     slackSendMsg(f"{user}의 무한매수를 완료하였습니다.")
-                    # else:
-                    #     slackSendMsg(mess)
+                    # closeLotto()
                     slackSendMsg(f"{user}의 VR <적립식> 매수/매도가 시작 합니다.")
                     vr_main(type="적립식", user=user)
                     slackSendMsg(f"{user}의 VR <적립식> 매수/매도를 완료 했습니다.")
                     slackSendMsg(f"{user}의 VR <거치식> 매수/매도를 시작 합니다.")
                     vr_main(type="거치식", user=user)
                     slackSendMsg(f"{user}의 VR <거치식> 매수/매도를 완료 했습니다.")
+                    slackSendMsg(f"{user}의 TLP 거래 시작 합니다.")
+                    startTlpMain("start")
+                    slackSendMsg(f"{user}의 TLP 거래 완료 했습니다.")
+                    slackSendMsg(f"{user}의 AV 거래를 시작합니다.")
+                    startLotto()
+                    slackSendMsg(f"{user}의 AV 거래 세팅을 완료했습니다.")
                     kw_close()
                     slackSendMsg(f"{user}의 영운문(Global)를 종료합니다.")
                 elif user == "lee":

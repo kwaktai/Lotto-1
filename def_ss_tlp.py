@@ -11,7 +11,7 @@ import csv
 # test 20211224-B
 
 
-def main(test):
+def startTlpMain(test):
     setSheet()
     for pig in ["one", "two", "three"]:
         setTLP(pig, test)
@@ -26,7 +26,8 @@ json_file_name = 'D:\TaiCloud\Documents\Project\stockRpawin_kw\jsop_Key\spreadsh
 credentials = ServiceAccountCredentials.from_json_keyfile_name(
     json_file_name, scope)
 gc = gspread.authorize(credentials)
-spreadsheet_TLP = "https://docs.google.com/spreadsheets/d/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/edit#gid=981824825"
+# spreadsheet_TLP = "https://docs.google.com/spreadsheets/d/1b6da8QlPW0EWs-__vbd7gc_mZCoCH_DPDiYYbEogmD4/edit#gid=981824825" V2.1버전
+spreadsheet_TLP = "https://docs.google.com/spreadsheets/d/1Kg1lw7c9lsyqEtl9owEUi7KYlN6y3plx4bTJ0QKs89E/edit#gid=0"
 
 doc = gc.open_by_url(spreadsheet_TLP)
 worksheet_order = doc.worksheet('자동거래시트')  # 시트선택
@@ -58,14 +59,14 @@ def setTLPvalue(acc):
     stockName, myValue, myQty = getTLPvalue(acc)
 
     if acc == "TLP1_04":
-        worksheet_TLP.update_acell('D30', myValue)
-        worksheet_TLP.update_acell('E30', myQty)
+        worksheet_TLP.update_acell('E30', myValue)
+        worksheet_TLP.update_acell('D30', myQty)
     elif acc == "TLP2_02":
-        worksheet_TLP.update_acell('G30', myValue)
-        worksheet_TLP.update_acell('H30', myQty)
+        worksheet_TLP.update_acell('H30', myValue)
+        worksheet_TLP.update_acell('G30', myQty)
     elif acc == "TLP3_09":
-        worksheet_TLP.update_acell('J30', myValue)
-        worksheet_TLP.update_acell('K30', myQty)
+        worksheet_TLP.update_acell('K30', myValue)
+        worksheet_TLP.update_acell('J30', myQty)
     pass
 
 
@@ -122,6 +123,7 @@ def setTLP(pig, test):
                     # input2102_buy(stockName, buyQty, buyPrice, test)  #
             for sell in range(5, 8):
                 checkValueSell = list(pigList.values())[sell]
+
                 if checkValueSell == "-":
                     logger.info("sell not")
                 else:
@@ -166,5 +168,7 @@ def setSheet():
 
 
 if __name__ == '__main__':
+    # setTLPvalue("TLP1_04")
     # print(dataList("one"))
-    main("start")
+    startTlpMain("start")
+    pass

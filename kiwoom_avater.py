@@ -1,14 +1,33 @@
 
-from def_lotto import startAvatar
-# from def_loggin import accunt_info
 from slack_engin import *
-# logger = __get_logger()
+import subprocess
+import time
+
+
+def startLotto():
+    logger.info("Lotto AV1 Start!")
+    slackSendMsg("Lotto AV1 Start!")
+    subprocess.Popen(
+        r"D:\TaiCloud\Documents\Project\Lotto\Lotto\Run.exe -av1=0")
+    time.sleep(60)
+    logger.info("Lotto AV2 Start!")
+    slackSendMsg("Lotto AV2 Start!")
+    subprocess.Popen(
+        r"D:\TaiCloud\Documents\Project\Lotto\Lotto\Run.exe -av2=0")
+    time.sleep(60)
+    logger.info("Lotto AV3 Start!")
+    slackSendMsg("Lotto AV3 Start!")
+    subprocess.Popen(
+        r"D:\TaiCloud\Documents\Project\Lotto\Lotto\Run.exe -av3=0")
+
 
 if __name__ == '__main__':
+    startLotto()
     try:
         # winActivate('iLabAuto')
         # checkLottoOpen()
-        startAvatar()
+        # openLoto("kwak")
+        # startAvatar()
         # startAvatar()
         # checkLottoOpen()
         # # winActivate("iLabAuto",0,0)
