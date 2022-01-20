@@ -69,8 +69,19 @@ def moveAccNumDown(count, num=2):
     pass
 
 
-# numList = ['45', '49', '53', '04',
-#            '02', '09', '24', '23', '62', '82']
+def unconnetGlobal():
+    winControl = auto.WindowControl(
+        searchDepth=1, Name='영웅문Global')
+    winControl.SetActive()
+    pane = winControl.PaneControl(foundIndex=1)
+    btm = pane.ButtonControl(foundIndex=1, Name="확인")
+    if not btm.Exists(0.3, 1):
+        logger.info('Can not find 영웅문Global')
+        return 0
+    else:
+        btm.Click()
+
+    # print(pane)  # mag = ""
 
 
 def setAccNum(acc, menuNum, num=2):
@@ -119,7 +130,7 @@ def kw_window(l=0, r=0):
         anWindow = auto.WindowControl(
             searchDepth=2, Name='영웅문Global')
         if not anWindow.Exists(0.3, 1):
-            logger.info('Can not find 영웅문Global')
+            # logger.info('Can not find 영웅문Global')
             # exit(0)
             return 0
         anWindow.SetActive()
@@ -216,10 +227,15 @@ def set2102_Buy(stockname, user, qty, price, test, locType, acc):
     # kw_window()
     # setAccNum(acc, "2102")
     secletTab("매수")
+    logger.info(f"매수")
     set_NFHeroMainClass_WriteValuesDocumentControl(4, stockname)
+    logger.info(f"Name : {stockname}")
     set_NFHeroMainClassSetLOC(5, locType)
+    logger.info(f"Type : {locType}")
     set_NFHeroMainClass_WriteValues(7, qty)
+    logger.info(f"QTY : {qty}")
     set_NFHeroMainClass_WriteValues(6, price)
+    logger.info(f"Price : {price}")
     pag.press("enter")
     secletEventEnter()
     if test == "test":
@@ -292,12 +308,13 @@ if __name__ == '__main__':
     # get_NFHeroMainClass(6)
     # set_NFHeroMainClassSetLOC(6, "LOC")
     # secletEventEnter()
-    kw_window()
-    setAccNum("04", "2102")
-    set2102_Buy("TQQQ", "kwak", "34", "160.11", "test", "LOC", "82")
-    set2102_Buy("TQQQ", "kwak", "22", "130.11", "test", "LOC", "82")
-    set2102_Sell("TQQQ", "kwak", "56", "150.21", "test", "AFTER지정", "82")
-    set2102_Sell("TQQQ", "kwak", "77", "150.21", "test", "LOC", "82")
+    unconnetGlobal()
+    # kw_window()
+    # setAccNum("04", "2102")
+    # set2102_Buy("TQQQ", "kwak", "34", "160.11", "test", "LOC", "82")
+    # set2102_Buy("TQQQ", "kwak", "22", "130.11", "test", "LOC", "82")
+    # set2102_Sell("TQQQ", "kwak", "56", "150.21", "test", "AFTER지정", "82")
+    # set2102_Sell("TQQQ", "kwak", "77", "150.21", "test", "LOC", "82")
     # secletTab("매도")
     # set_NFHeroMainClassSetLOC(5, "AFTER지정", trade="매도")
     # set_NFHeroMainClass_WriteValues(8, "33")

@@ -275,3 +275,6 @@
 2022-01-11 12:21:57.942 UI_test.py[183] <module> -> Find Control Timeout: {Name: '[2102] 해외주식 미니주문', ControlType: WindowControl}
 2022-01-11 12:25:38.690 UI_test.py[183] <module> -> Find Control Timeout: {Name: '[2102] 해외주식 미니주문', ControlType: EditControl}
 2022-01-11 12:25:57.069 UI_test.py[183] <module> -> Find Control Timeout: {Name: '[2102] 해외주식 미니주문', ControlType: EditControl}
+2022-01-16 12:42:15.384 def_ui.py[75] unconnetGlobal -> Find Control Timeout: {Name: '영웅문Global', ControlType: WindowControl}
+2022-01-16 12:46:50.603 def_ui.py[77] unconnetGlobal -> Find Control Timeout: {Name: '확인', ControlType: ButtonControl}
+2022-01-16 12:48:19.342 def_ui.py[77] unconnetGlobal -> Find Control Timeout: {Name: '확인', ControlType: ButtonControl}

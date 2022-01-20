@@ -23,8 +23,9 @@ from def_ui import *
 
 def accunt_info(user, type):
     # {"무메":[계좌순서,매수수량]]}
-    acc_type = {"kwak": {"무매": [0, 0], "적립식": [1, 2], "거치식": [
-        2, 7], "ava": [3, 0], "TLP2": [4, 0]}, "lee": {"무매": [0, 0], "적립식": [0, 1], "거치식": [2, 7]},
+    acc_type = {"kwak": {"무매": [0, 0], "적립식": [1, 4], "거치식": [
+        2, 14], "ava": [3, 0], "TLP2": [4, 0]},
+        "lee": {"무매": [0, 0], "적립식": [0, 1], "거치식": [2, 7]},
         "han": {"무매": [0, 0], "적립식": [0, 1], "거치식": [2, 14]}}
     # accuntInfo = accunt_info(user, type)
     accNum = acc_type[user][type][0]
@@ -49,9 +50,9 @@ def typewrite_def(typewrite, commend=0):
         print(commend)
 
 
-def get_today_week():
-    weeks = [1, 2, 3, 4, 5, 6, 7]
-    return weeks[datetime.datetime.today().weekday()]
+# def get_today_week():
+#     weeks = [1, 2, 3, 4, 5, 6, 7]
+#     return weeks[datetime.datetime.today().weekday()]
 
 
 def get_today_hoilday():
@@ -60,23 +61,23 @@ def get_today_hoilday():
     return XNYS.is_session(todayis)
 
 
-def kw_window_org(l=0, r=0):
-    i = 1
-    while i < 10:
-        try:
-            HG_titleName = win32gui.FindWindow(None, "영웅문Global")
-            if HG_titleName > 0:
-                time.sleep(0.3)
-                win32gui.SetForegroundWindow(HG_titleName)
-                time.sleep(0.3)
-                logger.debug(HG_titleName)
-                return HG_titleName
-            else:
-                time.sleep(3)
-                logger.info(f"영웅문Global 확인안됨. {i}회 재 확인")
-                i = i + 1
-        except:
-            pass
+# def kw_window_org(l=0, r=0):
+#     i = 1
+#     while i < 10:
+#         try:
+#             HG_titleName = win32gui.FindWindow(None, "영웅문Global")
+#             if HG_titleName > 0:
+#                 time.sleep(0.3)
+#                 win32gui.SetForegroundWindow(HG_titleName)
+#                 time.sleep(0.3)
+#                 logger.debug(HG_titleName)
+#                 return HG_titleName
+#             else:
+#                 time.sleep(3)
+#                 logger.info(f"영웅문Global 확인안됨. {i}회 재 확인")
+#                 i = i + 1
+#         except:
+#             pass
 
 
 def kw_window(l=0, r=0):
@@ -84,7 +85,7 @@ def kw_window(l=0, r=0):
         anWindow = auto.WindowControl(
             searchDepth=2, Name='영웅문Global')
         if not anWindow.Exists(10, 1):
-            print('Can not find Notepad window')
+            logger.info("영웅문 실행 되지 않았음.")
             # exit(0)
             return 0
         anWindow.SetActive()
@@ -106,47 +107,47 @@ def activeWindow(title, l=0, r=0):
     return kwActivage
 
 
-def kw_window_check_kwlogin(l=0, r=0):
-    i = 0
-    while i < 10:
-        try:
-            i = i+1
-            HG_titleName = win32gui.FindWindow(None, "영웅문Global Login")
-            if HG_titleName > 0:
-                time.sleep(0.3)
-                win32gui.SetForegroundWindow(HG_titleName)
-                time.sleep(0.3)
-                logger.debug(HG_titleName)
-                return HG_titleName
-                break
-            else:
-                time.sleep(1)
-                logger.info(f"{i}창없음")
-                continue
-        except:
-            # raise kw_window()
-            pass
+# def kw_window_check_kwlogin(l=0, r=0):
+#     i = 0
+#     while i < 10:
+#         try:
+#             i = i+1
+#             HG_titleName = win32gui.FindWindow(None, "영웅문Global Login")
+#             if HG_titleName > 0:
+#                 time.sleep(0.3)
+#                 win32gui.SetForegroundWindow(HG_titleName)
+#                 time.sleep(0.3)
+#                 logger.debug(HG_titleName)
+#                 return HG_titleName
+#                 break
+#             else:
+#                 time.sleep(1)
+#                 logger.info(f"{i}창없음")
+#                 continue
+#         except:
+#             # raise kw_window()
+#             pass
 
 
-def kw_window_click(window, l=0, r=0):
-    i = 0
-    while i < 10:
-        try:
-            i = i+1
-            HG_titleName = win32gui.FindWindow(None, window)
-            if HG_titleName > 0:
-                time.sleep(0.3)
-                win32gui.SetForegroundWindow(HG_titleName)
-                time.sleep(0.3)
-                logger.DEBUG(window, HG_titleName)
-                return HG_titleName
-            else:
-                logger.info(f"{i}: {window} 창없음")
-                time.sleep(3)
-                continue
-        except:
+# def kw_window_click(window, l=0, r=0):
+#     i = 0
+#     while i < 10:
+#         try:
+#             i = i+1
+#             HG_titleName = win32gui.FindWindow(None, window)
+#             if HG_titleName > 0:
+#                 time.sleep(0.3)
+#                 win32gui.SetForegroundWindow(HG_titleName)
+#                 time.sleep(0.3)
+#                 logger.DEBUG(window, HG_titleName)
+#                 return HG_titleName
+#             else:
+#                 logger.info(f"{i}: {window} 창없음")
+#                 time.sleep(3)
+#                 continue
+#         except:
 
-            pass
+#             pass
 
 
 def sendText(hwnd, text):
@@ -174,24 +175,24 @@ AfxControlBar110_classname_MDIClient = []
 AfxControlBar110_handles_MDIClien = []
 
 
-def all_ok_1(hwnd, param):
-    na = win32gui.GetWindowText(hwnd)
-    clas = win32gui.GetClassName(hwnd)
-    child_classname_1.append(clas)
-    child_handles_1.append(hwnd)
-    # child_handles = child_handles[clas].append(na)
-    # print(f"all_ok_1 {na}: {hwnd} : {clas}")
-    return True
+# def all_ok_1(hwnd, param):
+#     na = win32gui.GetWindowText(hwnd)
+#     clas = win32gui.GetClassName(hwnd)
+#     child_classname_1.append(clas)
+#     child_handles_1.append(hwnd)
+#     # child_handles = child_handles[clas].append(na)
+#     # print(f"all_ok_1 {na}: {hwnd} : {clas}")
+#     return True
 
 
-def all_ok_AfxControlBar110(hwnd, param):
-    na = win32gui.GetWindowText(hwnd)
-    clas = win32gui.GetClassName(hwnd)
-    AfxControlBar110_classname_MDIClient.append(clas)
-    AfxControlBar110_handles_MDIClien.append(hwnd)
-    # child_handles = child_handles[clas].append(na)
-    # print(f"all_ok_1 {na}: {hwnd} : {clas}")
-    return True
+# def all_ok_AfxControlBar110(hwnd, param):
+#     na = win32gui.GetWindowText(hwnd)
+#     clas = win32gui.GetClassName(hwnd)
+#     AfxControlBar110_classname_MDIClient.append(clas)
+#     AfxControlBar110_handles_MDIClien.append(hwnd)
+#     # child_handles = child_handles[clas].append(na)
+#     # print(f"all_ok_1 {na}: {hwnd} : {clas}")
+#     return True
 
 
 def all_ok_MDIClient(hwnd, param):
@@ -283,11 +284,11 @@ def find_handle_3(title, childNum):
     return hendle
 
 
-def find_handle_3_nonClick(title, childNum):
-    titleNum, child_handles_MDIClient_1 = find_titleNum(title)
-    Num = titleNum + childNum
-    hendle = child_handles_MDIClient_1[Num]
-    return hendle
+# def find_handle_3_nonClick(title, childNum):
+#     titleNum, child_handles_MDIClient_1 = find_titleNum(title)
+#     Num = titleNum + childNum
+#     hendle = child_handles_MDIClient_1[Num]
+#     return hendle
 
 
 def MDIClient_def():
@@ -533,8 +534,6 @@ def csv_save(fileName, user="kwak", type="무매", accNUM=0):
 
 
 def save_stockQty(user, type, acc):
-    # kw_window()
-    # setMainSearch("2150")
     setAccNum(acc, "2150")
     screen_xy()
     csv_save("mystockdata", user, type, acc)
@@ -590,13 +589,13 @@ def input2102_price(price):
     return print(f"주문금액 : ${price} 입력완료.")
 
 
-def test_input2102_price(price):
-    print("값", type(price))
-    if type(price) == "int":
-        print("int")
-    else:
-        type(price) == "str"
-        print("str")
+# def test_input2102_price(price):
+#     print("값", type(price))
+#     if type(price) == "int":
+#         print("int")
+#     else:
+#         type(price) == "str"
+#         print("str")
 
 # test_input2102_price(111)
 
@@ -661,16 +660,16 @@ def check_message():
         return txt
 
 
-def check_window_org(titleName, x=0, y=0):
-    try:
-        handle = win32gui.FindWindow(None, titleName)
-        win32gui.SetForegroundWindow(handle)
-    except:
-        # print("윈도우 없음")
-        return handle
-    else:
-        print(handle)
-        return handle
+# def check_window_org(titleName, x=0, y=0):
+#     try:
+#         handle = win32gui.FindWindow(None, titleName)
+#         win32gui.SetForegroundWindow(handle)
+#     except:
+#         # print("윈도우 없음")
+#         return handle
+#     else:
+#         print(handle)
+#         return handle
 
     # kw_window()
 
@@ -903,12 +902,12 @@ def startGlobal():
 #             module
 
 
-def getText(accHendle):
-    check_message_title = win32gui.FindWindow(None, "안내")
-    print(accHendle)
-    mag = win32gui.FindWindowEx(accHendle, None, None, None)
-    txt = win32gui.GetWindowText(accHendle)
-    print(txt)
+# def getText(accHendle):
+#     check_message_title = win32gui.FindWindow(None, "안내")
+#     print(accHendle)
+#     mag = win32gui.FindWindowEx(accHendle, None, None, None)
+#     txt = win32gui.GetWindowText(accHendle)
+#     print(txt)
 
 
 # def popUp_2150_SelectAccount_오리지널(accNum):
@@ -927,13 +926,13 @@ def getText(accHendle):
 #     # pag.press("esc", 2)
 
 
-def popUp_2150_SelectAccount(accNum):
-    kw_window()
-    pag.press("up", 10)
-    pag.press("down", accNum)
-    time.sleep(0.5)
-    pag.press('enter')
-    time.sleep(0.5)
+# def popUp_2150_SelectAccount(accNum):
+#     kw_window()
+#     pag.press("up", 10)
+#     pag.press("down", accNum)
+#     time.sleep(0.5)
+#     pag.press('enter')
+#     time.sleep(0.5)
 
 
 # def SelectAccount(accNum):

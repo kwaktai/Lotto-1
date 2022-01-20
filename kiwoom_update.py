@@ -1,6 +1,6 @@
 from def_lotto import *
 from slack_engin import *
-from def_kw import save_stockQty, saveMyDeposit, startGlobal, activeWindow, saveMyRevenue
+from def_kw import kw_window, save_stockQty, saveMyDeposit, startGlobal, activeWindow, saveMyRevenue
 from def_kw_exchange import main as ex_main
 import def_ss
 import def_ss_tlp

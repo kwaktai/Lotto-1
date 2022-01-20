@@ -6,6 +6,7 @@ from slack_engin import *
 import def_ui
 import time
 import csv
+import def_kw
 # import pyautogui as pag
 
 # test 20211224-B
@@ -44,6 +45,7 @@ def getTLPvalue(acc):
         f = open(revenueFile, 'r', encoding='utf-8')
         rdr = csv.reader(f, delimiter='\t')
         r = list(rdr)
+        logger.debug(r)
         myValue = r[1][5]
         myQty = r[1][6]
         stockName = r[1][1]
@@ -57,7 +59,6 @@ def getTLPvalue(acc):
 
 def setTLPvalue(acc):
     stockName, myValue, myQty = getTLPvalue(acc)
-
     if acc == "TLP1_04":
         worksheet_TLP.update_acell('E30', myValue)
         worksheet_TLP.update_acell('D30', myQty)
@@ -70,7 +71,7 @@ def setTLPvalue(acc):
     pass
 
 
-def dataList(pig):
+def getDataList(pig):
     i = str(pig)
     pigList = {"one": 2, "two": 4, "three": 6}
     valueList = []
@@ -96,10 +97,39 @@ def pig_test():
     return pigList
 
 
+def setEmptyTrade(checkWork, pig, user, test, pigAcc, pigList, pigName):
+    if pigName == "첫째":
+        type = "TLP1"
+    elif pigName == "둘쩨":
+        type = "TLP2"
+    elif pigName == "셋째":
+        type = "TLP3"
+    # pigList = getDataList(pig)
+    if checkWork == "일하자":
+        valuesAvg = list(pigList.keys())[7]
+        print(valuesAvg)
+        if valuesAvg == "-" or valuesAvg == "0" or valuesAvg == 0:
+            stockName = list(pigList.values())[1]
+            buyPrice = str(round(float(list(pigList.keys())[7][2:])*1.15, 2))
+            buyQty = str(int(list(pigList.values())[7]))
+            print(stockName, buyPrice, buyQty)
+            def_ui.setAccNum(pigAcc, "2102")
+            time.sleep(0.5)
+            def_ui.set2102_Buy(stockName, user, buyQty,
+                               buyPrice, test, "AFTER지정", pigAcc)
+            def_ui.setAccNum(pigAcc, "2150")
+            def_kw.screen_xy()
+            def_kw.csv_save("mystockdata", user, type, pigAcc)
+        else:
+            pass
+    pass
+
+
 def setTLP(pig, test):
     try:
         user = "kwak"
-        pigList = dataList(pig)
+        pigList = getDataList(pig)
+        print(pigList)
         # pigList = pig_test()
         checkWork = list(pigList.values())[0]  # 일하자? 쉬자? 존버?
         pigAcc = pigList['acc']  # 계좌번호
@@ -107,25 +137,28 @@ def setTLP(pig, test):
         def_ui.setAccNum(pigAcc, "2102")
         if checkWork == "일하자":
             pigName = list(pigList.keys())[0]
-            logger.info(f"{pigName} : {pigAcc}")
+            setEmptyTrade(checkWork, pig, user, test,
+                          pigAcc, pigList, pigName)
+            # list(pigList.keys())[10] 평단 체크
+            logger.info(f"{pigName} : 계좌번호({pigAcc})")
             for buy in range(2, 5):
-                logger.info(buy)
+                logger.info(f"매수 거래 항목 : {buy}")
                 checkValue = list(pigList.values())[buy]
-                if checkValue == "-":
-                    logger.info("매수 거래 없음.")
+                if checkValue == "-" or checkValue == "0" or checkValue == 0:
+                    logger.info("해당 항목 거래 없음.")
                     pass
                 else:
                     stockName = list(pigList.values())[1]
                     buyPrice = str(float(list(pigList.keys())[buy][2:]))
                     buyQty = str(int(checkValue))
+                    print(checkValue, stockName, buyPrice, buyQty)
                     def_ui.set2102_Buy(stockName, user, buyQty,
                                        buyPrice, test, "LOC", pigAcc)
-                    # input2102_buy(stockName, buyQty, buyPrice, test)  #
             for sell in range(5, 8):
+                logger.info(f"매도 거래 항목 : {buy}")
                 checkValueSell = list(pigList.values())[sell]
-
-                if checkValueSell == "-":
-                    logger.info("sell not")
+                if checkValueSell == "-" or checkValueSell == "0" or checkValueSell == 0:
+                    logger.info("해당 항목 거래 없음.")
                 else:
                     if sell == 5 or sell == 6:
                         i = "LOC"
@@ -143,7 +176,7 @@ def setTLP(pig, test):
             logger.info(f"{pig}는 존버(매도만 하기)")
             for sell in range(5, 8):
                 checkValueSell = list(pigList.values())[sell]
-                if checkValueSell == "-":
+                if checkValueSell == "-" or checkValueSell == "0" or checkValueSell == 0:
                     logger.info("sell not")
                 else:
                     if sell == 5 or sell == 6:
@@ -158,7 +191,7 @@ def setTLP(pig, test):
                                         sellPrice, test, i, pigAcc)
                 pass
     except:
-        print("에러")
+        print(f"{pig}에러")
 
 
 def setSheet():
@@ -168,6 +201,8 @@ def setSheet():
 
 
 if __name__ == '__main__':
+    # print(list(getDataList("two").keys())[10])
+    # setEmptyTrade("three")
     # setTLPvalue("TLP1_04")
     # print(dataList("one"))
     startTlpMain("start")

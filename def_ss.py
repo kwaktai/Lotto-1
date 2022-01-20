@@ -25,10 +25,10 @@ credentials = ServiceAccountCredentials.from_json_keyfile_name(
 gc = gspread.authorize(credentials)
 
 
-spreadsheet_url = "https://docs.google.com/spreadsheets/d/1fdgmklJQleUirNKm9vgH032EqIMZjpYs3qMYuKt81G4/edit#gid=1780394304"
+spreadsheet_url = "https://docs.google.com/spreadsheets/d/1Hbr2VGCWeVeHIDX4qG4YwJkPdM7irB0HtCWkZ9ghA38/edit#gid=2045710087"
 # spreadsheet_url = "https://docs.google.com/spreadsheets/d/1c6qnORby5wLx4EYCzDNIHfDUax90yKIQRwqaiFqy0FI/edit#gid=1309564982"
 findrsishare_20210807_url = "https://docs.google.com/spreadsheets/d/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE/edit#gid=0"
-spreadsheet_url_lee = "https://docs.google.com/spreadsheets/d/1ImrZF6aZ57rfsbpVVvY4GJiVLqszqxCSKXBM_qIJOdU/edit#gid=1309564982"
+spreadsheet_url_lee = "https://docs.google.com/spreadsheets/d/1asLMrOcX99CTdMogXOd2e7MSgh-wucWt866zq8tC6kw/edit#gid=228682672"
 
 # -------------
 doc = gc.open_by_url(spreadsheet_url)
@@ -277,7 +277,13 @@ def MyRevenueData(user, type_1, acc):
         pass
 
 
+def checkDocsFileName():
+    print(doc.title)
+    print(doc_lee.title)
+
+
 if __name__ == '__main__':
+    checkDocsFileName()
     # MyRevenueData("kwak", "무매")
     # a = buy_values("kwak", "거치식")
     # print(a)

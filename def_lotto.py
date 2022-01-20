@@ -10,7 +10,7 @@ import pandas as pd
 from pywinauto.application import Application
 from slack_engin import *
 import def_xyp as dx
-from def_kw import kw_window, check_window
+from def_kw import check_window
 from passdoc import pw
 # from def_ui import closeLotto
 import subprocess
@@ -31,82 +31,82 @@ def today_nowDate():
     return today_now_date
 
 
-def typewrite_def(typewrite, commend=0):
-    pag.typewrite(typewrite, interval=0)
-    if commend == 0:
-        time.sleep(0.5)
-        return
-    else:
-        time.sleep(0.3)
-        print(commend)
+# def typewrite_def(typewrite, commend=0):
+#     pag.typewrite(typewrite, interval=0)
+#     if commend == 0:
+#         time.sleep(0.5)
+#         return
+#     else:
+#         time.sleep(0.3)
+#         print(commend)
 
 
-def winActivate(winName, l=0, r=0):
-    i = 0
-    while i < 10:
-        try:
-            i = i + 1
-            winHandle = win32gui.FindWindow(None, winName)
-            logger.info(f"{winName} : {winHandle}")
-            if winHandle > 0:
-                win = gw.getWindowsWithTitle(winName)[0]
-                time.sleep(0.3)
-                win.activate()
-                win_left = win.left
-                win_top = win.top
-                pag.click(win_left+l, win_top+r)
-                return win_left, win_top
-            else:
-                time.sleep(1)
-                logger.info(f"{winName} : 없음")
-                continue
-        except:
-            logger.info(f"{win} : 창 없음")
-            pass
+# def winActivate(winName, l=0, r=0):
+#     i = 0
+#     while i < 10:
+#         try:
+#             i = i + 1
+#             winHandle = win32gui.FindWindow(None, winName)
+#             logger.info(f"{winName} : {winHandle}")
+#             if winHandle > 0:
+#                 win = gw.getWindowsWithTitle(winName)[0]
+#                 time.sleep(0.3)
+#                 win.activate()
+#                 win_left = win.left
+#                 win_top = win.top
+#                 pag.click(win_left+l, win_top+r)
+#                 return win_left, win_top
+#             else:
+#                 time.sleep(1)
+#                 logger.info(f"{winName} : 없음")
+#                 continue
+#         except:
+#             logger.info(f"{win} : 창 없음")
+#             pass
 
 
-def winActivate_debug(winName, l, r):
-    time.sleep(1)
-    win = gw.getWindowsWithTitle(winName)[0]
-    if win.isActive == False:
-        pywinauto.application.Application().connect(
-            handle=win._hWnd).top_window().set_focus()
-    win.activate()  # 윈도우 활성화
-    time.sleep(0.3)
-    win_left = win.left
-    win_top = win.top
-    # pag.moveRel(win.left+l, win.top+r)
-    # pag.moveTo(win.left+l, win.top+r)
-    pag.click(win.left+l, win.top+r)
-    print(win_left, win_top)
-    return win_left, win_top
+# def winActivate_debug(winName, l, r):
+#     time.sleep(1)
+#     win = gw.getWindowsWithTitle(winName)[0]
+#     if win.isActive == False:
+#         pywinauto.application.Application().connect(
+#             handle=win._hWnd).top_window().set_focus()
+#     win.activate()  # 윈도우 활성화
+#     time.sleep(0.3)
+#     win_left = win.left
+#     win_top = win.top
+#     # pag.moveRel(win.left+l, win.top+r)
+#     # pag.moveTo(win.left+l, win.top+r)
+#     pag.click(win.left+l, win.top+r)
+#     print(win_left, win_top)
+#     return win_left, win_top
 
 
-def winActivate_moveto(winName, l, r):
-    time.sleep(1)
-    win = gw.getWindowsWithTitle(winName)[0]
-    # if win.isActive == False:
-    #     pywinauto.application.Application().connect(
-    #         handle=win._hWnd).top_window().set_focus()
-    win.activate()  # 윈도우 활성화
-    # print(win.left)
-    # print(win.top)
-    # time.sleep(0.3)
-    # pag.move(win.left+l, win.top+r)
-    # pag.click(win.left+l, win.top+r)
+# def winActivate_moveto(winName, l, r):
+#     time.sleep(1)
+#     win = gw.getWindowsWithTitle(winName)[0]
+#     # if win.isActive == False:
+#     #     pywinauto.application.Application().connect(
+#     #         handle=win._hWnd).top_window().set_focus()
+#     win.activate()  # 윈도우 활성화
+#     # print(win.left)
+#     # print(win.top)
+#     # time.sleep(0.3)
+#     # pag.move(win.left+l, win.top+r)
+#     # pag.click(win.left+l, win.top+r)
 
 
-def check_message_login():
-    title_9988 = "간편인증 인증서 선택 (Ver 1.1.0.0)  [AnN]"
-    time.sleep(0.5)
-    check_message_title = win32gui.FindWindow(None, title_9988)
-    mag = win32gui.FindWindowEx(check_message_title, None, "Edit", None)
+# def check_message_login():
+#     title_9988 = "간편인증 인증서 선택 (Ver 1.1.0.0)  [AnN]"
+#     time.sleep(0.5)
+#     check_message_title = win32gui.FindWindow(None, title_9988)
+#     mag = win32gui.FindWindowEx(check_message_title, None, "Edit", None)
 
-    if check_message_title == 0:
-        return "False"
-    else:
-        mouseClick(mag)
-        return "True"
+#     if check_message_title == 0:
+#         return "False"
+#     else:
+#         mouseClick(mag)
+#         return "True"
 
 
 def kw_Login(user="kwak", xy=2):
@@ -188,12 +188,12 @@ def openLoto(user="kwak", x=1, tradetype="아바타"):
     slackSendMsg("Loto 프로그램을 실행했습니다.")
 
 
-def select_test():
-    winActivate("iLabAuto", 0, 0)
-    win_left, win_top = pag.position()
-    dx.movingAndClick(win_left+223, win_top+620)  # select 클릭
-    time.sleep(2)
-    dx.movingAndClick(win_left+245, win_top+390)  # 3번클릭
+# def select_test():
+#     winActivate("iLabAuto", 0, 0)
+#     win_left, win_top = pag.position()
+#     dx.movingAndClick(win_left+223, win_top+620)  # select 클릭
+#     time.sleep(2)
+#     dx.movingAndClick(win_left+245, win_top+390)  # 3번클릭
 
 # def kw_window(l=0, r=0):
 #     # pag.press("esc", 5)
@@ -243,10 +243,10 @@ def select_test():
 #         return print(txt)
 
 
-def mouseClick(hwnd):
-    win32gui.PostMessage(hwnd, win32con.WM_LBUTTONDOWN, 0, 0)
-    # time.sleep(0.2)
-    win32gui.PostMessage(hwnd, win32con.WM_LBUTTONUP, 0, 0)
+# def mouseClick(hwnd):
+#     win32gui.PostMessage(hwnd, win32con.WM_LBUTTONDOWN, 0, 0)
+#     # time.sleep(0.2)
+#     win32gui.PostMessage(hwnd, win32con.WM_LBUTTONUP, 0, 0)
 
 
 def closeLotto():
@@ -261,16 +261,16 @@ def closeLotto():
         pass
 
 
-def ilab_window(l=0, r=0):
-    # pag.press("esc", 5)
-    time.sleep(0.3)
-    kw_win = gw.getWindowsWithTitle("iLabAuto")[0]
-    if kw_win.isActive == False:
-        pywinauto.application.Application().connect(
-            handle=kw_win._hWnd).top_window().set_focus()
-    kwActivage = kw_win.activate()  # 윈도우 활성화
-    time.sleep(0.3)
-    return kw_win
+# def ilab_window(l=0, r=0):
+#     # pag.press("esc", 5)
+#     time.sleep(0.3)
+#     kw_win = gw.getWindowsWithTitle("iLabAuto")[0]
+#     if kw_win.isActive == False:
+#         pywinauto.application.Application().connect(
+#             handle=kw_win._hWnd).top_window().set_focus()
+#     kwActivage = kw_win.activate()  # 윈도우 활성화
+#     time.sleep(0.3)
+#     return kw_win
 
 
 # "iLabAuto 2nd"
@@ -290,19 +290,19 @@ def ilab_window(l=0, r=0):
 #             pass
 
 
-def waitApp(title):
-    Application().connect(title=title, timeout=20)
+# def waitApp(title):
+#     Application().connect(title=title, timeout=20)
 
 
-def KW_Win(l, r):
-    kw_win = gw.getWindowsWithTitle("영웅문Global")[0]
-    if kw_win.isActive == False:
-        pywinauto.application.Application().connect(
-            handle=kw_win._hWnd).top_window().set_focus()
-    kw_win.activate()  # 윈도우 활성화
-    print("영웅문Global : ")
-    time.sleep(0.3)
-    pag.click(kw_win.left+l, kw_win.top+r)
+# def KW_Win(l, r):
+#     kw_win = gw.getWindowsWithTitle("영웅문Global")[0]
+#     if kw_win.isActive == False:
+#         pywinauto.application.Application().connect(
+#             handle=kw_win._hWnd).top_window().set_focus()
+#     kw_win.activate()  # 윈도우 활성화
+#     print("영웅문Global : ")
+#     time.sleep(0.3)
+#     pag.click(kw_win.left+l, kw_win.top+r)
 
 
 def kw_close():
@@ -335,46 +335,46 @@ def check_windowLoto_after():
 # "iLabAuto 4th"
 
 
-def checkLottoOpen():
-    windowLoto = check_windowLoto("iLabAuto")
-    # while windowLoto > 0:
-    if windowLoto == 0:
-        logger.info("실행된 Lotto 없음")
-        pass
-        # break
-    else:
-        # win32gui.SetForegroundWindow(windowLoto)
-        # check_window("iLabAuto", 0, 0)
-        slackSendMsg("실행전 Lotte가 Open되어있어 우선 종료합니다.")
-        closeLotto("iLabAuto")
-        # windowLoto = check_windowLoto()
+# def checkLottoOpen():
+#     windowLoto = check_windowLoto("iLabAuto")
+#     # while windowLoto > 0:
+#     if windowLoto == 0:
+#         logger.info("실행된 Lotto 없음")
+#         pass
+#         # break
+#     else:
+#         # win32gui.SetForegroundWindow(windowLoto)
+#         # check_window("iLabAuto", 0, 0)
+#         slackSendMsg("실행전 Lotte가 Open되어있어 우선 종료합니다.")
+#         closeLotto("iLabAuto")
+#         # windowLoto = check_windowLoto()
 
 
-def startAvatar():
-    checkLottoOpen()
-    try:
-        program_file = r"D:\TaiCloud\Documents\Project\Lotto\Lotto\Run.exe"
-        Application(backend="uia").start(program_file)
-        # win_left, win_top = winActivate("iLabAuto", 30, 675)
-        time.sleep(10)
-        winActivate("iLabAuto", 0, 0)  # 만약 에러가 발생하면, 예외처리로 다시 생각해보자.
-        win_left, win_top = pag.position()
-        dx.movingAndClick(win_left+36, win_top+52)  # select 클릭
-        time.sleep(1)
-        dx.movingAndClick(win_left+45, win_top+290)  # 3번클릭
-        time.sleep(1)
-        dx.movingAndClick(win_left+500, win_top+580)  # start 클릭
-        time.sleep(1)
-        dx.movingAndClick(win_left+480, win_top+630)  # accept 클릭
-        logger.info(slackSendMsg("아바타를 실행하였습니다."))
+# def startAvatar():
+#     checkLottoOpen()
+#     try:
+#         program_file = r"D:\TaiCloud\Documents\Project\Lotto\Lotto\Run.exe"
+#         Application(backend="uia").start(program_file)
+#         # win_left, win_top = winActivate("iLabAuto", 30, 675)
+#         time.sleep(10)
+#         winActivate("iLabAuto", 0, 0)  # 만약 에러가 발생하면, 예외처리로 다시 생각해보자.
+#         win_left, win_top = pag.position()
+#         dx.movingAndClick(win_left+36, win_top+52)  # select 클릭
+#         time.sleep(1)
+#         dx.movingAndClick(win_left+45, win_top+290)  # 3번클릭
+#         time.sleep(1)
+#         dx.movingAndClick(win_left+500, win_top+580)  # start 클릭
+#         time.sleep(1)
+#         dx.movingAndClick(win_left+480, win_top+630)  # accept 클릭
+#         logger.info(slackSendMsg("아바타를 실행하였습니다."))
 
-    except:
-        slackSendMsg("Lotto 실행시 문제 발생 다시 실행.(아바타)")
+#     except:
+#         slackSendMsg("Lotto 실행시 문제 발생 다시 실행.(아바타)")
 
 
-def activeLotto():
-    pag.getWindowsWithTitle("iLabAuto")[0].close()
-    time.sleep(0.2)
+# def activeLotto():
+#     pag.getWindowsWithTitle("iLabAuto")[0].close()
+#     time.sleep(0.2)
 
 
 if __name__ == '__main__':
