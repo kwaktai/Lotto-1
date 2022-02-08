@@ -31,6 +31,7 @@ import datetime
 
 def __get_logger(name=None):
     # 1 logger instance를 만든다.
+
     logger = logging.getLogger(name)
 
     # 2 logger의 level을 가장 낮은 수준인 DEBUG로 설정해둔다.
@@ -47,7 +48,7 @@ def __get_logger(name=None):
         'D:\TaiCloud\Documents\Project\Lotto\log\debug.log', 'a', 'utf-8')
     # 5 handler 별로 다른 level 설정
     console.setLevel(logging.INFO)
-    file_handler.setLevel(logging.DEBUG)
+    file_handler.setLevel(logging.INFO)
 
     # 6 handler 출력 format 지정
     console.setFormatter(formatter)
@@ -64,3 +65,4 @@ def __get_logger(name=None):
 if __name__ == "__main__":
     logger = __get_logger()
     logger.info("gkgkgk하하하")
+    logger.debug("debug")

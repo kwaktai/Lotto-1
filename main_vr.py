@@ -50,6 +50,6 @@ if __name__ == '__main__':
     # pag.press("esc", 5)
     # vr_main(user="kwak", type="적립식", start="test")
     # def_ui.setMainSearch("2153")
-    vr_main(user="kwak", type="거치식", start="test")
+    vr_main(user="kwak", type="거치식")
     # input2102_check_accuntNumber(1)
     # test_acc()

@@ -25,10 +25,10 @@ credentials = ServiceAccountCredentials.from_json_keyfile_name(
 gc = gspread.authorize(credentials)
 
 
-spreadsheet_url = "https://docs.google.com/spreadsheets/d/1Hbr2VGCWeVeHIDX4qG4YwJkPdM7irB0HtCWkZ9ghA38/edit#gid=2045710087"
+spreadsheet_url = "https://docs.google.com/spreadsheets/d/1KwDFM6EC8nhunkuEOkJJV2aeBCFpSLtsW8VlQr1IQfE/edit#gid=1780394304"
 # spreadsheet_url = "https://docs.google.com/spreadsheets/d/1c6qnORby5wLx4EYCzDNIHfDUax90yKIQRwqaiFqy0FI/edit#gid=1309564982"
 findrsishare_20210807_url = "https://docs.google.com/spreadsheets/d/10tIiJxGO5MsXIyeOYlMZXkzuAQe683ZiBUvYtMzWDvE/edit#gid=0"
-spreadsheet_url_lee = "https://docs.google.com/spreadsheets/d/1asLMrOcX99CTdMogXOd2e7MSgh-wucWt866zq8tC6kw/edit#gid=228682672"
+spreadsheet_url_lee = "https://docs.google.com/spreadsheets/d/1md_p0k-jcZ0u3rr_2gwRhT1fyCTkKiE-1fl8656sj1k/edit#gid=1309564982"
 
 # -------------
 doc = gc.open_by_url(spreadsheet_url)
@@ -43,6 +43,7 @@ findrsishare_stockList = doc_findrsishare.worksheet('StockList')
 findrsishare_total = doc_findrsishare.worksheet('TOTAL')
 findrsishare_MyRevenue = doc_findrsishare.worksheet('MyRevenue')
 
+#test 20211224
 
 def column_dataQTY():
     # column_data = []
@@ -50,6 +51,7 @@ def column_dataQTY():
     column_data.remove("")
     column_data_qty = len(column_data)
     return column_data, column_data_qty
+    
 
 
 def buy_values(user="kwak", type="적립식"):  # accumulative적립식  stationary거치식
@@ -94,13 +96,24 @@ def find_current_share_qty():
     return current_share_qty
 
 
-def rsiMin_data():
+def rsiMin_data_org():
     range_list_stockname = findrsishare_stockList.col_values(1)
     range_list_rsiminValue = findrsishare_stockList.col_values(3)
     rsimin_list = {}
     for dic in range(len(range_list_stockname)):
         rsimin_list[range_list_stockname[dic]] = (range_list_rsiminValue[dic])
         # rsimin_list[range_list_stockname[dic]] = int(range_list_rsiminValue[dic])
+    return rsimin_list
+
+
+def rsiMin_data():
+    # range_list_stockname = findrsishare_stockList.col_values(1)
+    # range_list_rsiminValue = findrsishare_stockList.col_values(3)
+    rsimin_list = {'2022-01-21': '', 'KORU': '35', 'GDXU': '35', 'YINN':
+                   '35', 'BNKU': '35', 'UTSL': '35', 'DPST': '35', 'TPOR': '40', 'DRN': '40', 'DFEN': '40', 'DUSL': '40', 'PILL': '45', 'CURE': '45', 'FAS': '45', 'MIDU': '45', 'LABU': '45', 'NAIL': '50', 'TNA': '50', 'RETL': '50', 'UDOW': '50', 'WANT': '55', 'HIBL': '55', 'UPRO': '55', 'FNGU': '55', 'TECL': '60', 'WEBL': '60', 'TQQQ': '60', 'SOXL': '65', 'BULZ': '65'}
+    # for dic in range(len(range_list_stockname)):
+    #     rsimin_list[range_list_stockname[dic]] = (range_list_rsiminValue[dic])
+    # rsimin_list[range_list_stockname[dic]] = int(range_list_rsiminValue[dic])
     return rsimin_list
 
 
@@ -118,18 +131,27 @@ def current_share_qty_test():
 
 def find_rsi_targetSharelist():  # 현재 잔고가 없는것만 DEL
     rsi_targetSharelist = []
+    rsi_targetSharelist_b = []
     a = find_current_share_qty()
+    # print(f"a: {a}")
     # a = current_share_qty_test()  # 테스트용
     # 0이 아닌것만 뺴야하는데, 지금은 0인것만 뺴라고 했다.
-    a = dict({key: value for key, value in a.items() if value == "0"})
-    for i in a.keys():
+    ab = dict({key: value for key, value in a.items() if value == "0"})
+    for i in ab.keys():
         rsi_targetSharelist.append(i)
-    return rsi_targetSharelist
+    b = dict({key: value for key, value in a.items() if value != "0"})
+    for i in b.keys():
+        rsi_targetSharelist_b.append(i)
+    rsi_targetSharelist_b.pop(0)
+    # print(f"b: {b}")
+    # print(f"rsi_targetSharelist_b: {rsi_targetSharelist_b}")
+    return rsi_targetSharelist, rsi_targetSharelist_b
 
 
 def tickerNow_rsi():
     try:
-        current_shareLists = find_rsi_targetSharelist()
+        current_shareLists = find_rsi_targetSharelist()[0]
+        stocksHeldLists = find_rsi_targetSharelist()[1]
         # print(current_shareLists)
         targetList = {}
         BasicRsi = {}
@@ -138,6 +160,25 @@ def tickerNow_rsi():
         # rsi 기준값 가져오기
         # rsiMin_keys = rsiData.rsiMin()  # rsi 기준값 가져오기
         for i in current_shareLists:
+            targetList[i] = rsiMin_keys[i]
+        for key in targetList:
+            BasicRsi[key] = makeRsi(key)  # 현재
+        return BasicRsi, targetList
+    except:
+        return BasicRsi, targetList
+
+
+def stocksHeldLists_rsi():
+    try:
+        stocksHeldLists = find_rsi_targetSharelist()[1]
+        # print(current_shareLists)
+        targetList = {}
+        BasicRsi = {}
+        rsiMin_keys = rsiMin_data()
+        # print(rsiMin_keys())
+        # rsi 기준값 가져오기
+        # rsiMin_keys = rsiData.rsiMin()  # rsi 기준값 가져오기
+        for i in stocksHeldLists:
             targetList[i] = rsiMin_keys[i]
         for key in targetList:
             BasicRsi[key] = makeRsi(key)  # 현재
@@ -171,6 +212,35 @@ def tickerNow_rsi_test2():
 
 def rsiResult():
     BasicRsi, targetList = tickerNow_rsi()
+    # BasicRsi_s, targetList_s = stocksHeldLists_rsi() # 보유한 Stock 의 리스트
+    stockList = []
+    RsiResultEnd = {}
+    for i in BasicRsi.keys():
+        stockList.append(i)
+    for k in stockList:
+        v = int(targetList[k]) - int(BasicRsi[k])
+        per = round(v/int(BasicRsi[k])*100, 2)
+        if v < 1:
+            pass
+        else:
+            # RsiResultEnd[i] = v
+            RsiResultEnd[k] = per
+
+    # for i in BasicRsi_s.keys():
+    #     stockList.append(i)
+    # for k in stockList:
+    #     v = int(targetList_s[k]) - int(BasicRsi_s[k])
+    #     per = round(v/int(BasicRsi_s[k])*100, 2)
+    #     if v < 1:
+    #         pass
+    #     else:
+    #         # RsiResultEnd[i] = v
+    #         RsiResultEnd[k] = per
+    return RsiResultEnd
+
+
+def rsiResult_test():
+    BasicRsi, targetList = tickerNow_rsi_test2()
     stockList = []
     RsiResultEnd = {}
     for i in BasicRsi.keys():
@@ -283,23 +353,8 @@ def checkDocsFileName():
 
 
 if __name__ == '__main__':
-    checkDocsFileName()
-    # MyRevenueData("kwak", "무매")
-    # a = buy_values("kwak", "거치식")
-    # print(a)
-    # myDepositValue_test("kwak", "ava")
-    # mystockdata("kwak", "TLP2", "02")
-    # print(myDepositValue("kwak", "무매", "45"))
-    # updateLocation = {"kwak": {"무매": ["B8"], "ava": ["I7"]}}
-    # updateLocation = {"kwak": {"무매": ["B8"], "ava": ["I7"]}}
-    # sh = findrsishare_total
-    # a = updateLocation["kwak"]["무매"][0]
-    # print(a)
-    # sh.update_acell(updateLocation["kwak"]["ava"][0], p)
-    # mystockdata()
-    # myDepositValue()
-    # buy_values(type="거치식")
-    # print(tickerNow_rsi())
-    # print(buy_values(user="lee"))
-    # mystockdata()
+    # rsiResult_test().items()
+    # find_rsi_targetSharelist()
+    print(buy_values()[0])
+
     pass

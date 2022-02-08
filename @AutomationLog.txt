@@ -278,3 +278,4 @@
 2022-01-16 12:42:15.384 def_ui.py[75] unconnetGlobal -> Find Control Timeout: {Name: '영웅문Global', ControlType: WindowControl}
 2022-01-16 12:46:50.603 def_ui.py[77] unconnetGlobal -> Find Control Timeout: {Name: '확인', ControlType: ButtonControl}
 2022-01-16 12:48:19.342 def_ui.py[77] unconnetGlobal -> Find Control Timeout: {Name: '확인', ControlType: ButtonControl}
+2022-02-03 22:02:34.860 def_ui.py[199] set_NFHeroMainClassSetLOC -> 

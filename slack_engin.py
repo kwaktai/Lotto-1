@@ -1,9 +1,9 @@
 import requests
 from slacker import Slacker
 from passdoc import pw
-from def_loggin import __get_logger
+from def_loggin import __get_logger, logging
 logger = __get_logger()
-
+logging.basicConfig(level=logging.INFO)
 
 slack_stock = pw.slackT()
 
@@ -38,6 +38,9 @@ def slackSendMsg_rsi_check(text):
                   )
     return print((f"channel #rsi-check: {text}"))
 
+
+logger.debug("debug")
+logger.info("info")
 
 if __name__ == "__main__":
     slackSendMsg("?????")

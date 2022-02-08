@@ -24,7 +24,7 @@ from def_ui import *
 def accunt_info(user, type):
     # {"무메":[계좌순서,매수수량]]}
     acc_type = {"kwak": {"무매": [0, 0], "적립식": [1, 4], "거치식": [
-        2, 14], "ava": [3, 0], "TLP2": [4, 0]},
+        2, 7], "ava": [3, 0], "TLP2": [4, 0]},
         "lee": {"무매": [0, 0], "적립식": [0, 1], "거치식": [2, 7]},
         "han": {"무매": [0, 0], "적립식": [0, 1], "거치식": [2, 14]}}
     # accuntInfo = accunt_info(user, type)
@@ -739,21 +739,25 @@ def input2102_check_after():
 def input2102_buy_VR(stockname, user="kwak", qty=2, test="test", type="적립식"):
     logger.info("VR 매수시작")
     buy_valueList = buy_values(user, type)
-    for i in buy_valueList:
-        time.sleep(0.1)
-        input2102_Stockname(stockname)  # 2102의 시작
-        time.sleep(0.1)
-        input2102_check_after()
-        time.sleep(0.1)
-        input2102_Qty(qty)
-        time.sleep(0.1)
-        input2102_price(i)
-        if input2102_finshBuy(test) == "end":
-            slackSendMsg("증거금 부족으로 매수 종료")
-            break
-        # check_message()
-        print("-----------------------")  # 실제주문시 필요한
-    print("VR 매수 완료.")
+    if buy_valueList[0] == "Pool 소진" or buy_valueList[0] == "주문 없음":
+        slackSendMsg(f"VR {user} {type} 매수 : {buy_valueList[0]}")
+        slackSendMsg("VR 매수를 종료 합니다.")
+    else:
+        for i in buy_valueList:
+            time.sleep(0.1)
+            input2102_Stockname(stockname)  # 2102의 시작
+            time.sleep(0.1)
+            input2102_check_after()
+            time.sleep(0.1)
+            input2102_Qty(qty)
+            time.sleep(0.1)
+            input2102_price(i)
+            if input2102_finshBuy(test) == "end":
+                slackSendMsg("증거금 부족으로 매수 종료")
+                break
+            # check_message()
+            print("-----------------------")  # 실제주문시 필요한
+        slackSendMsg("VR 매수 완료.")
 
 
 # def input2102_sell(stockname, qty, price, test="test", loc="loc"):
@@ -769,8 +773,8 @@ def input2102_sell_VR(stockname, user="kwak", qty=2, test="test", type="적립�
     sell_valueList = sell_values(user, type)
     # input2102_check_accuntNumber(1)
     # print(buy_valueList)
-    if sell_valueList == 0:
-        slackSendMsg("매도할 수량이 없습니다.")
+    if sell_valueList[0] == "Pool 소진" or sell_valueList[0] == "주문 없음":
+        slackSendMsg(f"VR {user} {type} 매수 : {sell_valueList[0]}")
         slackSendMsg("VR 매도를 종료 합니다.")
     else:
         for s in sell_valueList:
@@ -945,7 +949,7 @@ def startGlobal():
 
 
 if __name__ == '__main__':
-    save_screenshot("kwak")
+    input2102_buy_VR("TQQQ","kwak")
     # startGlobal()
     # save_stockQty("kwak", "무매", "45")
     # saveMyDeposit("kwak", "무매", "45")
