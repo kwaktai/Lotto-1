@@ -43,7 +43,7 @@ logger.debug("debug")
 logger.info("info")
 
 if __name__ == "__main__":
-    slackSendMsg("?????")
-    slackSendMsg_rsi_check("성공")
+    slackSendMsg("test 성공")
+    slackSendMsg_rsi_check("test 성공")
     # slackSendFile("kwak", "거치식")
     pass

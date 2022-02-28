@@ -278,4 +278,25 @@
 2022-01-16 12:42:15.384 def_ui.py[75] unconnetGlobal -> Find Control Timeout: {Name: '영웅문Global', ControlType: WindowControl}
 2022-01-16 12:46:50.603 def_ui.py[77] unconnetGlobal -> Find Control Timeout: {Name: '확인', ControlType: ButtonControl}
 2022-01-16 12:48:19.342 def_ui.py[77] unconnetGlobal -> Find Control Timeout: {Name: '확인', ControlType: ButtonControl}
-2022-02-03 22:02:34.860 def_ui.py[199] set_NFHeroMainClassSetLOC -> 
+2022-02-03 22:02:34.860 def_ui.py[199] set_NFHeroMainClassSetLOC -> 2022-02-25 15:56:04.997 UI_test.py[102] printControlValues -> Find Control Timeout: {ControlType: EditControl}
+2022-02-25 15:59:20.758 UI_test.py[102] printControlValues -> Find Control Timeout: {ControlType: EditControl}
+2022-02-25 16:00:26.240 UI_test.py[102] printControlValues -> Find Control Timeout: {ControlType: EditControl}
+2022-02-25 16:02:52.403 UI_test.py[102] printControlValues -> Find Control Timeout: {ControlType: EditControl}
+2022-02-25 16:25:29.863 def_updown.py[19] foundWct -> Find Control Timeout: {ControlType: ButtonControl}
+2022-02-25 16:27:15.818 def_updown.py[20] foundWct -> Find Control Timeout: {ControlType: ButtonControl}
+2022-02-25 16:28:02.571 def_updown.py[20] foundWct -> Find Control Timeout: {ControlType: ButtonControl}
+2022-02-25 16:28:51.931 def_updown.py[20] foundWct -> Find Control Timeout: {ControlType: ButtonControl}
+2022-02-25 16:29:15.711 def_updown.py[20] foundWct -> Find Control Timeout: {ControlType: ButtonControl}
+2022-02-27 23:24:57.115 def_updown.py[44] setStockName -> Find Control Timeout: {ControlType: DocumentControl}
+2022-02-27 23:25:41.003 def_updown.py[44] setStockName -> Find Control Timeout: {ControlType: DocumentControl}
+2022-02-27 23:26:47.681 def_updown.py[44] setStockName -> Find Control Timeout: {Classname: 'Edit', ControlType: DocumentControl}
+2022-02-27 23:31:31.083 def_updown.py[77] <module> -> Find Control Timeout: {ControlType: EditControl}
+2022-02-27 23:32:33.658 def_updown.py[77] <module> -> Find Control Timeout: {ControlType: EditControl}
+2022-02-27 23:33:20.801 def_updown.py[52] get_NFHeroMainClass -> Find Control Timeout: {ClassName: 'Afx:00200000:b:00010005:00000006:004C182B', ControlType: WindowControl}
+2022-02-27 23:47:05.369 def_updown.py[24] foundWct -> Find Control Timeout: {ControlType: DocumentControl}
+2022-02-27 23:47:15.401 def_updown.py[24] foundWct -> Find Control Timeout: {ControlType: DocumentControl}
+2022-02-27 23:47:25.425 def_updown.py[24] foundWct -> Find Control Timeout: {ControlType: DocumentControl}
+2022-02-27 23:49:19.298 def_updown.py[80] <module> -> Find Control Timeout: {ControlType: EditControl}
+2022-02-27 23:49:44.698 def_updown.py[80] <module> -> Find Control Timeout: {ControlType: DocumentControl}
+2022-02-27 23:52:10.464 def_updown.py[24] foundWct -> Find Control Timeout: {ControlType: EditControl}
+2022-02-27 23:52:41.860 UI_test.py[102] printControlValues -> Find Control Timeout: {ControlType: EditControl}

@@ -160,7 +160,25 @@ def select2102():
     return accNumEdit.Name
 
 
+def select2120():
+    # winControl = auto.WindowControl(
+    #     searchDepth=1, Name='영웅문Global')
+    winControl = auto.PaneControl(
+        searchDepth=2, ClassName="MDIClient")
+    accNumEdit = winControl.WindowControl(
+        Name="[2120] 해외주식 예약주문 - 예약주문")
+    # accNumEdit = winControl.DocumentControl()
+
+    if not accNumEdit.Exists(0.2, 1):
+        print("없음")
+        # exit(0)
+    return accNumEdit.Name
+
+
 if __name__ == '__main__':
+    # secletTab(select2120())
+    # setMainSearch("2120")
+    printControlValues()
     # print(kw_Login_2())
     # pyperclip.copy("")
     # anWindow = auto.WindowControl(
@@ -181,7 +199,7 @@ if __name__ == '__main__':
     # secletTab("매도")
     # for i in range(0, 10):
     #     print(select2102(i))
-    print(select2102())
+    # print(select2102())
     # print("매도 파트")
     # secletTab("매도")
     # printControlValues()

@@ -85,6 +85,8 @@ def unconnetGlobal():
 
 
 def setAccNum(acc, menuNum, num=2):
+    numList = ['45', '49', '53', '04',
+               '02', '09', '24', '23', '62', '82']
     try:
         nowAccNum = getAccNumber(menuNum, num)
         while acc == nowAccNum:
@@ -95,9 +97,9 @@ def setAccNum(acc, menuNum, num=2):
             nowAccNumIndex = numList.index(nowAccNum)
             indexValue = selectAccNumIndex - nowAccNumIndex
             if indexValue > 0:
-                moveAccNumDown(indexValue)
+                moveAccNumDown(indexValue, num)
             else:
-                moveAccNumUp(indexValue*-1)
+                moveAccNumUp(indexValue*-1, num)
                 pass
     except LookupError:
         print("2150 창이 없습니다.실행합니다.")
@@ -308,7 +310,7 @@ if __name__ == '__main__':
     # get_NFHeroMainClass(6)
     # set_NFHeroMainClassSetLOC(6, "LOC")
     # secletEventEnter()
-    unconnetGlobal()
+    # unconnetGlobal()
     # kw_window()
     # setAccNum("04", "2102")
     # set2102_Buy("TQQQ", "kwak", "34", "160.11", "test", "LOC", "82")

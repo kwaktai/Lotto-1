@@ -9,16 +9,16 @@ def startLotto():
     slackSendMsg("Lotto AV1 Start!")
     subprocess.Popen(
         r"D:\TaiCloud\Documents\Project\Lotto\Lotto\Run.exe -av1=0")
-    time.sleep(60)
+    time.sleep(30)
     logger.info("Lotto AV2 Start!")
     slackSendMsg("Lotto AV2 Start!")
     subprocess.Popen(
         r"D:\TaiCloud\Documents\Project\Lotto\Lotto\Run.exe -av2=0")
-    time.sleep(60)
+    time.sleep(30)
     logger.info("Lotto AV3 Start!")
     slackSendMsg("Lotto AV3 Start!")
     subprocess.Popen(
-        r"D:\TaiCloud\Documents\Project\Lotto\Lotto\Run.exe -av3=0")
+        r"D:\TaiCloud\Documents\Project\Lotto\Lotto\Run.exe -av4=0")
 
 
 if __name__ == '__main__':

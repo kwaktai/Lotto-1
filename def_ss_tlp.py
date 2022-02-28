@@ -155,7 +155,7 @@ def setTLP(pig, test):
                     def_ui.set2102_Buy(stockName, user, buyQty,
                                        buyPrice, test, "LOC", pigAcc)
             for sell in range(5, 8):
-                logger.info(f"매도 거래 항목 : {buy}")
+                logger.info(f"매도 거래 항목 : {sell}")
                 checkValueSell = list(pigList.values())[sell]
                 if checkValueSell == "-" or checkValueSell == "0" or checkValueSell == 0:
                     logger.info("해당 항목 거래 없음.")
