@@ -84,9 +84,14 @@ def unconnetGlobal():
     # print(pane)  # mag = ""
 
 
-def setAccNum(acc, menuNum, num=2):
-    numList = ['45', '49', '53', '04',
-               '02', '09', '24', '23', '62', '82']
+def setAccNum(acc, menuNum, num=2, user="kwak"):
+    if user == "kwak":
+        numList = ['45', '49', '53', '04',
+                   '02', '09', '24', '23', '62', '82']
+    elif user == "lee":
+        numList = ["94", "52", "10"]
+    elif user == "han":
+        numList = ["04", "98", "38"]
     try:
         nowAccNum = getAccNumber(menuNum, num)
         while acc == nowAccNum:
@@ -100,7 +105,7 @@ def setAccNum(acc, menuNum, num=2):
                 moveAccNumDown(indexValue, num)
             else:
                 moveAccNumUp(indexValue*-1, num)
-                pass
+            print(f"{acc} 계좌 변경 성공.")
     except LookupError:
         print("2150 창이 없습니다.실행합니다.")
 

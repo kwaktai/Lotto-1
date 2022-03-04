@@ -19,7 +19,6 @@ credentials = ServiceAccountCredentials.from_json_keyfile_name(
 gc = gspread.authorize(credentials)
 spreadsheet_udt = "https://docs.google.com/spreadsheets/d/1WfoW90rSo0gbPZ7fuMqvmrgFDZWXTfkdbcm1th-ugc4/edit#gid=2078891690"
 doc = gc.open_by_url(spreadsheet_udt)
-worksheet_order = doc.worksheet('거래시트')  # 시트선택
 # worksheet_order.acell("C2").value
 
 
@@ -29,8 +28,8 @@ def replaceDollar(setList):
     return setList
 
 
-def sellValueList(i):
-    # sell_valuelist = []
+def sellValueList(i, user):
+    worksheet_order = doc.worksheet(f'거래시트_{user}')  # 시트선택
     sell_valuelist = worksheet_order.col_values(i+1)  # 열읽기
     sell_valuelist = sell_valuelist[1]
     sell_valuelist = sell_valuelist.replace("$", "")
@@ -41,13 +40,13 @@ def sellValueList(i):
     return sellList
 
 
-def tradeList(num):
-    if num == 1:
-        i = 12
-    elif num == 2:
-        i = 16
+def tradeList(solt, user):
+    i = 12 + (((solt)-1)*4)
+    worksheet_order = doc.worksheet(f'거래시트_{user}')
     stockName = worksheet_order.col_values(i)
     stockName = stockName[0]
+    accNum = worksheet_order.col_values(i+1)
+    accNum = accNum[0]
     buy_valuelist = []
     buy_valuelist = worksheet_order.col_values(i+1)  # 열읽기
     buy_valuelist = buy_valuelist[2:13]
@@ -57,8 +56,8 @@ def tradeList(num):
     buyList = {}
     for dic in range(len(buy_qtylist)):
         buyList[buy_valuelist[dic]] = buy_qtylist[dic]
-    sellList = sellValueList(i)
-    return stockName, sellList, buyList
+    sellList = sellValueList(i, user)
+    return stockName, sellList, buyList, accNum
 
 
 winControl = auto.WindowControl(
@@ -66,8 +65,6 @@ winControl = auto.WindowControl(
 
 
 def foundWct():
-    # winControl = auto.WindowControl(
-    #     searchDepth=1, Name='영웅문Global')
     winControl.SetActive()
     for i in range(1, 50):
         try:
@@ -83,8 +80,6 @@ def clickWct(i):
         r = 27
     elif i == "매도":
         r = 28
-    # winControl = auto.WindowControl(
-    #     searchDepth=1, Name='영웅문Global')
     winControl.SetActive()
     winControl.ButtonControl(foundIndex=r).Click(x=0, y=0)
     # wct.Click
@@ -92,12 +87,8 @@ def clickWct(i):
 
 
 def clickLOC():
-    # winControl = auto.WindowControl(
-    #     searchDepth=1, ClassName='_NFHeroMainClass')
-    # winControl.SetActive()
     accNumEdit = get_2120Class(6)
     editTarget = accNumEdit.GetValuePattern()
-    # editTarget.SetValue(value)
     accNumEdit.SetFocus()
     accNumEdit.SendKeys('{DOWN}')
     accNumEdit.SendKeys('{DOWN}')
@@ -136,42 +127,43 @@ def set_NFHeroMainClass_WriteValuesDocumentControl(num, value=0):
 
 
 def setUpDownTrade(tradeType, stockName, qty, price):
-    print(f"{stockName} I 수량 : {qty} / 단가 : {price}")
+    print(f"{stockName} {tradeType} : {qty} / 단가 : {price}")
     set_NFHeroMainClass_WriteValues(7, qty)
     set_NFHeroMainClass_WriteValues(8, price)
     pag.press('enter')
     pass
 
 
-def setTrade(num, acc=0):
-    trade = tradeList(num)
+def setTrade(solt, user="kwak", tradeType="매수진행"):
+    trade = tradeList(solt, user)
     stockName = trade[0]
-    # sellList = trade[1]
-    # setAccNum('24', "2120", 9)
+    accNum = trade[3]
     for price, qty in trade[1].items():
-        clickWct("매도")
-        set_NFHeroMainClass_WriteValuesDocumentControl(4, stockName)
-        clickLOC()
-        setUpDownTrade("매도", stockName, qty, price)
-    for price, qty in trade[2].items():
-        clickWct("매수")
-        set_NFHeroMainClass_WriteValuesDocumentControl(4, stockName)
-        clickLOC()
-        setUpDownTrade("매수", stockName, qty, price)
-    # print(sellList)
+        if qty == "-":
+            print("매도 없음")
+        else:
+            setAccNum(accNum, "2120", 9, user)
+            clickWct("매도")
+            set_NFHeroMainClass_WriteValuesDocumentControl(4, stockName)
+            clickLOC()
+            setUpDownTrade("매도", stockName, qty, price)
+    if tradeType == "매수진행":
+        for price, qty in trade[2].items():
+            clickWct("매수")
+            set_NFHeroMainClass_WriteValuesDocumentControl(4, stockName)
+            clickLOC()
+            setUpDownTrade("매수", stockName, qty, price)
+    elif tradeType == "분할손절":
+        print("분할손절으로 매수는 진행하지 않습니다.")
 
 
 if __name__ == '__main__':
-    # setList = ["$4.4", "$4.5"]
-    # print(replaceDollar(setList))
-    # clickLOC()
-    # set_NFHeroMainClass_WriteValues(6, "LOC")
-    # setTrade(2)
-    setAccNum('24', "2120", 9)
-    # print(sellValueList(12))
-    pass
+    # for i in range(1):
+    #     setTrade(i, "분할손절", "lee")
+    # pass
     # foundWct()
-
+    # print(tradeList(1, "lee"))
+    setTrade(1, "lee", "분할손절")
     # 2	예약주문기간 종료일
     # 3	예약주문기간 시작일
     # 4	종목
