@@ -85,6 +85,7 @@ def unconnetGlobal():
 
 
 def setAccNum(acc, menuNum, num=2, user="kwak"):
+    pag.press("esc", 10)
     if user == "kwak":
         numList = ['45', '49', '53', '04',
                    '02', '09', '24', '23', '62', '82']

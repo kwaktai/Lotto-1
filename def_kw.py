@@ -678,7 +678,7 @@ def check_window(titleName, x=0, y=0):
     try:
         anWindow = auto.WindowControl(
             searchDepth=2, Name=titleName)
-        if not anWindow.Exists(10, 1):
+        if not anWindow.Exists(20, 1):
             exit(0)
         anWindow.SetActive()
     except:
@@ -949,7 +949,7 @@ def startGlobal():
 
 
 if __name__ == '__main__':
-    input2102_buy_VR("TQQQ","kwak")
+    input2102_buy_VR("TQQQ", "kwak")
     # startGlobal()
     # save_stockQty("kwak", "무매", "45")
     # saveMyDeposit("kwak", "무매", "45")

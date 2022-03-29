@@ -10,6 +10,8 @@ from oauth2client.service_account import ServiceAccountCredentials
 import uiautomation as auto
 import pyautogui as pag
 from def_ui import setAccNum
+from def_lotto import kw_Login, kw_close
+import time
 
 
 scope = ['https://spreadsheets.google.com/feeds']
@@ -17,7 +19,8 @@ json_file_name = 'D:\TaiCloud\Documents\Project\stockRpawin_kw\jsop_Key\spreadsh
 credentials = ServiceAccountCredentials.from_json_keyfile_name(
     json_file_name, scope)
 gc = gspread.authorize(credentials)
-spreadsheet_udt = "https://docs.google.com/spreadsheets/d/1WfoW90rSo0gbPZ7fuMqvmrgFDZWXTfkdbcm1th-ugc4/edit#gid=2078891690"
+spreadsheet_udt = "https://docs.google.com/spreadsheets/d/1HaPTo1o06WFjLz4o_N0fy6sDkrxG4x-pGgcqWsB9LS4/edit#gid=2078891690"
+
 doc = gc.open_by_url(spreadsheet_udt)
 # worksheet_order.acell("C2").value
 
@@ -140,30 +143,106 @@ def setTrade(solt, user="kwak", tradeType="매수진행"):
     accNum = trade[3]
     for price, qty in trade[1].items():
         if qty == "-":
-            print("매도 없음")
+            try:
+                # setAccNum("04", "2120", 9, user)
+                setAccNum(accNum, "2120", 9, user)
+                print("매도 없음")
+            except:
+                secletEventEnter()
         else:
-            setAccNum(accNum, "2120", 9, user)
-            clickWct("매도")
-            set_NFHeroMainClass_WriteValuesDocumentControl(4, stockName)
-            clickLOC()
-            setUpDownTrade("매도", stockName, qty, price)
+            try:
+                setAccNum(accNum, "2120", 9, user)
+                # setAccNum("04", "2120", 9, user)
+                clickWct("매도")
+                set_NFHeroMainClass_WriteValuesDocumentControl(4, stockName)
+                clickLOC()
+                setUpDownTrade("매도", stockName, qty, price)
+            except:
+                secletEventEnter()
     if tradeType == "매수진행":
         for price, qty in trade[2].items():
-            clickWct("매수")
-            set_NFHeroMainClass_WriteValuesDocumentControl(4, stockName)
-            clickLOC()
-            setUpDownTrade("매수", stockName, qty, price)
+            try:
+                clickWct("매수")
+                set_NFHeroMainClass_WriteValuesDocumentControl(4, stockName)
+                clickLOC()
+                setUpDownTrade("매수", stockName, qty, price)
+            except:
+                secletEventEnter()
     elif tradeType == "분할손절":
         print("분할손절으로 매수는 진행하지 않습니다.")
 
 
+def setTrade_kwak():
+    for i in range(1, 5):
+        setTrade(i, "kwak")
+    pass
+
+
+def setTrade_lee():
+    setTrade(1, "lee")
+
+
+def setTrade_han():
+    setTrade(1, "han")
+
+
+def upDownAutoRun():
+    # kw_Login("kwak")
+    # time.sleep(20)
+    # setTrade_kwak()
+    # kw_close()
+    kw_Login("lee")
+    time.sleep(20)
+    setTrade_lee()
+    kw_close()
+    kw_Login("han")
+    time.sleep(20)
+    setTrade_han()
+    kw_close()
+
+
+# def test()
+
+
+def secletEventEnter():
+    winControl = auto.WindowControl(
+        searchDepth=1, ClassName='_NFHeroMainClass')
+    accNumEdit = winControl.WindowControl(foundIndex=1, Name="확인")
+    # print(accNumEdit)
+    if not accNumEdit.Exists(0.2, 1):
+        accNumEdit = winControl.WindowControl(foundIndex=1, Name="안내")
+        if not accNumEdit.Exists(0.2, 1):
+            # exit(0)
+            pass
+        else:
+            print(accNumEdit.TextControl(foundIndex=1).Name)
+            print("네")
+            accNumEdit.SendKeys('{enter}')
+    else:
+        print(accNumEdit.TextControl(foundIndex=1).Name)
+        print("네")
+        accNumEdit.SendKeys('{enter}')
+
+
 if __name__ == '__main__':
-    # for i in range(1):
-    #     setTrade(i, "분할손절", "lee")
-    # pass
+    # upDownAutoRun()
+    setTrade_kwak()
+    # secletEventEnter()
+    # setTrade_lee()
+    # setTrade_han()
+    # kw_Login("kwak")
+    # kw_Login("kwak")
+    # time.sleep(20)
+    # kw_Login("lee")
+    # time.sleep(20)
+    # kw_close()
+    # kw_Login("han")
+    # time.sleep(20)
+    # kw_close()
+
     # foundWct()
     # print(tradeList(1, "lee"))
-    setTrade(1, "lee", "분할손절")
+    # setTrade(1, "kwak", "분할손절")
     # 2	예약주문기간 종료일
     # 3	예약주문기간 시작일
     # 4	종목

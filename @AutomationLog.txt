@@ -301,3 +301,5 @@
 2022-02-27 23:52:10.464 def_updown.py[24] foundWct -> Find Control Timeout: {ControlType: EditControl}
 2022-02-27 23:52:41.860 UI_test.py[102] printControlValues -> Find Control Timeout: {ControlType: EditControl}
 2022-03-04 12:19:54.202 UI_test.py[102] printControlValues -> Find Control Timeout: {ControlType: EditControl}
+2022-03-17 08:54:44.692 def_updown.py[123] set_NFHeroMainClass_WriteValuesDocumentControl -> Find Control Timeout: {ControlType: EditControl}
+2022-03-18 08:01:03.328 def_ui.py[35] setMainSearch -> 2022-03-18 22:19:47.064 def_lotto.py[311] kw_close -> 2022-03-18 22:26:09.191 def_updown.py[179] closeKiwom -> 2022-03-18 22:27:36.215 def_updown.py[179] closeKiwom -> 2022-03-18 22:30:02.870 def_updown.py[179] closeKiwom -> 2022-03-27 17:19:10.290 def_updown.py[200] secletEventEnter -> 
