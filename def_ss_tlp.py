@@ -205,5 +205,6 @@ if __name__ == '__main__':
     # setEmptyTrade("three")
     # setTLPvalue("TLP1_04")
     # print(dataList("one"))
+    time.sleep(720)
     startTlpMain("start")
     pass

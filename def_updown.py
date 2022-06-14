@@ -1,5 +1,5 @@
 import gspread
-from datetime import datetime
+# from datetime import datetime
 from oauth2client.service_account import ServiceAccountCredentials
 # from slack_engin import *
 # from def_kw import setAccNum
@@ -173,8 +173,8 @@ def setTrade(solt, user="kwak", tradeType="매수진행"):
 
 
 def setTrade_kwak():
-    for i in range(1, 5):
-        setTrade(i, "kwak")
+    for i in range(1, 3):
+        setTrade(i, "kwak", "분할손절")
     pass
 
 
@@ -226,7 +226,9 @@ def secletEventEnter():
 
 if __name__ == '__main__':
     # upDownAutoRun()
-    setTrade_kwak()
+    # setTrade_kwak()
+    setTrade(1, "kwak")
+    setTrade(2, "kwak")
     # secletEventEnter()
     # setTrade_lee()
     # setTrade_han()

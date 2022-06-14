@@ -1,0 +1,7 @@
+[삭제하세요] [오전 10:38] 컨트롤 하려는 창을 열어놓고 dump_tree 를 print 해서 복사해 놓고, 
+inspect 어플 켜놓고 원하는 버튼이나 칸으로 마우스를 이동하면 노란색으로 객체가 인식되면서 mouse 좌표가 나오는데, 
+복사해놓은 dump_tree 에서 이 좌표랑 동일한 child_window 를 찾으시면 됩니다. 실행했는데 중복으로 나올 경우 
+child_window 에서 found_index = 0 부터 숫자 올려보면 어떤 창인지 알 수 있습니다.
+
+
+inspect 에서 BoundingRectangle 좌표입니다.

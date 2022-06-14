@@ -302,4 +302,29 @@
 2022-02-27 23:52:41.860 UI_test.py[102] printControlValues -> Find Control Timeout: {ControlType: EditControl}
 2022-03-04 12:19:54.202 UI_test.py[102] printControlValues -> Find Control Timeout: {ControlType: EditControl}
 2022-03-17 08:54:44.692 def_updown.py[123] set_NFHeroMainClass_WriteValuesDocumentControl -> Find Control Timeout: {ControlType: EditControl}
-2022-03-18 08:01:03.328 def_ui.py[35] setMainSearch -> 2022-03-18 22:19:47.064 def_lotto.py[311] kw_close -> 2022-03-18 22:26:09.191 def_updown.py[179] closeKiwom -> 2022-03-18 22:27:36.215 def_updown.py[179] closeKiwom -> 2022-03-18 22:30:02.870 def_updown.py[179] closeKiwom -> 2022-03-27 17:19:10.290 def_updown.py[200] secletEventEnter -> 
+2022-03-18 08:01:03.328 def_ui.py[35] setMainSearch -> 2022-03-18 22:19:47.064 def_lotto.py[311] kw_close -> 2022-03-18 22:26:09.191 def_updown.py[179] closeKiwom -> 2022-03-18 22:27:36.215 def_updown.py[179] closeKiwom -> 2022-03-18 22:30:02.870 def_updown.py[179] closeKiwom -> 2022-03-27 17:19:10.290 def_updown.py[200] secletEventEnter -> 2022-06-08 21:51:19.817 def_ui.py[35] setMainSearch -> Find Control Timeout(10s): {Name: '영웅문Global', ControlType: WindowControl}
+2022-06-08 21:51:29.925 def_updown.py[86] clickWct -> Find Control Timeout(10s): {Name: '영웅문Global', ControlType: WindowControl}
+2022-06-08 21:51:40.518 def_updown.py[86] clickWct -> 2022-06-08 21:52:47.456 def_ui.py[35] setMainSearch -> Find Control Timeout(10s): {Name: '영웅문Global', ControlType: WindowControl}
+2022-06-08 21:52:57.512 def_updown.py[86] clickWct -> Find Control Timeout(10s): {Name: '영웅문Global', ControlType: WindowControl}
+2022-06-08 21:53:08.088 def_updown.py[86] clickWct -> Find Control Timeout(10s): {Name: '영웅문Global', ControlType: WindowControl}
+2022-06-08 21:53:18.655 def_updown.py[86] clickWct -> Find Control Timeout(10s): {Name: '영웅문Global', ControlType: WindowControl}
+2022-06-08 21:53:29.202 def_updown.py[86] clickWct -> Find Control Timeout(10s): {Name: '영웅문Global', ControlType: WindowControl}
+2022-06-08 21:53:39.823 def_updown.py[86] clickWct -> Find Control Timeout(10s): {Name: '영웅문Global', ControlType: WindowControl}
+2022-06-08 21:53:50.384 def_updown.py[86] clickWct -> Find Control Timeout(10s): {Name: '영웅문Global', ControlType: WindowControl}
+2022-06-08 21:54:00.944 def_updown.py[86] clickWct -> Find Control Timeout(10s): {Name: '영웅문Global', ControlType: WindowControl}
+2022-06-08 21:54:11.496 def_updown.py[86] clickWct -> Find Control Timeout(10s): {Name: '영웅문Global', ControlType: WindowControl}
+2022-06-08 21:54:22.059 def_updown.py[86] clickWct -> Find Control Timeout(10s): {Name: '영웅문Global', ControlType: WindowControl}
+2022-06-08 21:54:32.624 def_updown.py[86] clickWct -> Find Control Timeout(10s): {Name: '영웅문Global', ControlType: WindowControl}
+2022-06-08 21:54:43.195 def_updown.py[86] clickWct -> Find Control Timeout(10s): {Name: '영웅문Global', ControlType: WindowControl}
+2022-06-08 21:54:53.766 def_updown.py[86] clickWct -> Find Control Timeout(10s): {Name: '영웅문Global', ControlType: WindowControl}
+2022-06-08 21:55:07.130 def_ui.py[35] setMainSearch -> Find Control Timeout(10s): {Name: '영웅문Global', ControlType: WindowControl}
+2022-06-08 21:55:17.195 def_updown.py[86] clickWct -> Find Control Timeout(10s): {Name: '영웅문Global', ControlType: WindowControl}
+2022-06-08 21:55:27.759 def_updown.py[86] clickWct -> Find Control Timeout(10s): {Name: '영웅문Global', ControlType: WindowControl}
+2022-06-08 21:55:38.325 def_updown.py[86] clickWct -> Find Control Timeout(10s): {Name: '영웅문Global', ControlType: WindowControl}
+2022-06-08 21:55:48.877 def_updown.py[86] clickWct -> Find Control Timeout(10s): {Name: '영웅문Global', ControlType: WindowControl}
+2022-06-08 21:55:59.457 def_updown.py[86] clickWct -> Find Control Timeout(10s): {Name: '영웅문Global', ControlType: WindowControl}
+2022-06-08 21:56:10.031 def_updown.py[86] clickWct -> Find Control Timeout(10s): {Name: '영웅문Global', ControlType: WindowControl}
+2022-06-08 21:56:20.604 def_updown.py[86] clickWct -> Find Control Timeout(10s): {Name: '영웅문Global', ControlType: WindowControl}
+2022-06-08 21:56:31.160 def_updown.py[86] clickWct -> Find Control Timeout(10s): {Name: '영웅문Global', ControlType: WindowControl}
+2022-06-08 21:56:41.723 def_updown.py[86] clickWct -> Find Control Timeout(10s): {Name: '영웅문Global', ControlType: WindowControl}
+2022-06-08 21:56:52.282 def_updown.py[86] clickWct -> 2022-06-10 21:20:44.124 def_ui.py[35] setMainSearch -> 
